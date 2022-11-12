@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>frontend</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="javascript.js"></script>
+  <meta name="frontend">
+</head>
+<body onload="initialisation(5)">
+
+  <nav>
+    <div class="navbar" id="hautDePage">
+        <a class="navbar" href="index.html">Stratégie</a>                
+        <a class="navbar" href="specification.html">Spécifications</a>
+        <a class="navbar" href="ux_ui.html">Ux/Ui</a>
+        <a class="navbar" href="contenus.html">Contenus</a>
+        <a class="navbar" href="architecture.html">Architecture</a>
+        <a class="navbar pageActuel" href="frontend.html">Frontend</a>
+        <a class="navbar" href="backend.html">Backend</a>
+        <a class="navbar" href="hebergement.html">Hébergement</a>
+    </div>
+  </nav>
+
+    <!-- le panier -->
+    <div class="enssemblePanier"> 
+      <a href="panier.html" class="panier panierNonSelectionner"> 
+      <div>
+      <img id="imagePanier" src="logo/panier.png" alt="image d'un panier"/>
+      </div>
+      <div class="textePanier">
+      <p class="textePanier">
+          panier
+      </p>
+      <p id="textePanier">
+      </p>
+      </div>
+      </a>
+  </div>
+
+
+    <!-- bouton retour en haut -->
+    <div class="caseRetourHaut">
+      <a href="#hautDePage" class="boutonRetourHaut">
+        <img id="buttonGoUp" src="logo/toTop.png" alt="image d'un bouton retouner en haut"/>
+      </a>
+    </div>
+
+
+
+
+  <div class="ensembleSousNav"> <!-- texte du site -->
+    <h1 class="titreGrandTheme">
+        FRONTEND
+    </h1>
+    <div class="contenuPage"> <!-- contenu -->
+      <div class='enssembleThemeSecondaire'>
+        <div class='interieur_theme_secondaire' onclick='changeColor(0);'>
+        <h2>
+        Est-ce que les fonctions proposées sont bien en rapport avec un usage ?
+        </h2>
+        <p>
+        Derrière chaque fonctionnalité il y a du code, des échanges, des données. Si certaines fonctions ne correspondent pas à un vrai besoin, des ressources sont gaspillées en vain.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(1);'>
+        <h2>
+        Chaque fonction du service est-elle appréhendée en regard de son importance dans le service ?
+        </h2>
+        <p>
+        Les fonctions les plus gourmandes en ressources ne sont pas toujours les fonctions les plus utiles, il est acceptable de consommer des ressources pour des éléments critiques, mais plus dommageable lorsque c&#39;est pour des choses mineures.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(2);'>
+        <h2>
+        Les fonctions secondaires ont-elles aussi un impact moindre sur l&#39;impact environnemental ?
+        </h2>
+        <p>
+        La cohérence NR pousse à s&#39;assurer que les fonctions secondaires n&#39;ont pas un impact environnemental plus important que les fonctions principales. Les phases de développement doivent clairement identifier les fonctions principales et secondaires et leur impact du point de vue NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(3);'>
+        <h2>
+        Utilisez-vous des standards de développement éprouvés ?
+        </h2>
+        <p>
+        Les meilleurs standards de développement couvrent une grande partie des attentes du NR sur les aspects de fiabilité, de réutilisation, validation des codes produits, ainsi que l&#39;utilisabilité par différentes catégories de publics. L&#39;adoption et le respect de ces standards donne une base solide pour construire en appliquant les démarches NR qui sont hors du périmètre de ces méthodes et outils.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(4);'>
+        <h2>
+        Est-ce qu&#39;une méthodologie de qualité est en place ?
+        </h2>
+        <p>
+        La qualité du logiciel produit a un impact direct sur les aspects NR. Les défauts entraînent de multiples livraisons de nouvelles versions successives, les anomalies entraînent des productions de traces d&#39;anomalies importantes, et des fonctionnalités plus consommatrices de ressources techniques, parfois pour un résultat non atteint, donc des ressources ont été gaspillées pour ne produire aucun résultat
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(5);'>
+        <h2>
+        Les données ACV sont-elles réutilisées dans le cas d&#39;une adaptation d&#39;un service existant ?
+        </h2>
+        <p>
+        Les analyses ACV peuvent être réalisées sur des services existants afin de les rendre plus efficaces dans le cas d&#39;une refonte ou adaptation d&#39;un service existant, les spécifications et exigences NR issues des ACV précédentes doivent être reprises et adaptées si besoin.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(6);'>
+        <h2>
+        Est-ce bien la fonctionnalité qui guide les choix plutôt que l&#39;attrait de la technologie à la mode ?
+        </h2>
+        <p>
+        Le choix technologique doit être dicté par les fonctionnalités et le respect des critères NR, plutôt que par l&#39;attrait technologique de la nouveauté à la mode.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(7);'>
+        <h2>
+        Quel serait mon réflexe de dev, pour prendre en compte le cycle de vie ?
+        </h2>
+        <p>
+        La prise en compte du cycle doit être intégrée dans les phases de développement. Les développeurs sont les principaux acteurs qui, par leurs choix, leurs pratiques vont conditionner les résultats futurs. La prise en compte du cycle de vie dans le développement est indispensable. Il serait plus coûteux, plus risqué et moins efficace de traiter les aspects de cycle de vie en aval.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(8);'>
+        <h2>
+        Chaque partie-prenante interne a-t-elle la latitude de prendre des décisions pouvant influer sur l&#39;impact environnemental ?
+        </h2>
+        <p>
+        Les orientations des développements peuvent évoluer au fil du temps. Ces évolutions doivent systématiquement prendre en compte les aspects NR. Les adaptations sont le plus souvent le fait des métiers ou des contraintes techniques qui apparaissent au cours du développement. Les impacts environnementaux doivent pouvoir aussi être traités par les équipes techniques avec des chemins de validation pré-définis.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(9);'>
+        <h2>
+        Les aspects Numérique Responsable sont-ils propagés et entretenus sur l&#39;ensemble des acteurs ?
+        </h2>
+        <p>
+        La maturité NR d&#39;une équipe repose sur la connaissance partagée. C&#39;est cette connaissance NR qui doit être présente pour devenir une pratique métier standard en permanente évolution.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(10);'>
+        <h2>
+        Le public cible du service est-il déterminé vis-à-vis de ses capacités d&#39;utilisation du service ?
+        </h2>
+        <p>
+        La finalité du développement est dépendante des publics utilisateurs cibles. Les choix d&#39;implémentation ont une forte conséquence sur la capacité d&#39;utilisation du service. Les équipes de développement sont souvent éloignées des cas d&#39;usage réels, il est indispensable de reconstruire cette proximité pour que tous les publics utilisateurs soient inclus.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(11);'>
+        <h2>
+        Utilisez vous les mécanismes de cache pour limiter les échanges ?
+        </h2>
+        <p>
+        La réduction des volumes d&#39;échanges, des opérations de calculs, traitements, et accès aux données est un axe d&#39;optimisation des consommations de ressources. La mise en place de systèmes de cache permet de réduire les coûts des opérations répétitives. Les mécanismes de cache peuvent être déployés à différents points de passage dans un service. Plus le cache est proche du demandeur qu&#39;il doit servir, plus le volume de données en transit et la longueur du chemin emprunté par les données sont faibles. Plus le cache est proche de la source de données, plus il peut être mutualisé par un nombre important d&#39;utilisateurs mais les données seront tout de même échangées, seules les opérations de traitement et collecte seront réduites.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(12);'>
+        <h2>
+        Est-ce que les fonctionnalités couvertes par des actions locales (côté client) sont privilégiées plutôt que des échanges API ?
+        </h2>
+        <p>
+        Les charges introduites par la sollicitation de ressources distantes via des mécanismes API peuvent être importantes. Certaines fonctionnalités pourraient être couvertes par des actions locales plutôt que distantes ce qui réduit la volumétrie des échanges et le nombre de composants mis en oeuvre, donc réduit l&#39;impact environnemental. En revanche, il ne faut pas que le traitement en local d&#39;une fonctionnalité qui peut nécessiter de nouvelles dépendances techniques, alourdisse la charge sur le front end.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(13);'>
+        <h2>
+        Est-ce que les données remontées par les API sont bien uniquement celles dont l&#39;application a besoin au moment où elles sont demandées ?
+        </h2>
+        <p>
+        Les parcours et besoins des utilisateurs sont très difficilement anticipables. Une tendance consiste à collecter sur le front end un maximum de données pour couvrir le maximum de cas d&#39;utilisation. Cette pratique est inefficace d&#39;un point de vue NR car la collecte, le traitement, l&#39;acheminement, le stockage local des données génère une charge et donc une consommation énergétique importante sans certitude que toutes ces données seront effectivement utilisées. L&#39;empreinte du service doit être réduite en ne collectant que les données indispensables au fur et à mesure du déroulement du service via les mécanismes API.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(14);'>
+        <h2>
+        Est-ce qu&#39;une alternative openSource est disponible pour les API ?
+        </h2>
+        <p>
+        L&#39;opacité de certains fournisseurs de service ne permet pas de connaître leurs pratiques sur les différentes dimensions du NR. Les solutions open source, communautaires peuvent lever certaines de ces contraintes, mais l&#39;open source ne garantit pas que l&#39;ensemble des critères NR soient couverts ou visibles.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(15);'>
+        <h2>
+        Les bibliothèques utilisées permettent-elles de ne prendre que les composants effectivement utiles ?
+        </h2>
+        <p>
+        Bien souvent les composants issus de bibliothèques publiques (open source ou commerciales) apportent un ensemble de fonctionnalités qui ne sont que rarement toutes utilisées et drainent des dépendances vis-à -is d&#39;autres composants avec les mêmes caractéristiques. Au final le projet agrège un volume de bibliothèque important alors qu&#39;une petite partie est réellement utilisée. Privilégier les composants dont les dépendances et fonctionnalités sont pilotables par rapport aux besoins est efficace du point de vue NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(16);'>
+        <h2>
+        Les dépendances non utilisées sont-elles identifiées et retirées ?
+        </h2>
+        <p>
+        Les arbres de dépendance donnent la cartographie des composants et leurs relations. Un arbre de dépendance le plus réduit possible est efficace car il réduit les volumes de code, mais cela ne présume pas que chaque branche de cet arbre de dépendance est justifiée par une utilisation effective.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(17);'>
+        <h2>
+        Est-ce que la fonctionnalité attendue ne pourrait pas être mise en place avec les capacités natives du navigateur ?
+        </h2>
+        <p>
+        Certaines fonctionnalités sont disponibles sous plusieurs formes. Lorsqu&#39;elles sont natives, aucun code ou composants supplémentaires ne sont nécessaires pour les utiliser ce qui réduit l&#39;impact du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(18);'>
+        <h2>
+        Une alternative openSource est-elle disponible ?
+        </h2>
+        <p>
+        Une solution Open Source n&#39;est pas un gage d&#39;efficacité NR et les différentes alternatives doivent être challengées. Mais l&#39;open source permet de limiter les ambitions et mainmises de certains acteurs dont les pratiques économiques, sociales sont opaques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(19);'>
+        <h2>
+        L&#39;ensemble des équipements techniques utilisés par le service sont-ils identifiés?
+        </h2>
+        <p>
+        La conception, le développement, les tests, la production, la gestion de disponibilité sont des étapes qui vont utiliser des ressources techniques. Chacune de ces ressources doit être identifiée et ses caractéristiques répertoriées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(20);'>
+        <h2>
+        Pour chaque équipement, les caractéristiques sont-elles disponibles ? (Ancienneté, données de perf environnementales, ...)
+        </h2>
+        <p>
+        La position de l&#39;équipement dans son cycle de vie et son impact environnemental doivent être connus pour utiliser au mieux les équipements disponibles.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(21);'>
+        <h2>
+        Les fonctionnalités liées aux traitements de données réglementées (santé, personnelles, bancaires) sont-elles validées en terme d&#39;interopérabilité ?
+        </h2>
+        <p>
+        Le cadre réglementaire de certaines catégories de données est très strict, le respect de ces données pour protéger les utilisateurs est un critère important. Il est indispensable que dans le processus de développement aucune brèche ne soit possible et que toutes les interopérabilités avec les mécanismes standards de ces domaines soient validés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(22);'>
+        <h2>
+        Les dernières avancées techniques, sont-elles utilisées lorsqu&#39;elles contribuent réellement à réduire l&#39;impact ?
+        </h2>
+        <p>
+        Les avancées technologiques se succèdent rapidement, le NR en se diffusant progresse aussi dans les pratiques et l&#39;efficacité. La conjonction de ces 2 phénomènes nécessite au cours du projet, une veille permanente et une stratégie pour évaluer les bénéfices de l&#39;adoption de nouveaux éléments techniques vis-à-vis des impacts NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(23);'>
+        <h2>
+        La plage de rétro-compatibilité est-elle définie ?
+        </h2>
+        <p>
+        Les équipements utilisateurs sont de plus en plus performants. Lorsque les services numériques exploitent toutes les capacités des équipements, cela écarte certains publics qui ne disposent pas des même outils performants. Cela empêche aussi d&#39;aborder la fourniture des fonctionnalités avec des moyens moins gourmands en ressources mais procurant le même résultat.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(24);'>
+        <h2>
+        Chacune de ces phases du cycle de vie sont-elles identifiées avec des actions spécifiques ?
+        </h2>
+        <p>
+        La démarche ACV est une base de la prise en compte du NR dans la conception des services numériques, elle permet d&#39;associer des actions à chaque étape du cycle de vie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(25);'>
+        <h2>
+        Une version légère du service pour des équipements anciens ou des conditions d&#39;accès réseau limitées est-elle disponible ?
+        </h2>
+        <p>
+        Plus le service implémente de composants qui présentent une charge sur les serveurs, sur les réseaux et sur le périphérique utilisateur, plus l&#39;impact est important. Une version allégée du service contribue à réduire l&#39;impact environnemental de l&#39;encombrement des réseaux, du sur-dimensionnement des infrastructures.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(26);'>
+        <h2>
+        Est-ce que les équipements plus anciens resteront compatibles, et dans quelles limites ?
+        </h2>
+        <p>
+        Le secteur d&#39;activité et le profil des utilisateurs permet le plus souvent de qualifier le parc matériel qui sera employé pour le service. Les matériels sont déterminés par leurs capacités techniques (puissance de calcul, mémoire, capacité réseau, capteurs, taille et qualité d&#39;écran) mais aussi par les systèmes d&#39;exploitation qu&#39;ils peuvent accueillir. Chaque contrainte que le service impose réduit le nombre de postes qui pourront l&#39;utiliser et donc exclut des publics. La mise en oeuvre de solutions alternatives permet de conserver un fonctionnement efficace sur des périphériques anciens qui conservent une bonne utilisabilité et de ne pas exclure d&#39;utilisateurs
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(27);'>
+        <h2>
+        Les fonctionnalités du service ne vont-elles pas au-delà des besoins utilisateurs ?
+        </h2>
+        <p>
+        Le nombre de fonctionnalités disponibles dans un service numérique impactent directement la consommation de ressources et l&#39;impact environnemental. En créant des fonctionnalités de peu d&#39;utilité ce sont des sources de création de dettes environnementales totalement inutiles. Les fonctionnalités augmentent aussi le volume du service, qui introduisent des délais de chargements et des espaces de stockage supplémentaires.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(28);'>
+        <h2>
+        Est-ce que les logs sont exempts d&#39;erreurs non traitées ?
+        </h2>
+        <p>
+        Les anomalies lors des traitements génèrent des insatisfactions utilisateurs, des traitements inutiles, des charges produites pour aucun résultat ce qui est un gaspillage de ressources. Les logs d&#39;erreurs permettent de repérer et de réparer ces anomalies dès leur apparition.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(29);'>
+        <h2>
+        Les codes morts sont-ils éliminés ?
+        </h2>
+        <p>
+        Dans les différentes évolutions des codes, certaines branches deviennent inutiles, mais restent souvent présentes dans les codes sources. Outre les risques de confusion et donc l&#39;augmentation des temps de maintenance, ces lignes de codes inactives sont transmises et génèrent une volumétrie superflue.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(30);'>
+        <h2>
+        Un langage compilé est-il utilisé pour des aspects performance et/ou sécurité ?
+        </h2>
+        <p>
+        Le type de langage utilisé introduit soit une proximité vers les processeurs (CPU), c&#39;est le cas des langages compilés, soit vers les hommes, c&#39;est le cas des langages interprétés (PHP, JavaScript, ...). La proximité des ordres machine augmente la performance technique mais rend la production logicielle plus lourde (phases de compilation, édition de liens). La proximité &quot;humaine&quot; facilite les développements mais aussi les malversations (piratage) et demande aux systèmes un effort supplémentaire pour traduire &quot;à la demande&quot; les lignes de programme en code machine, avec l&#39;aide d&#39;un interpréteur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(31);'>
+        <h2>
+        Les éléments de références sont-ils connus, tenus à jour, et mis à disposition de l&#39;ensemble de l&#39;équipe projet ?
+        </h2>
+        <p>
+        Le cadrage des opérations de développement nécessite un socle de référentiels qui soient connus, adoptés et validés par l&#39;ensemble des équipes techniques. Ces références doivent évoluer en fonction des avancées de l&#39;état de l&#39;art pour rester à la pointe des pratiques autant techniques que NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(32);'>
+        <h2>
+        L&#39;état des lieux des données d&#39;entrée est-il mis à disposition afin d&#39;être réutilisé dans d&#39;autres projets?
+        </h2>
+        <p>
+        Les principes NR sont stables et les bonnes pratiques déployées sont directement utilisables dans d&#39;autres contextes projet, d&#39;autant plus que les projets au sein d&#39;une organisation ont beaucoup de similarités que ce soit dans les méthodes, les objectifs ou les périmètres fonctionnels. Dans la phase de développement, collecter, préparer et produire ces éléments est un gage d&#39;efficacité et de fiabilité pour augmenter la maturité de l&#39;organisation dans ses pratiques NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(33);'>
+        <h2>
+        Limitez-vous les flux échangés ?
+        </h2>
+        <p>
+        Dans les usages de services numériques les échanges de données sont à la fois indispensables mais génèrent une consommation importante de ressources. La réduction des besoins d&#39;échanges au strict minimum diminue l&#39;impact de ces échanges. Seule la vue globale des flux avec leurs sources, destinations et objectifs permettent de qualifier la nécessité et d&#39;accepter l&#39;impact de consommation qu&#39;ils génèrent.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(34);'>
+        <h2>
+        Est-ce qu&#39;il y a un suivi du nombre de requêtes ?
+        </h2>
+        <p>
+        Les opérations réalisées sur le front end génèrent des requêtes vers les services distants. Plus le nombre de requêtes est important plus les mécanismes de traitements et d&#39;échanges vont consommer de ressources.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(35);'>
+        <h2>
+        Les volumétries d&#39;échanges sont-elles évaluées et réduites avec les traitements techniques les plus pertinents (compression/minification) ?
+        </h2>
+        <p>
+        Les échanges indispensables doivent permettre de réduire la volumétrie des transferts. La minification des échanges, la compression des données échangées permettent de réduire ces volumes. Toutefois les opérations de compression et décompression nécessitent des exécutions de traitements qui peuvent annuler le bénéfice de la compression des échanges.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(36);'>
+        <h2>
+        Est-ce qu&#39;il y a des fichiers en double ?
+        </h2>
+        <p>
+        En plus des besoins de réplication pour gérer la sécurité et la disponibilité des services, certains fichiers sont présents dans plusieurs emplacements sans réelles justifications. La recherche des doublons permet de réduire les volumes de stockage et de sauvegardes sans impact sur le fonctionnement du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(37);'>
+        <h2>
+        Combien de domaines différents sont utilisés ?
+        </h2>
+        <p>
+        Les mécanismes de cache et la mise en oeuvre des accès aux ressources externes est facilité lorsque le nombre de sources sont réduites. L&#39;utilisation de nombreux domaines est inefficace à la fois d&#39;un point de vue performance et NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(38);'>
+        <h2>
+        Les capteurs sont-ils sollicités au besoin réel, plutôt qu&#39;en permanence ?
+        </h2>
+        <p>
+        Les opérations techniques réalisées sur le front end peuvent mettre en oeuvre des capteurs physiques du périphérique utilisateur. La sollicitation de ces capteurs, les processus de contrôle de ces capteurs peut entraîner une usure prématurée et en cas de panne pousser au renouvellement du périphérique. Certaines techniques logicielles permettent de réduire l&#39;utilisation des capteurs physiques, ou de s&#39;assurer qu&#39;ils sont employés avec le minimum de contraintes.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(39);'>
+        <h2>
+        Les fonctions de mise en pause sont-elles disponibles ?
+        </h2>
+        <p>
+        L&#39;optimisation des utilisations des composants physiques du périphérique utilisateur permet de préserver la durée de vie de ces composants et conserver plus longtemps l&#39;intégrité du périphérique utilisateur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(40);'>
+        <h2>
+        L&#39;inaccessibilité d&#39;un capteur, lié à l&#39;équipement ou au choix de l&#39;utilisateur, est-elle traitée pour permettre au service d&#39;être néanmoins fonctionnel (si possible) ?
+        </h2>
+        <p>
+        L&#39;inaccessibilité de composants physiques du périphérique utilisateur doit être adressée pour permettre à des matériels anciens, ou partiellement fonctionnels d&#39;exécuter le service. Certains cas d&#39;indisponibilité de capteurs peuvent être simplement traités par des procédures de réinitialisation ou par des approximations logicielles.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(41);'>
+        <h2>
+        Des algorithmes prédictifs sont-ils mis en place pour éviter l&#39;utilisation de capteurs physiques ?
+        </h2>
+        <p>
+        Les capteurs physiques fournissent des données réputées exactes et précises, la majorité des services n&#39;ont que très rarement besoin d&#39;une précision absolue en permanence. Les algorithmes prédictifs peuvent soulager l&#39;utilisation des capteurs et rendre le service néanmoins tout à fait efficace.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(42);'>
+        <h2>
+        Informez-vous les utilisateurs des contraintes de volume et format de fichiers acceptés ?
+        </h2>
+        <p>
+        Les opérations sur le front end peuvent nécessiter des transferts de fichiers entre le poste utilisateur et les serveurs de traitement. Les types et volumes de fichiers acceptés doivent être exposés à l&#39;utilisateur pour éviter des charges de transfert, des stockages et des traitements qui seraient voués à l&#39;échec pour cause de non-respect des formats et volumes attendus. La limitation du volume est indispensable pour réduire l&#39;impact des transferts.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(43);'>
+        <h2>
+        La fréquence de l&#39;animation est-elle adaptée à la fonctionnalité ?
+        </h2>
+        <p>
+        La présentation des opérations sur le front end peut pousser à mettre en place des mécanismes dynamiques. Ces traitements requièrent des ressources de traitements. Il est nécessaire de réduire les impacts de ces éléments dynamiques en les évitant ou lorsqu&#39;ils sont jugés indispensables en réduisant les fréquences des animations.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(44);'>
+        <h2>
+        Est-ce que les uploads permettent uniquement la liste des types de fichiers autorisés ?
+        </h2>
+        <p>
+        Les fichiers transférés par l&#39;utilisateur génèrent des traitements, des flux d&#39;échange, des espaces de stockage, une redondance pour sécuriser les données, des sauvegardes. Chaque transfert doit donc être utile pour le service. Et supprimés lorsqu&#39;ils n&#39;ont plus d&#39;intérêt.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(45);'>
+        <h2>
+        Les images à uploader sont-elles bien redimensionnées et converties dans un format léger côté client avant transfert ?
+        </h2>
+        <p>
+        Les transferts d&#39;images introduisent des particularités liées au format des images, certains génèrent des tailles de fichiers très différents. Les tailles et niveaux de qualité des images augmentent très rapidement les volumes nécessaires pour stocker des images. Les transcodages, et redimensionnements peuvent être réalisés avant les transferts mais nécessitent des ressources de traitements, des espaces de stockage intermédiaires et créent de nouveaux fichiers qui, en l&#39;absence de nettoyages automatiques, peuvent augmenter le volume de données.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(46);'>
+        <h2>
+        Les fichiers échangés sont-ils compressés ?
+        </h2>
+        <p>
+        Le volume de données transféré augmente l&#39;empreinte environnementale du service, car les données sont aussi stockées, sécurisées avec de la duplication, sauvegardées. Certains formats de données peuvent être compressés pour réduire leur volume, l&#39;opération de compression nécessitant des ressources de calcul et de stockage intermédiaire il est plus efficace que les données soient disponibles sous forme compressée.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(47);'>
+        <h2>
+        La navigation rapide est-elle possible ?
+        </h2>
+        <p>
+        La facilité d&#39;utilisation et repérage dans le service rend un meilleur service à l&#39;utilisateur. Il permet aussi à un utilisateur de trouver plus facilement les informations qu&#39;il cherche, ce qui réduit les navigations parasites et diminue la consommation de ressources et d&#39;énergie pour des résultats ne correspondant pas au besoin de l&#39;utilisateur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(48);'>
+        <h2>
+        Est-ce que l&#39;attention utilisateur est capturée avec son consentement et pour les usages qu&#39;il attend ?
+        </h2>
+        <p>
+        L&#39;attention de l&#39;utilisateur est une ressource qui doit être considérée comme rare et précieuse. Dans cette optique le respect de l&#39;utilisateur passe aussi par sa capacité à concentrer son attention sur les éléments de son choix, plutôt que ceux que le service souhaiterait mettre en avant.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(49);'>
+        <h2>
+        Les données réglementées (personnelles, santé, financières) sont-elles exposées aux utilisateurs ?
+        </h2>
+        <p>
+        Les données que l&#39;utilisateur confie lorsqu&#39;elles entrent dans un cadre réglementaire doivent être exposées aux utilisateurs pour qu&#39;ils puissent les transmettre avec un consentement éclairé.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(50);'>
+        <h2>
+        Le service est-il adapté aux différents formats de support d&#39;accessibilité ?
+        </h2>
+        <p>
+        Certains outils et mécanismes d&#39;accessibilité introduisent des contraintes sur les dispositions des écrans (portrait, paysage, loupe). Le service ne doit pas bloquer les possibilité sous peine d&#39;exclure une parties des utilisateurs.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(51);'>
+        <h2>
+        Les différents formats d&#39;images disponibles ont-ils été évalués pour ne retenir que le plus efficace ?
+        </h2>
+        <p>
+        Les services numériques utilisent des images à des fins d&#39;illustration ou d&#39;information. Les tailles, degrés de définition, formats d&#39;encodage ont un impact important sur le volume des fichiers de ces images. La réduction des volumes permet de limiter les impacts environnementaux.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(52);'>
+        <h2>
+        Les redimensionnements d&#39;images sont-ils traités en amont et en statique (côté serveur) ?
+        </h2>
+        <p>
+        Les services utilisent plusieurs tailles d&#39;une même image pour des besoins différents. Le redimensionnement des images, lorsqu&#39;il est effectué à la demande génère des charges de traitements, des productions de fichiers intermédiaires qui introduisent des déperditions d&#39;énergie à chaque demande. Il est plus efficace que les images soient disponibles dans les différentes tailles utilisées par le service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(53);'>
+        <h2>
+        Est-ce que la définition de l&#39;image est réduite et adaptée à son objectif (illustration, contractuel, ...) ?
+        </h2>
+        <p>
+        Les images d&#39;illustration et les images qui portent une information plus contractuelle comme l&#39;image d&#39;un produit n&#39;ont pas les mêmes besoins de précisions de qualité. L&#39;adaptation du niveau de qualité à l&#39;importance de l&#39;image permet de réduire l&#39;impact environnemental des besoins les moins critiques pour le service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(54);'>
+        <h2>
+        Toutes les images ont-elles une alternative texte ?
+        </h2>
+        <p>
+        Les assistants d&#39;accessibilité doivent pouvoir utiliser une description de l&#39;information portée par l&#39;image afin de permettre une bonne compréhension du service sans la vision de l&#39;image.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(55);'>
+        <h2>
+        Les alternatives de formats d&#39;images sont-elles mises à disposition via srcset ?
+        </h2>
+        <p>
+        La sélection des différentes tailles d&#39;images disponibles peut être laissée au navigateur avec une encapsulation des images dans srcset. Le browser va sélectionner le format le plus adapté à son utilisation. Cette technique n&#39;est pas toujours la plus efficace du point de vue NR et doit être validée par rapport à des alternatives plus statiques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(56);'>
+        <h2>
+        Les sprites CSS sont-ils mis en place pour limiter les flux de récupération d&#39;images ?
+        </h2>
+        <p>
+        Les techniques sprite css, permettent de réduire le nombre de fichiers d&#39;images en combinant plusieurs images par fichiers; Cette technique ne réduit pas la volumétrie des échanges, mais réduit le nombre de requêtes de récupération d&#39;images. Cela procure un gain d&#39;efficacité NR si l&#39;ensemble des images du sprite sont réellement utilisées, dans le cas contraire des volumes de données ont été transférées pour rien.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(57);'>
+        <h2>
+        La mise en forme en css est-elle privilégiée, pour limiter l&#39;usage des images ?
+        </h2>
+        <p>
+        Parmi les éléments de présentation utilisés dans les services, les images représentent un volume important, ce qui génère un impact environnemental. Dans certains cas des opérations de mise en forme avec du CSS permettent de se dispenser d&#39;une image, cette solution plus légère est à privilégier.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(58);'>
+        <h2>
+        Est-ce que le lazy load apporte un gain (poids de la page, ressource CPU) ?
+        </h2>
+        <p>
+        Lors du chargement du service sur le périphérique utilisateur, toutes les informations n&#39;ont pas la même importance. Le chargement différé de certains éléments est souvent tout à fait acceptable, sans vraiment réduire le volume de chargement cela sollicite moins de ressources techniques en même temps sur les serveurs ce qui réduit le besoin de dimensionnement de ces serveurs.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(59);'>
+        <h2>
+        Est-ce que la définition du son est adaptée ?
+        </h2>
+        <p>
+        Les sons diffusés par le service, sont caractérisés par leurs durées, le nombre de répétitions, la qualité du son et enfin le type d&#39;encodage (Codec) utilisé. Les actions sur chacun de ces points vont réduire l&#39;impact des fichiers sons autant dans le transfert, que le volume des fichiers. Certains Codec très compressés réduisent de manière significative le volume de données pour une même qualité, mais le codage / décodage de ces formats peut nécessiter beaucoup de ressources de traitements, ce qui atténue fortement le bénéfice global du point de vue NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(60);'>
+        <h2>
+        Une version épurée est-elle disponible pour les impressions ?
+        </h2>
+        <p>
+        Les flux de dématérialisation sont parfois rompus, et imposent la production d&#39;écrits sur papiers. L&#39;utilisateur dans certains cas peut aussi être plus confortable à utiliser des documents imprimés plutôt que 100% électroniques. Les impressions ont un impact environnemental important, que ce soit dans la consommation de papier, de consommables tels que les cartouches et encres d&#39;impression. Les besoins de présentation en électronique ou en impression sont différents, d&#39;autre part la limitation de l&#39;empreinte environnementale doit conduire à réduire la densité et le volume d&#39;informations imprimées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(61);'>
+        <h2>
+        Est-ce bien une action utilisateur qui déclenche le &quot;play&quot; ?
+        </h2>
+        <p>
+        Les contenus actifs utilisent des ressources techniques pour fonctionner. L&#39;activité de ces composants doit être lancée à la demande de l&#39;utilisateur pour éviter de consommer de l&#39;énergie inutilement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(62);'>
+        <h2>
+        Les vidéos ou animations hors de la zone active sont-elles automatiquement mises en pause / stoppées ?
+        </h2>
+        <p>
+        Les contenus actifs, animations, vidéos, sons lancés par l&#39;utilisateur peuvent au cours de la navigation ne plus être visibles sur la zone écran présentée à l&#39;utilisateur. La poursuite de la diffusion de ces contenus devient inutiles et consomment inutilement des ressources, ils doivent donc être arrêtés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(63);'>
+        <h2>
+        Une vidéo est-elle la seule solution pour l&#39;illustration attendue ?
+        </h2>
+        <p>
+        Les flux vidéo sont dans les usages de service numérique l&#39;un des éléments qui consomment le plus de ressources de traitement, de volume d&#39;échange. Les vidéos doivent être limitées aux cas où elles apportent une valeur importante. La vidéo n&#39;est pas accessible pour certains publics et doit donc être limitée.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(64);'>
+        <h2>
+        Réduisez-vous le nombre de picto utilisés dans le service ?
+        </h2>
+        <p>
+        Tous les éléments de présentation ont un poids supérieur au caractères de l&#39;alphabet. Chaque fois qu&#39;un pictogramme est utilisé alors que l&#39;information qu&#39;il véhicule pourrait être présentée différemment le service augmente son volume. De plus, les assistants d&#39;accessibilité ne permettent pas toujours de restituer ces pictogrammes dans de bonnes conditions.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(65);'>
+        <h2>
+        Limitez-vous le nombre de fonts chargées pour le service ?
+        Privilégiez-vous les fonts web-safe ?
+        </h2>
+        <p>
+        Chaque police est encodée dans un fichier présentant tous les symboles associés ce qui représente un volume de données important échangé et manipulé. 
+        Les polices systèmes sont embarquées dans les outils de présentation et ne sont pas véhiculées, les flux sont donc réduits lorsqu&#39;elles sont utilisées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(66);'>
+        <h2>
+        En cas d&#39;impression, une police permettant l&#39;économie d&#39;encre est-elle mise en place ?
+        </h2>
+        <p>
+        Les flux de dématérialisation sont parfois rompus, et imposent la production d&#39;écrits sur papier. L&#39;utilisateur dans certains cas peut aussi être plus confortable à utiliser des documents imprimés plutôt que 100% électroniques. Les impressions ont un impact environnemental important, que ce soit dans la consommation de papier, de consommables tels que les cartouches et encres d&#39;impression. Les besoins de présentation en électronique ou en impression sont différents. D&#39;autre part la limitation de l&#39;empreinte environnementale doit conduire à réduire la densité et le volume d&#39;information imprimé.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(67);'>
+        <h2>
+        Est-ce que les polices utilisées ne sont pas chargées uniquement pour un nombre réduit d&#39;objets ?
+        </h2>
+        <p>
+        Chaque police est encodée dans un fichier présentant tous les symboles associés ce qui représente un volume de données important échangé et manipulé. Lorsque seuls quelques éléments de la police sont utilisés, le rapport entre le volume total et le volume réellement utile devient mauvais et un impact environnemental est généré pour aucun bénéfice.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(68);'>
+        <h2>
+        Le service est-il développé en accord avec les recommandations RGAA ?
+        </h2>
+        <p>
+        Au-delà des aspects purement réglementaires, l&#39;anticipation de la prise en compte de l&#39;accessibilité est nécessaire pour assurer une couverture de ce sujet durant toute la durée de vie du service. Anticiper les futurs points de règlements et normes permet de pérenniser le service en limitant les besoins de mises à jour dictées par l&#39;environnement légal.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(69);'>
+        <h2>
+        Les animations sont-elles nécessaires, souhaitées par l&#39;utilisateur ?
+        </h2>
+        <p>
+        Le traitement des animations consomme des ressources techniques et détourne l&#39;attention des utilisateurs, de plus les animations sont généralement dépendantes de caractéristiques techniques des terminaux et génèrent des incompatibilités qui poussent artificiellement au renouvellement des équipements.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(70);'>
+        <h2>
+        Une alternative CSS est-elle disponible pour une animation ?
+        </h2>
+        <p>
+        L&#39;information transmise à l&#39;utilisateur par les animations peut aussi être gérée par des mécanismes CSS qui sont moins lourds donc plus économes de ressources.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(71);'>
+        <h2>
+        Les objets de cartographie, animations, vidéos sont-ils présentés dans un mode statique ?
+        </h2>
+        <p>
+        Les objets de cartographie n&#39;ont pas toujours une pertinence à être présentés sous forme d&#39;objets dynamiques et interactifs. La version statique sous forme d&#39;image des plans peut apporter à l&#39;utilisateur suffisamment d&#39;information sans qu&#39;il n&#39;ait besoin d&#39;interagir avec l&#39;objet. Les objets de cartographie sont complexes et nécessitent des ressources de traitements et l&#39;utilisation de capteurs, ce que les versions images des plans évite. L&#39;utilisateur conserve la possibilité d&#39;interaction en activant la version dynamique mais uniquement à sa demande.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(72);'>
+        <h2>
+        Le suivi de positionnement peut-il se satisfaire d&#39;une fréquence plus réduite ?
+        </h2>
+        <p>
+        Les opérations techniques réalisées sur le front end peuvent mettre en oeuvre des capteurs physiques du périphérique utilisateur. La sollicitation de ces capteurs, et leurs les processus de contrôle peut entraîner une usure prématurée et en cas de panne pousser au renouvellement du périphérique. Certaines techniques logicielle permettent de réduire l&#39;utilisation des capteurs physiques, ou de s&#39;assurer qu&#39;ils sont employés avec le minimum de contraintes.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(73);'>
+        <h2>
+        Les recherches inutiles sont-elles limitées par les moteurs de recherche locaux ?
+        </h2>
+        <p>
+        L&#39;utilisation de moteurs de recherches locaux dans le service permettent aux utilisateurs d&#39;accéder plus rapidement aux informations dont ils ont besoin sans parcourir l&#39;intégralité du service. Ces moteurs de recherche sont donc efficaces d&#39;un point de vue efficacité environnementale et assistance à l&#39;utilisateur. En revanche les moteurs de recherche locaux ne disposent pas de toutes les informations pour proposer des réponses adaptées aux utilisateurs et s&#39;appuient sur des ressources distantes. Il est important de réduire les échanges avec ces ressources distantes afin de ne pas annuler le bénéfice acquis par l&#39;utilisation du moteur de recherche.
+        </p>
+        </div>
+        </div>
+
+
+        
+    </div>
+</div>
+
+
+</body>
+</html>

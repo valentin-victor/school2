@@ -1,0 +1,274 @@
+/* --- navbar --- */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1.25vw;
+  background-color: rgb(249 250 251);
+  font-size: 2.5rem;
+  color: black;
+}
+
+.navbar:hover, .pageActuel {
+  color: #55ddd5;
+}
+
+/* --- panier --- */
+
+.enssemblePanier{
+  position: sticky;
+  top: 0.3vw;
+}
+
+.panierSelectionner {
+  background-color: #55ddd5;
+}
+
+.panierNonSelectionner {
+  background-color: #e1e9e8;
+}
+
+.panier{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 12rem;
+  width: 35rem;
+  margin-top: 3vw;
+  margin-left: 70vw;  
+}
+
+.panier:hover {
+  background-color: #55ddd5;
+}
+
+.textePanier{
+  color: black;;
+}
+
+#imagePanier{
+  height: 60px;
+  width: 60px;
+}
+
+/* --- bouton retour haut --- */
+
+.caseRetourHaut {
+  position: sticky;
+  top: 90%;
+  margin-top: 50vw;
+  margin-bottom: -50vw;
+  margin-left: 96vw;
+  background-color: #e1e9e8;
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+}
+
+.caseRetourHaut:hover {
+background-color: #55ddd5;
+}
+
+
+#buttonGoUp{
+  height: 30px;
+  width: 30px;
+}
+
+.boutonRetourHaut {
+  display: block;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* --- texte du site --- */
+
+.ensembleSousNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  flex-direction: column;
+  padding: 1.25vw;
+}
+
+.fondPageActuel {
+  color: #55ddd5;
+}
+
+.titreGrandTheme {
+  padding: 5vw;
+  background-color: white;
+  font-size: 10rem;
+  line-height: 1;
+  color: #55ddd5; 
+}
+
+.titreSousTheme {
+  padding: 2.5vw;
+  font-size: 2.25rem;
+  line-height: 2.5vw;
+  background-color: rgb(243 244 246);
+  margin-top: 2.5vw;
+}
+
+.titreSousTheme:hover {
+  background-color: rgb(229 231 235);
+}
+
+.enssembleThemeSecondaire {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(243 244 246);
+  margin-bottom: 3%;
+}
+
+.interieur_theme_secondaire { /* intérieur carte */
+  flex-basis: 24.7vw;
+  padding-left: 1vw;
+  padding-right: 1vw; 
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw; 
+  margin: 1vw;
+  display: block;
+  padding: 1.5vw;
+  background-color: white;
+  border-radius: 0.5vw;
+  border-color: rgb(229 231 235);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  font-size: 1.2rem;
+}
+
+.interieur_theme_secondaire:hover {
+  background-color: rgb(243 244 246);
+}
+
+.contenuPage {
+  font-size: 1rem;
+  width: 91.666667%;
+  padding-top: 0.2vw;
+  padding-bottom: 2vw; 
+}
+
+.texteBonnesPratiques{
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  font-size: 2rem;
+}
+
+.boutonDownload{
+  margin-left: 40vw;
+}
+
+/* --- éléments par défauts --- */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1vw;
+  font-size: 2.2rem;
+}
+
+a {
+  text-decoration:none;
+}
+
+p {
+  font-size: 2rem;
+}
+
+@media (max-width: 1301px ) and (min-width: 651px) { /* taille écran moyen */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .enssemblePanier{
+    position: static;
+    top: 0.3vw;
+  }
+
+  .enssemblePanier{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .panier {
+    margin-left: 0vw;  
+  }
+
+  .interieur_theme_secondaire {
+    flex-basis: 39.6vw;
+  }
+
+  .titreGrandTheme {
+    font-size: 7rem;
+  }
+
+  #imagePanier{
+    height: 60px;
+    width: 60px;
+  }
+
+  #buttonGoUp{
+    height: 20px;
+    width: 20px;
+  }
+}
+
+
+@media (max-width: 650px) { /* taille écran petit */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .enssemblePanier{
+    position: static;
+    top: 0.3vw;
+  }
+
+  .enssemblePanier{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .panier {
+    margin-left: 0vw;  
+  }
+
+  .interieur_theme_secondaire {
+    flex-basis: 90vw;
+  }
+
+  .titreGrandTheme {
+    font-size: 4rem;
+  }
+
+  #imagePanier{
+    height: 60px;
+    width: 60px;
+  }
+
+  #buttonGoUp{
+    height: 10px;
+    width: 10px;
+  }
+}

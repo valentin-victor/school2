@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ux_ui</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="javascript.js"></script>
+  <meta name="ux_ui">
+</head>
+<body onload="initialisation(2)">
+
+  <nav>
+    <div class="navbar" id="hautDePage">
+        <a class="navbar" href="index.html">Stratégie</a>                
+        <a class="navbar" href="specification.html">Spécifications</a>
+        <a class="navbar pageActuel" href="ux_ui.html">Ux/Ui</a>
+        <a class="navbar" href="contenus.html">Contenus</a>
+        <a class="navbar" href="architecture.html">Architecture</a>
+        <a class="navbar" href="frontend.html">Frontend</a>
+        <a class="navbar" href="backend.html">Backend</a>
+        <a class="navbar" href="hebergement.html">Hébergement</a>
+    </div>
+  </nav>
+
+    <!-- le panier -->
+    <div class="enssemblePanier"> 
+      <a href="panier.html" class="panier panierNonSelectionner"> 
+      <div>
+      <img id="imagePanier" src="logo/panier.png" alt="image d'un panier" />
+      </div>
+      <div class="textePanier">
+      <p class="textePanier">
+          panier
+      </p>
+      <p id="textePanier">
+      </p>
+      </div>
+      </a>
+  </div>
+
+    <!-- bouton retour en haut -->
+    <div class="caseRetourHaut">
+      <a href="#hautDePage" class="boutonRetourHaut">
+        <img id="buttonGoUp" src="logo/toTop.png" alt="image d'un bouton retouner en haut"/>
+      </a>
+    </div>
+
+
+
+
+  <div class="ensembleSousNav"> <!-- texte du site -->
+    <h1 class="titreGrandTheme">
+        UX/UI
+    </h1>
+    <div class="contenuPage"> <!-- contenu -->
+      <div class='enssembleThemeSecondaire'>
+        <div class='interieur_theme_secondaire' onclick='changeColor(0);'>
+        <h2>
+        Dans les méthodes d&#39;idéation, l&#39;ensemble des parties prenantes est-il pris en compte dans toute sa dimension (humaine) ?
+        </h2>
+        <p>
+        Mettre l&#39;Utilisateur au centre de la réflexion est la garantie de couvrir les besoins essentiels de vos cibles et d&#39;avancer dans le bon sens. Par Utilisateurs, nous entendons les usagers finaux du service ou du produit mais également les différentes parties prenantes du projet. Considérer vos utilisateurs avec une dimension humaine et empathique permet d&#39;élargir le prisme de votre réflexion et d&#39;aller au-delà des aspects économiques et technologiques du projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(1);'>
+        <h2>
+        La planète est-elle prise en compte dans les méthodes d&#39;idéation pour intégrer la dimension écologique (planet centric design) ?
+        </h2>
+        <p>
+        Chaque décision de conception a un impact. Si les problématiques environnementales et écologiques ne sont pas au coeur de l&#39;analyse, aucun objectif de maîtrise ou de réduction des impacts ne sera pris en compte et donc respecté.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(2);'>
+        <h2>
+        Les plus-values extra-financières du numérique responsable sont-elles valorisées dans le business model ?
+        </h2>
+        <p>
+        Le Numérique Responsable (NR) peut-être considéré comme un réel vecteur de développement économique au sein de votre organisation. Intégrer la dimension NR de façon pérenne à votre business model permettra d&#39;éviter des arbitrages permanents sur sa valorisation et son intégration à vos futurs projets.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(3);'>
+        <h2>
+        Un process NR est-il prévu au niveau de la gouvernance projet ?
+        </h2>
+        <p>
+        Une démarche NR doit être systémique, sur l&#39;ensemble du cycle de vie du projet, et donc portée par tous les acteurs du développement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(4);'>
+        <h2>
+        Les améliorations NR sont-elles  identifiées et systématiquement planifiées ?
+        </h2>
+        <p>
+        Le principe d&#39;amélioration continue permet d&#39;augmenter la performance du projet et donc de limiter son impact.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(5);'>
+        <h2>
+        Pour les aspects NR les responsables projet (chef de projet, product owner ....) ont-ils les mêmes prérogatives que les aspects métiers?
+        </h2>
+        <p>
+        Pour que le sujet NR soit suivi, il doit être incarné par une personne identifiée, responsable, qui diffuse les enjeux à chaque intervenant métier et prend part aux décisions. Ce rôle peut être défini dans ses objectifs personnels ou fiche de poste.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(6);'>
+        <h2>
+        La production des livrables (production documentaire comprise) est-elle utilisée en amont du projet et est-elle produite pour permettre d&#39;être réutilisée dans les projets suivants ?
+        </h2>
+        <p>
+        Une base de connaissances et de compétences NR va émerger au fur et à mesure des projets. Il est important de capitaliser sur l&#39;expérience acquise et de diffuser les bonnes pratiques. Cela permettra à vos équipes de développer des automatismes et de réutiliser des solutions qui ont fait leurs preuves sur de futurs projets.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(7);'>
+        <h2>
+        Un budget sur les axes 3Ps est-il associé et suivi lors du projet ?
+        </h2>
+        <p>
+        Suivant le niveau de maturité de l&#39;organisation, la prise en compte du NR peut engendrer un coût et un temps de réflexion qui doivent être prévus et associés aux bénéfices attendus. Les postes et les temps alloués au NR sur le budget doivent être validés, visibles et communiqués de manière précise à toutes les parties prenantes du projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(8);'>
+        <h2>
+        Les parties prenantes sont-elles sensibilisées au NR ?
+        </h2>
+        <p>
+        Pour adhérer, il faut comprendre. Le NR n&#39;est pas une discipline technique. Les principes du NR doivent être mis en oeuvre dans des pratiques métiers et les comportements de chacun des acteurs. Toutes les parties prenantes du projet doivent être sensibilisées au NR pour agir à leur niveau.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(9);'>
+        <h2>
+        Les différentes étapes du projet sont-elles identifiées avec leur process de validation, afin de faire adhérer les parties prenantes à la démarche itérative ? 
+        </h2>
+        <p>
+        La démarche NR est itérative et parfaitement adaptée aux processus Agiles, ce qui impose aussi des mécanismes de contrôles et de validation performants et formalisés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(10);'>
+        <h2>
+        Avez-vous mis en place un système de présentation du suivi d&#39;impacts environnementaux, pour l&#39;exploitation du service et pour chaque utilisateur ?
+        </h2>
+        <p>
+        L&#39;engagement des utilisateurs va susciter l&#39;adhésion à la démarche NR, c&#39;est un aspect important de la propagation des valeurs et résultats de l&#39;organisation. Le fait de communiquer aux utilisateurs des éléments très visuels facilite leur adhésion et la compréhension de vos engagements.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(11);'>
+        <h2>
+        Quelles données sont disponibles à la communication concernant le respect des normes et préconisations NR sur le service ? 
+        </h2>
+        <p>
+        Un certain nombre de ressources sont disponibles pour afficher le niveau de complétion et adhésion au NR. Cela se traduit par des badges, des labels, des normes... permettant à l&#39;utilisateur d&#39;identifier les organisations qui font les efforts les plus sensibles sur les enjeux sociaux et environnementaux.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(12);'>
+        <h2>
+        Pour permettre aux utilisateurs d&#39;être acteurs dans la réduction de leurs impacts, ont-ils accès à des références qui les invitent à des pratiques NR  ?
+        
+        </h2>
+        <p>
+        Le comportement de l&#39;utilisateur reste l&#39;un des points sur lequel l&#39;organisation n&#39;a pas de contrôle. Malgré tous les bénéfices attendus d&#39;une conception responsable de services numériques, la pratique de l&#39;utilisateur peut soit démultiplier les effets positifs, soit les réduire dans des proportions importantes. Communiquer des éléments qui permettent à l&#39;utilisateur de prendre conscience de ces actions pour qu&#39;il réduise son impact est indispensable.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(13);'>
+        <h2>
+        Les freins à l&#39;utilisation du numérique (accessibilité, techniques, territoriaux) sont-ils pris en compte ?
+        </h2>
+        <p>
+        Afin d’être responsable, le numérique doit en tout premier lieu être disponible et accessible (En France, 14% de la population n&#39;a pas d&#39;accès à internet ou pas de compétences numériques (source : Vie-publique.fr / DILA  Source: ICT Surveys - INSEE), car en France plus d&#39;un usager sur 3 manque de compétences numériques de base. C&#39;est l&#39;objet de la dimension humaine du NR, qui couvre les freins à l&#39;utilisation du numérique pour certains publics en fonction de capacités à percevoir les éléments (accessibilité) et les accès et la qualité des réseaux.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(14);'>
+        <h2>
+        
+        Quelles solutions sont déployées pour lutter contre l&#39;illectronisme et simplifier les usages et services ?
+        </h2>
+        <p>
+        Réduire les inégalités d’accès au service numérique afin de n’exclure aucun utilisateur, ces cas d&#39;exclusion peuvent être fortement limités en prenant en compte très tôt dans la conception les disparités sociales, générationnelles et territoriales.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(15);'>
+        <h2>
+        Les critères technologiques, sociaux, physiques, temporels qui permettent à vos utilisateurs d&#39;atteindre leur but et limiter la fracture numérique, sont-ils pris en compte ?
+        </h2>
+        <p>
+        Traiter les cas d&#39;exclusion du numérique est la première étape incontournable, mais cela ne garantit pas que l&#39;utilisateur va pouvoir atteindre ses buts aisément par l&#39;utilisation du service. Ces aspects doivent être adressés en facilitant le parcours de l&#39;utilisateur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(16);'>
+        <h2>
+        Le service fonctionne-t-il avec des connexions faibles ?
+        </h2>
+        <p>
+        Les environnements de développement et de tests sont souvent performants ce qui masque les impacts de réseaux avec des performances faibles. Afin de ne pas rendre inutilisable le service dans des conditions ou les débits réseaux sont réduits la démarche NR doit prendre en compte une conception adaptée aux territoires ou localisations dont les accès réseaux sont dégradés
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(17);'>
+        <h2>
+        Est-ce que les mécanismes d&#39;accès au service d&#39;assistance sont disponibles et adaptés à tout public ?
+        </h2>
+        <p>
+        Les capacités d&#39;interactions entre l&#39;utilisateur et le service peut être améliorées avec des mécanismes d&#39;assistance en ligne qui doivent respecter les mêmes exigences NR que l&#39;ensemble du service. L&#39;accessibilité doit être pensée pour le service ainsi que pour les solutions d&#39;aide.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(18);'>
+        <h2>
+        Un fall-back humain a-t-il été mis en place, pour accompagner la prise en main du service ?
+        </h2>
+        <p>
+        La charge de l&#39;assistance aux utilisateurs est le plus souvent déléguée à un automate, afin de s&#39;affranchir des contraintes de disponibilité et ne pas générer de temps d&#39;attente pour des réponses fréquemment posées. Le contact avec un automate peut être frustrant et doit pouvoir se transformer en contact humain en respectant aussi tous les critères NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(19);'>
+        <h2>
+        Une stratégie de compatibilité avec les terminaux et versions logicielles obsolètes est-elle définie ?
+        </h2>
+        <p>
+        Les avancées technologiques poussent à augmenter en permanence les exigences matérielles, ce qui réduit le parc de périphériques sur lesquels un service peut s&#39;exécuter. Cet aspect écarte certains utilisateurs et pousse au renouvellement d&#39;équipements encore en état de fonctionner avec l&#39;impact environnemental associé.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(20);'>
+        <h2>
+        Dans la définition des personae, les versions cibles de devices, OS et browsers ont-ils été pris en compte ?
+        </h2>
+        <p>
+        Le secteur d&#39;activité, le profil des utilisateurs permet le plus souvent de qualifier le parc matériel qui sera employé pour le service. Les matériels sont déterminés par leurs capacités techniques (puissance de calcul, mémoire, capacité réseau, capteurs, taille et qualité d&#39;écran) mais aussi par les systèmes d&#39;exploitation qu&#39;ils peuvent accueillir. Chaque contrainte que le service impose réduit le nombre de postes qui pourront l&#39;utiliser et donc exclut des publics. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(21);'>
+        <h2>
+        Dès la conception, le service répond-t-il aux normes d&#39;accessibilité en vigueur (au minimum) ?
+        </h2>
+        <p>
+        Au delà des aspects purement réglementaires, l&#39;anticipation de la prise en compte de l&#39;accessibilité est nécessaire pour assurer une couverture de ce sujet durant toute la durée de vie du service. Anticiper les futurs points de règlements et normes permet de pérenniser le service en limitant les besoins de mises à jour dictées par l&#39;environnement légal. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(22);'>
+        <h2>
+        Tout type d&#39;utilisateur peut-il savoir facilement où il se trouve dans le service, par la mise en place d&#39;un système de navigation inclusif ?
+        </h2>
+        <p>
+        Plus le service est facile d&#39;utilisation et bien construit, moins l&#39;utilisateur passera de temps à trouver l&#39;information qu&#39;il cherche, ce qui réduira les navigations parasites et diminuera la consommation de ressources et d&#39;énergie
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(23);'>
+        <h2>
+        Une sobriété visuelle est-elle mise en place, pour limiter les ressources énergétiques et l&#39;impact sur la dégradation matérielle des composants visuels, sonores et tactiles constitutifs de l&#39;interface ?
+        </h2>
+        <p>
+        Des éléments/composants visuels, sonores et tactiles peuvent être mis en avant dans une démarche purement esthétique et/ou marketing mais n&#39;ont que très peu d&#39;intérêt pour l&#39;utilisateur. La simplification de ces éléments apportera une meilleure ergonomie et un usage adapté à chacun ainsi qu&#39;une réduction de l&#39;impact énergétique.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(24);'>
+        <h2>
+        Est-ce que les fonctionnalités sont utilisées par l&#39;utilisateur ?
+        </h2>
+        <p>
+        Selon des études (cast software et standish group), 70% des fonctionnalités ne sont jamais ou rarement utilisées. (ref 115 bonnes pratiques)
+        
+        Le nombre de fonctionnalités disponibles dans un service numérique impactent directement la consommation de ressources et l&#39;impact environnemental, en créant des fonctionnalités de peu d&#39;utilité. Ce sont des sources de création de dettes environnementales totalement inutiles. Les fonctionnalités augmentent aussi le volume du service, qui introduisent des délais de chargements, des espaces de stockage supplémentaires.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(25);'>
+        <h2>
+        Les prises de décision sont-elles justifiées et soutenues par des indicateurs fiables sur les usages des fonctionnalités tout au long du cycle de vie du service ?
+        </h2>
+        <p>
+        La supervision des usages permet de valider les estimations faites en début de conception et d&#39;identifier les pistes d&#39;amélioration. Mais ce principe se base sur des sources de données fiables.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(26);'>
+        <h2>
+        Une politique / démarche / une routine de réduction et de priorisation progressive des fonctionnalités, interactions et éléments graphiques, est-elle mise en place ?
+        </h2>
+        <p>
+        Les suppressions d&#39;éléments sur les interfaces peuvent ne pas perturber les utilisateurs, et donc générer une empreinte réduite avec moins d&#39;éléments et de fonctionnalités sans que cela ne détériore la valeur du service tout en limitant son impact environnemental
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(27);'>
+        <h2>
+        Les parties prenantes du service SEO sont-elles intégrées, dès la phase de conception ?
+        </h2>
+        <p>
+        Les algorithmes d&#39;optimisation ont tendance à accumuler des données, dans la majorité des cas les données collectées ne sont pas analysées et ne servent donc pas à rationaliser les usages. Les optimisations doivent s&#39;inscrire dans une démarche itérative et chaque retour doit permettre un gain d&#39;efficacité mesuré avant de passer à l&#39;étape suivante. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(28);'>
+        <h2>
+        La pratique de l&#39;e-mailing est-elle réfléchie, justifiée et réduite à son stricte nécessaire ?
+        </h2>
+        <p>
+        Les diffusions de mails notamment lorsque les mails contiennent des contenus riches génèrent une charge environnementale importante. Dans le cas de diffusion en masse, ces impacts sont démultipliés. Le cas des newsletters est particulièrement sujet à cette explosion de trafic. Les contenus, volumes et cibles de diffusions doivent être réduits pour compenser par l&#39;efficacité et la pertinence ce qui était pris en charge par la diffusion massive.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(29);'>
+        <h2>
+        Un planning d&#39;archivage et une version allégée des contenus anciens consultables sont-ils mis en oeuvre ?
+        </h2>
+        <p>
+        Il est souvent produit une quantité non négligeable de fichiers, souvent versionnés, afin de répondre aux exigences client.
+        Instaurer une bonne pratique de gestion des fichiers (livrables client comme internes) est essentiel.
+        Trier et supprimer les versions obsolètes et non utilisables aura un impact positif sur le stockage.
+        En effet, toutes ces données stockées ont un coût environnemental car liées à l&#39;utilisation de serveurs le plus souvent, et représentent donc un coût financier important également.
+        Définir une politique d&#39;archivage des contenus contribuera à une gestion responsable et efficace de la production du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(30);'>
+        <h2>
+        Est-ce que les analytics ont été limités au strict nécessaire pour optimiser le service ?
+        </h2>
+        <p>
+        Les collectes de données d&#39;analytics sont installées dans les codes sources et doivent être positionnées uniquement aux points de passage où elles apportent une possibilité d&#39;amélioration de performance car leurs actions ne sont pas neutres; elles collectent, transmettent, stockent des données et alourdissent les services en rajoutant des codes exécutables qui demandent des ressources de traitements sur le périphérique utilisateur, sur les réseaux et sur les serveurs distants. De plus, les données collectées peuvent être transmises et utilisées par des tiers pour des usages dont l&#39;utilisateur n&#39;est pas toujours conscient.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(31);'>
+        <h2>
+        Est-ce que les services tiers (fils réseaux sociaux, social wall, carrousels, google maps etc) ne sont pas utilisés par facilité pour pallier le manque de ressources de production de contenus ?
+        </h2>
+        <p>
+        Il est courant d&#39;utiliser des services tiers rattachés à l&#39;utilisation des réseaux sociaux, géolocalisation, etc.
+        L&#39;utilisation de ces services tiers doit être au service de l&#39;information et non pas de s&#39;y substituer car  leur usage est très gourmand en ressources, bande passante et batterie des terminaux notamment.
+        Il est important de limiter leur usage au strict nécessaire afin de limiter leur impact environnemental.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(32);'>
+        <h2>
+        L&#39;utilisation du service permet-elle d&#39;envisager des configurations logicielles ou matérielles moins impactantes pour l&#39;environnement ?
+        </h2>
+        <p>
+        Les équipements utilisateurs sont de plus en plus performants et les services numériques exploitent ces capacités techniques.
+        Cela a pour effet d&#39;accentuer la fracture numérique en excluant une partie des utilisateurs qui ne peuvent se procurer ces terminaux qui ont un coût financier important.
+        
+        Il est donc important de se questionner sur l&#39;utilité du recours à ces technologies pour arriver à la finalité du service numérique tout en préservant l&#39;accès au plus grand nombre.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(33);'>
+        <h2>
+        L&#39;expérience utilisateur prend-elle en compte les évolutions possible du service (ajout/suppression de fonctionnalités) ? 
+        </h2>
+        <p>
+        Un service numérique possède une durée de vie qu&#39;il est important de prolonger au maximum.
+        Il existe souvent une version bêta, puis suivent d&#39;autres fonctionnalités viendront se rajouter au fil de temps.
+        Il est important de soulever ces questions dès la conception du service avec les différents partenaires et clients afin de développer un service modulable et adaptable dans le temps.
+        Cela permettra de limiter les coûts financiers à terme et environnementaux car le service sera évolutif, prolongeant ainsi sa durée de vie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(34);'>
+        <h2>
+        Tous les éléments constitutifs de l&#39;interface font-ils l&#39;objet d&#39;une attention particulière en matière d&#39;impact NR, tout en respectant les règles d&#39;accessibilité ?
+        
+        </h2>
+        <p>
+        Plus le thème visuel est simple, plus il sera économe en ressources consommées pour l&#39;afficher.
+        Plus le service implémente de composants (charge sur les serveurs, les réseaux et les périphériques), plus l&#39;impact du nombre d&#39;utilisateur simultanés est important.
+        La solution technique est souvent de surdimensionner les environnements de production pour assurer une meilleure fluidité sur service.
+        Proposer aux utilisateurs de choisir une présentation du service moins gourmande contribuera à réduire l&#39;impact environnemental (encombrement des réseaux et du surdimensionnement des infrastructures).
+        Avec l&#39;augmentation du nombre d&#39;utilisateurs, le service s&#39;allègera, le périmètre global restera constant et/ou maitrisé avec des moyens techniques justement dimensionnés.
+        De plus, cela aura un rôle pédagogique : l&#39;utilisateur pourra devenir acteur de sa propre consommation et de son impact environnemental.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(35);'>
+        <h2>
+        Des solutions sans interface &quot;graphique&quot; sont-elles prévues pour certaines fonctionnalités, afin de proposer des alternatives au design visuel dans l&#39;interface ? 
+        </h2>
+        <p>
+        Une interface ne se résume pas seulement aux éléments visuels qui la constituent, il peut être intéressant de challenger les autres approches de l&#39;expérience utilisateur afin de réduire l&#39;impact du service. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(36);'>
+        <h2>
+        Un espace de paramétrage orienté NR est-il à disposition de l&#39;utilisateur, pour limiter au maximum le nombre d&#39;éléments de présentation ? 
+        </h2>
+        <p>
+        Chaque action compte et l&#39;utilisateur a pleinement son rôle à jouer dans la réduction de son incidence environnementale.
+        Sensibiliser l&#39;utilisateur et lui permettre d&#39;en être acteur.
+        Informer de l&#39;impact de ses actions et proposer des alternatives simples et rapides permettront d&#39;avoir un usage plus responsable du service et de développer une conscience collective, à terme, concernant la pollution numérique.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(37);'>
+        <h2>
+        La dématérialisation du service est-elle complète, et dans le cas où la production de documents papier est indispensable, est-elle conçue pour limiter son impact au minimum ?
+        </h2>
+        <p>
+        Les flux de dématérialisation sont parfois rompus, et imposent la production d&#39;écrits sur papier. L&#39;utilisateur, dans certains cas, peut aussi être plus confortable à utiliser des documents imprimés plutôt que 100% électroniques. Les impressions ont un impact environnemental important, que ce soit dans la consommation de papier, de consommables tels que les cartouches et encres d&#39;impression. Les besoins de présentation en électronique ou en impression sont différents, d&#39;autre part la limitation de l&#39;empreinte environnementale doit conduire à réduire la densité et le volume d&#39;information imprimé
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(38);'>
+        <h2>
+        L&#39;utilisateur peut-il controler l&#39;activation de solutions tierces ?
+        </h2>
+        <p>
+        Les connexions externes au service peuvent apporter de la valeur au service, mais dans certains cas lier l&#39;utilisateur avec des pratiques auxquelles il n&#39;adhère pas. Le choix de l&#39;utilisation des services tiers doit être transparent et dévolu à l&#39;utilisateur. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(39);'>
+        <h2>
+        Une méthode de démarche systémique est-elle en place, maîtrisée par les acteurs et associée à des outils ?
+        </h2>
+        <p>
+        Se lancer dans un projet sans prendre en compte l&#39;écosystème du projet/contexte peut avoir un impact conséquent sur le ROI. Mettre en place une démarche systémique et itérative permet d&#39;être plus efficace et responsable pour répondre aux besoins et réduire alors les délais de ROI. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(40);'>
+        <h2>
+        Est-ce que la solution a été prototypée en amont, avec le parcours utilisateur et les interactions ?
+        </h2>
+        <p>
+        Le prototypage interactif permet, à moindre coût, d&#39;avoir une vision graphique, ergonomique et technique de la future solution, de naviguer mais aussi de la tester. Par itération, le prototype sera de meilleure qualité.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(41);'>
+        <h2>
+        Le comportement et le feedback utilisateur ont-ils été étudiés pour répondre au mieux à leurs besoins ?
+        </h2>
+        <p>
+        Le projet est réalisé pour des utilisateurs, ne pas prendre en compte leurs comportements, leurs retours d&#39;utilisation de la solution n&#39;est pas recommandable. Faire tester sa solution auprès d&#39;un panel d&#39;utilisateurs permet d&#39;avoir un réel feedback terrain et d&#39;ajuster le projet pour mieux répondre aux besoins.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(42);'>
+        <h2>
+        La conception est-elle documentée (fonctionnellement et techniquement), les livrables de conception doivent être intelligibles par l&#39;équipe projet et transférables à l&#39;équipe de développement ?
+        </h2>
+        <p>
+        Trop de documents inadaptés sont produits lors des phases de conception. Une synchronisation entre les différents niveaux d&#39;attentes (tant sur le fond que sur la forme) améliorera la conduite du projet et évitera les frustrations de toutes parts ainsi que l&#39;impact énergétique et humain.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(43);'>
+        <h2>
+        Est-ce que les recherches les plus fréquentes ont été étudiées et adressées pour qu&#39;elles soient ou mises en cache ou affichées à l&#39;utilisateur sans envoi de requête ou clics inutiles.
+        </h2>
+        <p>
+        L&#39;utilisation des moteurs de recherches internes au service permettent aux utilisateurs d&#39;accéder plus rapidement aux informations en limitant la navigation sur le service. Ces moteurs de recherche sont donc un atout d&#39;un point de vue efficacité environnementale et assistance à l&#39;utilisateur. En revanche ils peuvent ne pas disposer de toutes les réponses et s&#39;appuient sur des ressources distantes qu&#39;il est coûteux de consulter. Il est important de réduire les échanges entre votre service et les serveurs distants pour de ne pas annuler le bénéfice acquis par l&#39;utilisation du moteur de recherche.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(44);'>
+        <h2>
+        Le chemin parcouru pour accéder au service est-il le plus rapide et le plus simple possible ?
+        </h2>
+        <p>
+        Il y a plusieurs scénarios d&#39;accès aux services et/ou information d&#39;un applicatif. Il faut les examiner et les faire coexister afin d&#39;améliorer l&#39;expérience des utilisateurs.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(45);'>
+        <h2>
+        Une démarche d&#39;amélioration continue a-t-elle été mise en place ?
+        </h2>
+        <p>
+        Au fil du temps, l&#39;organisation va augmenter sa maturité NR. Les services doivent pouvoir bénéficier de ces progrès pour s&#39;enrichir de plus d&#39;intelligence NR embarquée
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(46);'>
+        <h2>
+        Est ce que la fonctionnalité peut être proposée sans l&#39;appel de scripts ou de bibliothèques externes (JS, AJAX, ...) ?
+        </h2>
+        <p>
+        Les périphériques utilisateurs disposent de ressources de traitement, la mise en oeuvre de ces ressources consomme de l&#39;énergie et nécessite de transporter vers le périphérique utilisateur les codes exécutables. En réduisant l&#39;utilisation de scripts qui fonctionnent sur le poste utilisateur les 2 aspects sont atténués. De plus, certains utilisateurs peuvent ne pas pouvoir utiliser des scripts.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(47);'>
+        <h2>
+        La fonctionnalité cible nécessite -t-elle l&#39;appel d&#39;une iFrame ?
+        </h2>
+        <p>
+        L&#39;accessibilité d&#39;une iframe étant nulle et l&#39;ergonomie de la page proposant le service étant restreinte, l&#39;iFrame est une solution qui dégradera l&#39;experience utilisateur. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(48);'>
+        <h2>
+        Une politique de gestion/utilisation des médias afin de réduire leurs impacts est-elle en place, avec des critères de compression et de formats des médias ?
+        
+        </h2>
+        <p>
+        Le volume de données transférées augmente l&#39;empreinte environnementale du service. Il est nécessaire de proposer les médias nécessaires à l&#39;affichage du service dans la compression idoine afin d&#39;améliorer le service et augmenter sa sobriété. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(49);'>
+        <h2>
+        Le nombre de polices de caractères (fonts) et les variantes de polices appelées (graisse, caractères utilisés dans le projet) sont-ils limités ?
+        </h2>
+        <p>
+        Les polices de caractères peuvent être très volumineuses. En réduisant le nombre de polices uniquement à celles utilisées dans le service, la  volumétrie échangée diminue.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(50);'>
+        <h2>
+        Est-ce que les fonctionnalités et composants natifs du système peuvent correspondre au besoin ?
+        </h2>
+        <p>
+        Certaines fonctionnalités sont disponibles sous plusieurs formes. Lorsqu&#39;elles sont natives, aucun code ou composants supplémentaires ne sont nécessaires pour les utiliser ce qui réduit l&#39;impact du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(51);'>
+        <h2>
+        Les vidéos et animations sont-elles utilisées uniquement lorsqu&#39;elles apportent une valeur pour l&#39;utilisateur ?
+        </h2>
+        <p>
+        Les flux vidéo et les animations génèrent un volume de données important. La limitation des vidéos réduit la charge environnementale du service. Certains publics ne sont pas en mesure d&#39;utiliser des vidéos, ils seront donc exclus du service si celui-ci s&#39;appuie sur ce type de média.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(52);'>
+        <h2>
+        Les images sont-elles optimisées par rapport à leurs fonctions ?
+        </h2>
+        <p>
+        Le volume de données échangées pour la présentation d&#39;une image dépend de sa taille et de la qualité de son format. Certaines images ont des valeurs d&#39;information importantes, d&#39;autres ne sont que de l&#39;illustration. Les consommations de ressources liées doivent donc être en rapport avec l&#39;importance de l&#39;image et permettre à des publics pour lesquels les images ne sont pas accessibles de comprendre leur signification.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(53);'>
+        <h2>
+        Les informations partagées sont-elles utiles à l&#39;utilisateur ?
+        </h2>
+        <p>
+        L&#39;efficacité d&#39;utilisation d&#39;un service numérique est basée sur la compréhension par l&#39;utilisateur de la manière de satisfaire ses attentes. Les informations que le service numérique communique doivent permettre cette efficacité, en revanche des informations parasites peuvent brouiller sa compréhension et engendrer des comportements qui ne sont pas optimum et qui génèrent donc des actions inutiles pour l&#39;utilisateur et impactantes pour l&#39;environnement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(54);'>
+        <h2>
+        La notification de toutes les interactions machine / utilisateur ont-elles été prises en compte pour donner systématiquement à l&#39;utilisateur le résultat de ses actions et gérer les erreurs ?
+        </h2>
+        <p>
+        Les actions déclenchées par l&#39;utilisateur peuvent conduire à des erreurs. Afin d&#39;éviter que l&#39;utilisateur ne répète les mêmes erreurs il doit être informé du fait qu&#39;une erreur est survenue et indiquer la cause ou le mode opératoire pour la corriger. A l&#39;inverse lorsqu&#39;une action se déroule sans anomalie, l&#39;utilisateur doit aussi le savoir pour ne pas réitérer une même action.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(55);'>
+        <h2>
+        Les feedbacks utilisateurs d&#39;évaluation du service sont-ils pris en compte ?
+        </h2>
+        <p>
+        La mesure de la satisfaction ou insatisfaction des utilisateurs est un marqueur important de retour d&#39;expérience qui permet d&#39;améliorer la qualité de service et traiter les cas erronés qui ne seraient pas directement visibles mais introduiraient des conséquences sur la performance globale du service pour remplir les fonctionnalités attendues.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(56);'>
+        <h2>
+        L&#39;utilisateur a-t-il les moyens de vérifier simplement les informations exposées dans le service ?
+        </h2>
+        <p>
+        Lorsque les informations communiquées ne sont pas jugées fiables par les utilisateurs, cela peut engendrer des recherches supplémentaires pour confirmer des assertions et génère une navigation parasite. D&#39;autre part, la crédibilité du service peut être remise en cause et écartée par les utilisateurs. Les utilisateurs ont le droit d&#39;avoir des informations fiables, les éditeurs de service ont le devoir de respecter leurs utilisateurs en transmettant des informations vérifiées. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(57);'>
+        <h2>
+        Chacune des actions sont-elles initiées par l&#39;utilisateur ? est-il informé de la portée et des conséquences de ses actions ?
+        </h2>
+        <p>
+        Le mode de fonctionnement du service numérique doit être transparent vis-à-vis de l&#39;utilisateur, les actions proposées doivent être clairement décrites et les conséquences exposées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(58);'>
+        <h2>
+        Les utilisateurs sont-ils informés que des informations confidentielles sont collectées ?
+        </h2>
+        <p>
+        Les données que les utilisateurs confient sont sous votre responsabilité et les utilisateurs doivent être tenus informés du soin que vous mettez en oeuvre pour assurer la confidentialité de leurs données. Le RGPD impose un cadre pour les données personnelles mais ne couvre pas les autres catégories de données qui mériteraient pourtant les mêmes attentions et précautions.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(59);'>
+        <h2>
+        Le service évite-t-il les Dark Patterns ?
+        </h2>
+        <p>
+        Certains services sont pensés pour créer une certaine forme de dépendance à celui-ci. L&#39;utilisateur ne doit pas être soumis et exposé à certaines mécaniques de sur-consommation numérique.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(60);'>
+        <h2>
+        Les normes légales d&#39;affichage et de communication sur le RGAA (service publique et Société privée de plus de 250 M d&#39;€ de CA) sont-elles prises en compte ?
+        </h2>
+        <p>
+        Tous support numérique doit être accessible par tout à chacun. Il est nécessaire de pouvoir tenir informé l&#39;utilisateur du niveau d&#39;accessibilité et des efforts en cours pour améliorer le service. Ces informations doivent être disponibles et explicitement fléchées dans le parcours de l&#39;utilisateur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(61);'>
+        <h2>
+        Des règles en matière de respect de l&#39;utilisateur sont-elles mises en place ?  
+        </h2>
+        <p>
+        Certains services sont pensés pour créer une certaine forme de dépendance à celui-ci. L&#39;utilisateur doit pouvoir rester objectivement juge de sa consommation numérique
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(62);'>
+        <h2>
+        Est-ce que les publicités sont bien identifiées comme telles et ont-elles une vraie valeur économique dans le service ?
+        </h2>
+        <p>
+        La publicité ciblée ou non peut être une source de revenus incontournable pour le service numérique, la valeur apportée doit être suffisante pour justifier ces encarts promotionnels, et les utilisateurs ne doivent pas pouvoir confondre ces bannières de publicité et les contenus du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(63);'>
+        <h2>
+        Dans quelle mesure l&#39;attention de l&#39;utilisateur est-elle contrôlée par le service ?
+        </h2>
+        <p>
+        L&#39;attention de l&#39;utilisateur est une ressource qui doit être considérée comme rare et précieuse. Dans cette optique le respect de l&#39;utilisateur passe aussi par sa capacité à concentrer son attention sur les éléments de son choix, plutôt que ceux que le service souhaiterait mettre en avant.
+        </p>
+        </div>
+        </div>
+         
+
+        
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contenus</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="javascript.js"></script>
+  <meta name="contenus">
+</head>
+<body onload="initialisation(3)">
+
+  <nav>
+    <div class="navbar" id="hautDePage">
+        <a class="navbar" href="index.html">Stratégie</a>                
+        <a class="navbar" href="specification.html">Spécifications</a>
+        <a class="navbar" href="ux_ui.html">Ux/Ui</a>
+        <a class="navbar pageActuel" href="contenus.html">Contenus</a>
+        <a class="navbar" href="architecture.html">Architecture</a>
+        <a class="navbar" href="frontend.html">Frontend</a>
+        <a class="navbar" href="backend.html">Backend</a>
+        <a class="navbar" href="hebergement.html">Hébergement</a>
+    </div>
+  </nav>
+
+    <!-- le panier -->
+    <div class="enssemblePanier"> 
+      <a href="panier.html" class="panier panierNonSelectionner"> 
+      <div>
+      <img id="imagePanier" src="logo/panier.png" alt="image d'un panier"/>
+      </div>
+      <div class="textePanier">
+      <p class="textePanier">
+          panier
+      </p>
+      <p id="textePanier">
+      </p>
+      </div>
+      </a>
+  </div>
+
+    <!-- bouton retour en haut -->
+    <div class="caseRetourHaut">
+      <a href="#hautDePage" class="boutonRetourHaut">
+        <img id="buttonGoUp" src="logo/toTop.png" alt="image d'un bouton retouner en haut"/>
+      </a>
+    </div>
+
+
+
+
+  <div class="ensembleSousNav"> <!-- texte du site -->
+    <h1 class="titreGrandTheme">
+        CONTENUS
+    </h1>
+    <div class="contenuPage"> <!-- contenu -->
+      <div class='enssembleThemeSecondaire'>
+        <div class='interieur_theme_secondaire' onclick='changeColor(0);'>
+        <h2>
+        Est-ce que les prestataires retenus pour la production des contenus ont un engagement NR, RSE, accessibilité (formations, inclusion, éthique) ?
+        </h2>
+        <p>
+        Beaucoup d&#39;éléments sont produits en externe, il serait dommageable de casser une dynamique NR en choisissant des prestataires dont le NR n&#39;est pas un moteur
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(1);'>
+        <h2>
+        Est-ce que l&#39;ensemble des sources utilisées a été vérifié ?
+        </h2>
+        <p>
+        Les informations transmises peuvent être sujettes à controverses et vont nécessiter du temps et l&#39;utilisation de ressources techniques ayant un impact environnemental, pour que les utilisateurs puissent les vérifier ou les utiliser sans être abusés
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(2);'>
+        <h2>
+        Est-ce que les faits et opinions sont clairement identifiables ?
+        </h2>
+        <p>
+        Lorsque les informations communiquées ne sont pas jugées fiables par les utilisateurs, cela peut engendrer des recherches supplémentaires pour confirmer des assertions et une navigation parasite. D&#39;autre part, la crédibilité du service peut être remise en cause et écarter des utilisateurs. Les utilisateurs ont le droit d&#39;avoir des informations fiables. Les éditeurs de service ont le devoir de respecter leurs utilisateurs en transmettant des informations vérifiées. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(3);'>
+        <h2>
+        Quels sont les droits d&#39;utilisation des images, vidéos, illustrations et textes de mon site ?
+        </h2>
+        <p>
+        L&#39;emploi de ressources et matériels externes est courant dans les services numériques. Il est important de respecter la propriété intellectuelle et rendre aux créateurs la visibilité liée à leurs créations originales pour respecter une éthique numérique.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(4);'>
+        <h2>
+        Les balises de mise en forme de texte répondent-elles au besoin de hiérarchisation des informations, et pas à des mises en valeur de présentation ?
+        </h2>
+        <p>
+        Les automates et assistants d&#39;accessibilité utilisent les balises pour se repérer et structurer la restitution. L&#39;emploi de balises ne correspondant pas à la structure du contenu, par exemple pour des mises en forme de texte, rendent l&#39;utilisation de ces assistants plus difficiles pour une bonne compréhension du contenu.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(5);'>
+        <h2>
+        Est-ce  que les images ont été compressées en amont dans un format adapté pour sa visualisation ?
+        </h2>
+        <p>
+        La transmission de données compressées est indispensable pour réduire l&#39;impact des échanges, en revanche les algorithmes de compression sont consommateurs de ressources techniques de traitement, de stockage intermédiaire. Lorsque les compressions sont effectuées à chaque demande d&#39;échange, le bénéfice de la compression peut disparaître ou même augmenter l&#39;impact.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(6);'>
+        <h2>
+        Quelles sont les images réellement porteuses de sens utiles à la compréhension du service (exemples: logo, images liens, images contractuelles...) ?
+        </h2>
+        <p>
+        Le poids, et donc son impact, d&#39;une image est sans commune mesure avec du texte. Chaque fois que le choix d&#39;utilisation d&#39;une image est fait, il doit être justifié. Une image peut être nécessaire voir contractuelle (image d&#39;un produit sur un service de vente en ligne) ou ne servir qu&#39;à un remplissage d&#39;espace dans le contenu. Réduire le nombre d&#39;images diminue l&#39;impact d&#39;utilisation du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(7);'>
+        <h2>
+        De quelles images peut-on se passer (pas utile à la compréhension du service) ?
+        </h2>
+        <p>
+        Le poids et donc son impact d&#39;une image est sans commune mesure avec du texte. Chaque fois que le choix d&#39;utilisation d&#39;une image est fait, il doit être justifié. Une image peut être nécessaire voir contractuelle (image d&#39;un produit sur un service de vente en ligne) ou ne servir qu&#39;à un remplissage d&#39;espace dans le contenu. Réduire le nombre d&#39;images diminue l&#39;impact d&#39;utilisation du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(8);'>
+        <h2>
+        Est-ce que du texte peut remplacer certains types d&#39;images (icons, picto...)
+        </h2>
+        <p>
+        Le poids et donc son impact d&#39;une image est sans commune mesure avec du texte. Chaque fois que le choix d&#39;utilisation d&#39;une image est fait, il ne doit pas pouvoir être remplacé par un texte simple. Réduire le nombre d&#39;images diminue l&#39;impact d&#39;utilisation du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(9);'>
+        <h2>
+        Une alternative aux images est-elle systématiquement disponible ?
+        </h2>
+        <p>
+        Les assistants d&#39;accessibilité doivent pouvoir utiliser une description de l&#39;information portée par l&#39;image afin de permettre une bonne compréhension du service sans la vision de l&#39;image.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(10);'>
+        <h2>
+        La superposition d&#39;information est-elle supprimée ?
+        </h2>
+        <p>
+        La prolifération d&#39;informations superposées rend le service plus difficile à comprendre et à utiliser par des publics moins familiers avec les technologies ou ceux pour lesquels la technologie ne peut être perçu facilement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(11);'>
+        <h2>
+        L&#39;impact de l&#39;internationalisation (multi-langues ...) est-il évalué ?
+        </h2>
+        <p>
+        La gestion multi-langues ajoute une volumétrie conséquente de messages traduits dans les différentes langues. Certaines langues imposent des encodages de caractères multi-Bytes plus consommateurs d&#39;espace mémoire.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(12);'>
+        <h2>
+        Le nombre de polices différentes est-il limité ?
+        </h2>
+        <p>
+        Chaque police est encodée dans un fichier présentant tous les symboles associés ce qui représente un volume de données important échangé et manipulé. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(13);'>
+        <h2>
+        Privilégiez-vous les polices système ?
+        </h2>
+        <p>
+        Les polices systèmes sont embarquées dans les outils de présentation et ne sont pas véhiculées. Les flux sont donc réduits lorsqu&#39;elles sont utilisées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(14);'>
+        <h2>
+        Est-ce que la mise en forme du formulaire est minimale (afin de ne pas surcharger le code pour des styles peu utiles) ?
+        </h2>
+        <p>
+        Les balises de mise en forme génèrent un volume supplémentaire de données échangées et manipulées, réduire ces éléments permet d&#39;optimiser les traitements et les échanges
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(15);'>
+        <h2>
+        Est-ce que le formulaire permet à l&#39;utilisateur de désactiver les fonctions dynamiques (ex: auto completion)
+        </h2>
+        <p>
+        Certaines fonctions lorsqu&#39;elles sont activées vont utiliser des ressources de calcul et des échanges réseaux, c&#39;est le cas des systèmes d&#39;auto-complétion qui peuvent être utiles pour certains publics dont l&#39;expression écrite n&#39;est pas très fluide mais qui sont superflus pour des utilisateurs plus autonomes.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(16);'>
+        <h2>
+        Est-ce que les formulaires sont utiles (exemple : ne pas créer de compte pour l&#39;achat d&#39;un produit/service - e-commerce) ?
+        </h2>
+        <p>
+        Les formulaires de saisie, outre la gestion technique et leurs impacts (traitements, échanges réseaux) nécessitent des interactions de la part de l&#39;utilisateur qui peuvent s&#39;avérer contraignantes pour certains publics.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(17);'>
+        <h2>
+        Est-ce que le blocage des robots et accès non sollicités sont traités par des solutions peu coûteuses (captcha vs &quot;addition&quot; , ....) ?
+        </h2>
+        <p>
+        La protection vis à vis des automates peut mettre en oeuvre des techniques qui génèrent une charge d&#39;échange importante (images multiples par exemple) d&#39;autres techniques sont plus légères de ce point de vue pour bloquer les accès &quot;non humains&quot;
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(18);'>
+        <h2>
+        Lorsque des listes de sélection sont disponibles, sont-elles limitées aux valeurs pertinentes pour l&#39;utilisateur du service ?
+        </h2>
+        <p>
+        Lors des saisies de données à partir de listes, le volume des listes peut fournir des entrées qui n&#39;ont aucun intérêt et génèrent un volume totalement inutile, par exemple une liste de pays de l&#39;Afghanistan au Zimbabwe pour un service franco-français pour lequel le pays n&#39;est pas une donnée critique, par exemple des choix :  France, Europe, Autre suffiraient
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(19);'>
+        <h2>
+        Avez-vous limité les animations ?
+        </h2>
+        <p>
+        Le traitement des animations consomme des ressources techniques et détourne l&#39;attention des utilisateurs, de plus les animations sont généralement dépendantes de caractéristiques techniques des terminaux et génèrent des incompatibilités qui poussent artificiellement  au renouvellement des équipements.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(20);'>
+        <h2>
+        Est-ce que l&#39;utilisation de Flash est supprimée, remplacée par un autre effet?
+        </h2>
+        <p>
+        Les technologies Flash (en fin de vie) utilisent beaucoup de ressources techniques sur le terminal utilisateur et demandent un suivi et des mises à jour de versions fréquentes, avec des limites de &quot;rétro-compatibilité&quot; fortes conduisant à une obsolescence anticipée des périphériques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(21);'>
+        <h2>
+        Les contenus actifs sont-ils déclenchés uniquement sur action de l&#39;utilisateur ?
+        </h2>
+        <p>
+        Les contenus actifs utilisent des ressources techniques pour fonctionner. L&#39;activité de ces composants doit être lancée à la demande de l&#39;utilisateur pour éviter de consommer de l&#39;énergie inutilement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(22);'>
+        <h2>
+        Est-ce que le contenu animé est sur la partie visible de l&#39;écran (pas d&#39;animation déclenchée sous la partie active de l&#39;écran)
+        </h2>
+        <p>
+        La présentation d&#39;un service est rarement contenue sur la surface de l&#39;écran et du scrolling ou de la pagination sont nécessaires. Les animations demandées par l&#39;utilisateur peuvent être en dehors de la zone visible. Afin de réduire la consommation de ressources inutiles, toutes les animations non directement visibles doivent être stoppées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(23);'>
+        <h2>
+        Est-ce que la durée des contenus animés ayant été validés comme nécessaire est optimisée ?
+        </h2>
+        <p>
+        La durée totale des animations utilise des ressources. Le fait de réduire la durée et de ne pas les faire jouer en boucle permet, lorsque les animations sont indispensables, de réduire l&#39;impact de consommation. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(24);'>
+        <h2>
+        Quelles sont les vidéos réellement porteuses de sens et utiles à la compréhension du service (exemples: logo, images liens, images contractuelles...) ?
+        </h2>
+        <p>
+        Les flux vidéo sont dans les usages de service numérique l&#39;un des éléments qui consomme le plus de ressources de traitement, de volume d&#39;échange. Les vidéos doivent être limitées aux cas où elles apportent une valeur importante. La vidéo n&#39;est pas accessible pour certains publics et doit donc être limitée.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(25);'>
+        <h2>
+        De quelles vidéos peut-on se passer (pas utile à la compréhension du service) ?
+        </h2>
+        <p>
+        Les flux vidéo sont dans les usages de service numérique l&#39;un des éléments qui consomment le plus de ressources de traitement, de volume d&#39;échange. Les vidéos doivent être limitées aux cas où elles apportent une valeur importante. La vidéo n&#39;est pas accessible pour certains publics et doit donc être limitée. En revanche, elle peut aussi permettre une perception plus simple d&#39;un service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(26);'>
+        <h2>
+        Est-ce que l&#39;information portée par la vidéo peut être remplacée par une alternative (infographie...)
+        </h2>
+        <p>
+        Les informations apportées par la vidéo sont souvent transposables de manière à être proposées sous forme statique, nettement moins consommatrices de ressources.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(27);'>
+        <h2>
+        Est-ce que les alternatives au streaming (vs vidéo locale) ont été évaluées ?
+        </h2>
+        <p>
+        Le chemin total parcouru par les flux vidéo génère à chaque étape un impact environnemental. Les solutions pour réduire la longueur de ce chemin sont bénéfiques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(28);'>
+        <h2>
+        Est-ce que la durée des vidéos ayant été validées comme nécessaires est optimisée ?
+        </h2>
+        <p>
+        L&#39;impact des flux vidéo est lié à la durée de la vidéo, à la qualité des images et du son, au nombre de diffusion. Réduire la durée est l&#39;un des leviers facilement gérable pour réduire l&#39;impact.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(29);'>
+        <h2>
+        Est-ce que la diffusion de sessions live est utile ?
+        </h2>
+        <p>
+        Le nombre de flux diffusés multiplie par autant l&#39;impact environnemental de la vidéo.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(30);'>
+        <h2>
+        Est-ce que le son de la vidéo peut-être restitué sous forme texte ?
+        </h2>
+        <p>
+        L&#39;accès au son est difficile ou impossible pour certains publics. La fourniture d&#39;un texte en support ou remplacement du son est indispensable.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(31);'>
+        <h2>
+        Est-ce que les CODECS des sons sont compressés au maximum ?
+        </h2>
+        <p>
+        Le volume de données utilisé par la qualité des sons peut être réduit avec une précision, une qualité sonore plus basse. Les mécanismes de compression audio (CODEC) vont réduire le volume de données échangées mais demander plus de ressources CPU pour décoder et restituer les sons sur le périphérique utilisateur. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(32);'>
+        <h2>
+        Chaque contenu vidéo est-il associé à une durée de vie ?
+        </h2>
+        <p>
+        Les vidéos peuvent être des faits d&#39;actualité qui n&#39;ont que peu d&#39;intérêt en dehors de la période où elle a été produite. Généralement ces informations sont disponibles lors de la création et doivent être utilisées pour supprimer la vidéo après un délai défini. Cela libère de l&#39;espace de stockage et évite aux utilisateurs de consulter des documents périmés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(33);'>
+        <h2>
+        A t-on défini la proportion des contenus de type flux (contenus chauds de type actu...) et stock (contenus froid, longue traîne en SEO) ?
+        </h2>
+        <p>
+        Les contenus liés à un événement ou une actualité sont peu intéressants après un certain temps. Toutes ces informations doivent être utilisées pour que les informations périmées soient supprimées ou si nécessaire retravaillées pour réduire leurs tailles, et enfin être mis à disposition des utilisateurs sur des liens d&#39;archives pour bien exprimer que ces contenus sont anciens. Conserver les contenus anciens peut être utile pour conserver les référencement SEO acquis.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(34);'>
+        <h2>
+        Les contenus sont-ils uniques dans tout le service ?
+        </h2>
+        <p>
+        Outre les espaces de stockage supplémentaires et la confusion pour l&#39;utilisateur que la duplication de contenus amène, d&#39;un point de vue SEO, ces duplications sont inefficaces.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(35);'>
+        <h2>
+        Les notifications utilisateurs sont-elles nécessaires et désactivables par l&#39;utilisateur ?
+        </h2>
+        <p>
+        Les méthodes de notifications peuvent employer des technologies consommatrices de ressources et certaines pratiques visent à les multiplier ce qui augmente l&#39;empreinte environnementale du service. Réduire les notifications, utiliser des mécanismes légers, et permettre à l&#39;utilisateur de désactiver ces notifications est utile pour réduire les consommations d&#39;énergie ainsi que le détournement d&#39;attention des utilisateurs.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(36);'>
+        <h2>
+        Est-ce que la validité des données est contrôlée avant la soumission du formulaire ?
+        </h2>
+        <p>
+        Les saisies de données dans les formulaires sont sources d&#39;erreurs. Si les données ne sont contrôlées qu&#39;après soumission du formulaire, le nombre d&#39;échanges va augmenter. Le contrôle du format des données attendues avant l&#39;envoi au serveur permet de réduire les transferts de données et les traitements inutiles.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(37);'>
+        <h2>
+        La présentation des informations est-elle accessible sans générer une cascade de zones de présentations dynamiques ?
+        </h2>
+        <p>
+        Le dynamisme des affichages peut être perçu comme un critère de modernité, mais cela génère des calculs et traitements permanents qui sont une source de consommation, et l&#39;attention de l&#39;utilisateur peut être perturbée par des actions spontanées qu&#39;il n&#39;a pas déclenché.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(38);'>
+        <h2>
+        Chaque élément actif dispose-t-il d&#39;un nom permettant de comprendre l&#39;action qui sera réalisée par son utilisation ?
+        </h2>
+        <p>
+        Le dynamisme des interfaces peut ne pas être appréhendé par certains publics ou certains assistants d&#39;accessibilité. Il est indispensable que chaque élément actif puissent être décrit pour que l&#39;utilisateur comprenne le mode de fonctionnement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(39);'>
+        <h2>
+        Les informations de tracking de SEO sont-elles suivies et rationalisées afin de ne pas collecter d&#39;éléments inutiles ?
+        </h2>
+        <p>
+        Le suivi de l&#39;activité des utilisateurs dans le service peut engendrer la collecte d&#39;un volume important d&#39;informations qui seront échangées avec les moteurs SEO. Ces collectes sont utiles lorsqu&#39;elles permettent de fournir plus efficacement les informations aux utilisateurs et de faciliter leurs parcours, elles sont parasites et gaspillées lorsqu&#39;elles ne sont pas utilisées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(40);'>
+        <h2>
+        Est-ce que tous les liens et images-liens sont utiles ?
+        </h2>
+        <p>
+        Les contenus utilisent des références externes plutôt que dupliquer des informations. Le renvoi vers ces sources externes met en oeuvre des mécanismes techniques et consomment des ressources qui doivent avoir une valeur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(41);'>
+        <h2>
+        A t-on vérifié que les urls de destination sont bien valides ?
+        </h2>
+        <p>
+        Les contenus utilisent des références externes plutôt que de dupliquer des informations. Chaque lien est susceptible d&#39;être activé et générera une requête réseau, elle doit donc être valide. Dans le cas contraire, l&#39;utilisateur risque de ne pas comprendre la source de l&#39;erreur et générer de multiples tentatives infructueuses avec l&#39;utilisation de ressources techniques sans aucun résultat.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(42);'>
+        <h2>
+        Les textes mis à disposition des utilisateurs sont-ils adaptés à des publics cibles éloignés de la lecture de contenus électroniques (illectronisme) ?
+        </h2>
+        <p>
+        La compréhension de textes sur un support numérique peut être difficile pour des publics éloignés de ces technologies ou avec un confort visuel ou littéraire restreint. L&#39;illectronisme doit être pris en compte dans les choix éditoriaux des services pour inclure le plus de personnes.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(43);'>
+        <h2>
+        A t-on réduit au minimum le nombre de champs (exemple : les champs non obligatoires sont-ils nécessaires ?)
+        </h2>
+        <p>
+        Les formulaires de saisie sont l&#39;occasion de collecter des données de la part de l&#39;utilisateur. Lorsque ces données ne sont pas indispensables, elles génèrent tout de même des impacts d&#39;échange, de stockage et de sauvegarde. La réglementation encadre les données à caractère personnel et médicales. Toutes les données fournies par un utilisateur doivent être traitées avec la même parcimonie et respect.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(44);'>
+        <h2>
+        Les données utilisateurs collectées et exposées sont-elles clairement identifiées comme données personnelles et/ou sensibles lorsque c&#39;est le cas?
+        </h2>
+        <p>
+        La notion de données personnelles fait l&#39;objet d&#39;une définition légale, qui n&#39;est pas toujours connue par les utilisateurs et donc les règles associées à la protection des données personnelles peuvent être ignorées. Pour garantir que l&#39;utilisateur dispose du bon niveau d&#39;information, il est important que les données à caractère personnel et plus encore les données sensibles soient clairement identifiées comme telles.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(45);'>
+        <h2>
+        L&#39;utilisateur peut-il personnaliser la fréquence et le périmètre des contenus diffusés ?
+        </h2>
+        <p>
+        Les services numériques peuvent avoir besoin de garder le contact avec leurs utilisateurs, le plus souvent au travers de communications automatiques (newsletter par exemple). Ces diffusions en masse génèrent des coûts environnementaux de création de ces contenus, de diffusion, de consultation ou stockage (volontaire ou non) par l&#39;utilisateur. Le volume de communication doit pouvoir être réglé par l&#39;utilisateur, de même que le périmètre du contenu pour correspondre à ses attentes uniquement. La réglementation impose déjà l&#39;acceptation explicite (opt-In) pour recevoir ce type de communications
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(46);'>
+        <h2>
+        Les documents à télécharger sont-ils compressés, optimisés et accessibles ?
+        </h2>
+        <p>
+        Les documents disponibles pour l&#39;utilisateur dans le service doivent être compressés pour réduire les impacts liés aux transferts de ces données.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(47);'>
+        <h2>
+        Dans le cas d&#39;un long document de type PDF, est-il possible de le télécharger chapitre par chapitre? 
+        </h2>
+        <p>
+        Les documents volumineux sont rarement intégralement lus par les utilisateurs ou du moins en une seule fois. Afin de réduire à la fois les volumes de données échangées et le volume de stockage sur le périphérique utilisateur, un document long doit pouvoir être segmenté pour être chargé en segments plus petits que l&#39;utilisateur ira chercher s&#39;il en ressent la nécessité.
+        </p>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

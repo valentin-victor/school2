@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>architecture</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="javascript.js"></script>
+  <meta name="architecture">
+</head>
+<body onload="initialisation(4)">
+
+  <nav>
+    <div class="navbar" id="hautDePage">
+        <a class="navbar" href="index.html">Stratégie</a>                
+        <a class="navbar" href="specification.html">Spécifications</a>
+        <a class="navbar" href="ux_ui.html">Ux/Ui</a>
+        <a class="navbar" href="contenus.html">Contenus</a>
+        <a class="navbar pageActuel" href="architecture.html">Architecture</a>
+        <a class="navbar" href="frontend.html">Frontend</a>
+        <a class="navbar" href="backend.html">Backend</a>
+        <a class="navbar" href="hebergement.html">Hébergement</a>
+    </div>
+  </nav>
+
+    <!-- le panier -->
+    <div class="enssemblePanier"> 
+      <a href="panier.html" class="panier panierNonSelectionner"> 
+      <div>
+      <img id="imagePanier" src="logo/panier.png" alt="image d'un panier"/>
+      </div>
+      <div class="textePanier">
+      <p class="textePanier">
+          panier
+      </p>
+      <p id="textePanier">
+      </p>
+      </div>
+      </a>
+  </div>
+
+
+    <!-- bouton retour en haut -->
+    <div class="caseRetourHaut">
+      <a href="#hautDePage" class="boutonRetourHaut">
+        <img id="buttonGoUp" src="logo/toTop.png" alt="image d'un bouton retouner en haut"/>
+      </a>
+    </div>
+
+
+  <div class="ensembleSousNav"> <!-- texte du site -->
+    <h1 class="titreGrandTheme">
+        ARCHITECTURE
+    </h1>
+    <div class="contenuPage"> <!-- contenu -->
+      <div class='enssembleThemeSecondaire'>
+        <div class='interieur_theme_secondaire' onclick='changeColor(0);'>
+        <h2>
+        Chaque composant peut-il faire l&#39;objet de tests de &quot;Non Régression&quot; au niveau fonctionnel ? 
+        </h2>
+        <p>
+        La couverture des tests fonctionnels et la qualité gagnée par la prise en compte de tous les cas de tests permet de fiabiliser les développements, d&#39;éviter des fonctionnements logiciels inefficaces qui consomment des ressources techniques sans rendre la fonctionnalité et génèrent de multiples mises à jour. A l&#39;insatisfaction des utilisateurs s&#39;ajoute la frustration des équipes de développement qui doivent traiter la non-qualité sans pouvoir progresser dans leurs métiers.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(1);'>
+        <h2>
+        Une démarche BDD (Behaviour Driven Development)  est-elle mise en oeuvre pour piloter la réalisation par les usages ?
+        </h2>
+        <p>
+        Les usages identifiés et entérinés permettent de limiter les réalisations à des cas concrètement attendus par les utilisateurs. La sélection des usages doit toutefois être conforme aux usages réels, et ne pas être extrapolée par rapport aux interprétations des équipes techniques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(2);'>
+        <h2>
+        L&#39;automatisation des tâches de compilation, de test, d&#39;intégration et de déploiement existent-elles dans le workflow d&#39;intégration continue ? 
+        </h2>
+        <p>
+        La fiabilisation du processus de production permet de réduire les impacts liés à des re-livraisons suite à des erreurs et permet de livrer des codes qui remplissent leurs fonctions. La consommation de ressources pour un résultat erroné étant considéré comme un gaspillage inutile de ressources.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(3);'>
+        <h2>
+        Des sondes existent-elles pour mesurer en production la consommation réelle du code et permettre un dimensionnement au plus juste ? 
+        </h2>
+        <p>
+        En l&#39;absence de métriques fiables, le dimensionnement des composants physiques est basé sur des estimations qui peuvent ne pas être adaptées aux cas d&#39;usages réels. Ces métriques doivent ensuite être exploitées suivant 2 principes : ajuster les dimensionnements, et identifier les surconsommations qui doivent systématiquement faire l&#39;objet d&#39;une revue pour les traiter.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(4);'>
+        <h2>
+        Est-ce que l&#39;hébergement des applications est densifié?
+        </h2>
+        <p>
+        L&#39;adaptation des ressources techniques et leurs utilisations doivent être suivies par rapport à la somme des ressources virtuelles allouées et consommées par les applicatifs. Certaines technologies (Virtualisation) permettent d&#39;allouer plusieurs composants virtuels sur le même composant physique afin d&#39;augmenter la densité des solutions d&#39;hébergement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(5);'>
+        <h2>
+        Est-ce que les environnements autres que production (DEV, QA, ...) sont éteints ou décommissionnés en dehors des plages d&#39;usage (la nuit, en dehors des périodes de tests)?
+        </h2>
+        <p>
+        En dehors de la production, qui peut avoir une exigence de disponibilité 24/7, les autres environnements (tests, intégration, recette) sont le plus souvent liés à des opérations humaines soumises à des plages horaires restreintes, voire à des périodes limitées. Lorsque les environnements ne sont pas utilisés, ils ne doivent pas être actifs afin de réduire les consommations énergétiques de ces configurations. Ils doivent être décommissionnés lorsqu&#39;aucune utilisation ultérieure n&#39;est envisagée sur une longue période.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(6);'>
+        <h2>
+        Est-ce que les environnements de production non sollicités en dehors des pics de charge sont éteints ou décommissionnés?
+        </h2>
+        <p>
+        Les sécurisations de service mettent en oeuvre des solutions de distribution de charge. Les environnements sont dimensionnés par rapport aux pics d&#39;utilisation estimés, le plus souvent saisonniers. Ces réplications de serveurs lorsqu&#39;ils restent actifs prennent des charges alors qu&#39;un environnement plus réduit serait parfaitement en mesure de traiter l&#39;intégralité du trafic. Plus le nombre d&#39;instances serveurs est faible, plus l&#39;impact environnemental est réduit. La remise en ligne d&#39;un réplicat étant une opération peu complexe et parfaitement maîtrisée, il n&#39;y a aucun bénéfice à maintenir des images de serveurs 11 mois par an, si le pic de charge n&#39;est vraiment présent que pendant 1 mois.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(7);'>
+        <h2>
+        Les définitions des SLA et QoS pour chacune des fonctions de l&#39;architecture applicative sont-elles spécifiées en accord avec les usages métiers ?
+        </h2>
+        <p>
+        L&#39;état de l&#39;art de l&#39;IT tend à fiabiliser tous les composants de la même manière et de porter à l&#39;excellence dans les domaines de disponibilité et qualité de service. Les besoins métiers pourraient dans certains cas ou pour certaines fonctionnalités se satisfaire de contraintes plus légères. Lorsque les métiers et les usages ne sont pas consultés, l&#39;IT se sécurise en outrepassant les attentes plutôt que prendre le risque d&#39;être mis en cause.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(8);'>
+        <h2>
+        Le service numérique reste-t-il efficace pendant toute sa durée de vie effective ?
+        </h2>
+        <p>
+        Les évolutions techniques et les corrections d&#39;anomalies sont nombreuses au cours de la durée d&#39;utilisation d&#39;un service numérique, celui-ci doit pouvoir rester fonctionnel sans nécessiter de nouvelles installations plus gourmandes en ressources.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(9);'>
+        <h2>
+        Est ce que les contraintes légales liées à la persistance des données ont été analysées et les règles et délais d&#39;oubli spécifiés ? La durée de vie des données a-t-elle fait l&#39;objet d&#39;une étude approfondie ? Les durées légales ont-elle été analysées ?
+        </h2>
+        <p>
+        La réglementation impose de maîtriser le cycle de vie des données pour certaines catégories (données personnelles encadrées par le RGPD), les autres catégories de données ne sont pas prises en compte, ce qui conduit à accumuler les données sans prendre en compte les délais de péremption, ce qui introduit un accroissement permanent de la volumétrie de données, des volumes de sauvegardes, de ressources consommées par les accès aux données. Au fil du temps, le niveau de précision des données perd de son importance ce qui doit conduire à réduire la volumétrie dans la phase précédant le retrait pur et simple.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(10);'>
+        <h2>
+        Est-ce que la stratégie de stockage minimise les infrastructures ou la duplication des données par rapport à leur criticité ?
+        </h2>
+        <p>
+        Le volume occupé par une donnée est impactant pour la consommation énergétique du support de stockage, par l&#39;espace occupé sur les supports physiques qui sont ajoutés au fur et à mesure de leurs remplissages, par la consommation de ressources de manipulation des données, par les jeux de sauvegardes, par les éléments de sécurisations et duplications. Tous les leviers activés sur l&#39;un de ces aspects réduisent l&#39;impact environnemental des données indispensables au service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(11);'>
+        <h2>
+        Les données hors production sont-elles anonymisées et la volumétrie réduite pour obtenir un échantillon représentatif de la production ?
+        </h2>
+        <p>
+        La précision et concision des données du jeu de test permet de réduire les impacts des phases de développement, test  / Q&amp;A avec une volumétrie réduite. Et d&#39;autre part de valider la définition et la couverture des cas de test ce qui participe à la qualité finale du logiciel. Les données de test sont visibles, manipulées hors des contraintes de sécurité de la production, elles sont donc moins bien protégées et ne doivent en aucun être une source de fuite d&#39;information qui pourrait porter préjudice aux utilisateurs réels du service. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(12);'>
+        <h2>
+        La fréquence d&#39;actualisation des données est-elle déterminée par rapport aux attentes des utilisateurs ? 
+        </h2>
+        <p>
+        La mise à jour de données complexes en temps réel met en oeuvre des processus lourds, ces opérations doivent être adaptées aux besoins des utilisateurs. Si elles peuvent être déportées à des moments de charge plus réduite, la consommation de ressources techniques sera réduite.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(13);'>
+        <h2>
+        Les responsabilités du point de vue RGPD (ou cadre local dans d&#39;autres pays : privacy Act par exemple) avec les prestataires sont-elles clairement définies ?
+        </h2>
+        <p>
+        La réglementation impose une connaissance affirmée de tous les prestataires en contact avec des données personnelles. Les données hors du cadre RGPD ne sont pas soumises à ce traçage. Les données indispensables au fonctionnement d&#39;un service numérique ont toutes une importance du point de vue humain ou business. La pratique RGPD fait ses preuves pour une catégorie de données, la généralisation du principe à toutes les données permet d&#39;augmenter la cohérence de traitement de tout le patrimoine d&#39;une organisation
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(14);'>
+        <h2>
+        Est ce qu&#39;un modèle mettant en relation les ressources CPU/RAM/disques et les indicateurs physiques (consommation électrique, eau, ...) est utilisé ?
+        </h2>
+        <p>
+        Chaque élément physique génère un impact, qu&#39;il soit énergétique ou sur la consommation de ressources naturelles. Certains indicateurs sont déjà établis et doivent servir de base pour l&#39;évaluation d&#39;impact.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(15);'>
+        <h2>
+        Est ce que l&#39;ensemble des composants techniques sont évalués selon les critères eco-responsables?
+        </h2>
+        <p>
+        ?
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(16);'>
+        <h2>
+        Des mesures d&#39;impact des services numériques ont-elle été mises en place sur le service ?
+        </h2>
+        <p>
+        Chaque élément physique ou logiciel génère un impact, qu&#39;il soit énergétique ou sur la consommation de ressources naturelles. Certains indicateurs sont déjà établis et doivent servir de base pour l&#39;évaluation d&#39;impact.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(17);'>
+        <h2>
+        Quelles données sont consolidées pour établir la performance environnementale ?
+        </h2>
+        <p>
+        La fiabilité et la pertinence des indicateurs reposent sur la validité des données d&#39;entrées. Il est important de s&#39;assurer de cette validité avant de se lancer dans l&#39;exploitation de données de performance environnementale.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(18);'>
+        <h2>
+        Quelle est l&#39;efficience de mon protocole d&#39;échange entre le contenu et le contenant ? 
+        </h2>
+        <p>
+        La distribution des traitements sur des hardwares différents et distants impose des mécanismes de transfert qui peuvent être à la fois fréquents et volumineux. Les gains environnementaux sur ces points peuvent être traités en réduisant le volume de données échangées. Les compressions de données requièrent des ressources de calcul qui peuvent rendre inefficaces ou pénalisantes ces opérations.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(19);'>
+        <h2>
+        Les protocoles de communication mis en oeuvre sont-ils évalués par rapport au ratio entêtes/données utiles ?
+        </h2>
+        <p>
+        Les gains environnementaux sur les architectures distribuées peuvent être traités en ayant un rapport efficace entre les données d&#39;encapsulation du protocole d&#39;échange et la &quot;charge utile&quot; : payload. Les encapsulations des protocoles requièrent des ressources de calcul qui peuvent introduire un surcoût important.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(20);'>
+        <h2>
+        Le protocole de communication choisi est-il situé dans la phase ascendante, stable ou descendante de son utilisation par rapport à des contraintes de performance, de sécurité, d&#39;obligations légales ?
+        </h2>
+        <p>
+        Les avancées technologiques prennent de plus en plus en compte les aspects NR. Plus le projet technique fournissant les protocoles de communication est avancé plus il y aura de chance que les aspects environnementaux soient intégrés nativement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(21);'>
+        <h2>
+        Les alternatives réseau sont-elles évaluées par rapport à  la consommation d&#39;énergie ?
+        </h2>
+        <p>
+        Le rapport ARCEP (Octobre 2019 - L&#39;empreinte carbone du numérique) classe les consommations de GES par types de réseaux. Les réseaux filaires ou fibre sont au moins 3 fois plus économes en énergie que les réseaux sans fils. La 4G étant l&#39;un des consommateur le plus énergivore. Sur les réseaux sans fils, la consommation est très étroitement liée à la volumétrie des données, ce qui est moins vrai sur les réseaux filaires. D&#39;un autre point de vue les composants électroniques du &quot;sans fils&quot; sont moins robustes et peuvent entraîner plus de besoins de renouvellement. Cces composants étant intégrés le plus souvent sur les cartes mères des périphériques, la panne nécessite le plus souvent le remplacement de la totalité de l&#39;appareil.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(22);'>
+        <h2>
+        La capacité de mon système à fonctionner malgré les difficultés de connexion est-il spécifié et accepté par les métiers? 
+        </h2>
+        <p>
+        L&#39;inégalité d&#39;accès aux réseaux est un facteur important qui écarte une partie de la population de l&#39;usage des services numériques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(23);'>
+        <h2>
+        Un système de communication asynchrone existe t-il ?
+        </h2>
+        <p>
+        L&#39;introduction de délais de traitement, notamment dans le cas de couverture réseau de faible qualité, écarte certains utilisateurs. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(24);'>
+        <h2>
+        L&#39;architecture est-elle modulaire ? Permet-elle de recycler des composants déjà développés pour d&#39;autres projets (authentification, référentiels de données, API, etc.) ?
+        </h2>
+        <p>
+        Les efforts d&#39;adaptation aux contraintes environnementales réalisés et stabilisés doivent pouvoir bénéficier à l&#39;ensemble des projets de l&#39;organisation. Capitaliser sur les meilleures pratiques déployées est un gage d&#39;efficacité environnementale et opérationnelle. La concept modulaire permet aussi de propager rapidement tous les bénéfices environnementaux qui pourraient être intégrés dans un composant, dans le cadre du suivi de l&#39;état de l&#39;art et des performances environnementales.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(25);'>
+        <h2>
+        L&#39;architecture est-elle granulaire  et les interfaces sont-elles cohérentes pour respecter l&#39;indépendance de chaque entité ? 
+        </h2>
+        <p>
+        La capacité de réaliser des assemblages permettant de couvrir l&#39;ensemble des fonctionnalités en utilisant des éléments qui ont déjà fait l&#39;objet d&#39;adaptations pour réduire les impacts du point de vue NR est une solution efficace.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(26);'>
+        <h2>
+        La capacité de mon réseau à s&#39;adapter dans le temps fait-elle l&#39;objet d&#39;une étude spécifique ? 
+        </h2>
+        <p>
+        Les avancées techniques et les progrès en matière de consommation énergétique des réseaux doivent pouvoir être rapidement implémentées sans générer de refonte lourde du design logiciel du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(27);'>
+        <h2>
+        Un cache est-il mis en place entre les différents composants du SI pour limiter les échanges sur le réseau, lorsque la nature des données le permet ?
+        </h2>
+        <p>
+        La réduction des volumes d&#39;échanges, des opérations de calculs, traitements, et accès aux données est un axe d&#39;optimisation des consommations de ressources. La mise en place de systèmes de cache permet de réduire les coûts des opérations répétitives. Les mécanismes de cache peuvent être déployés à différents points de passage dans un service. Plus le cache est proche du demandeur qu&#39;il doit servir, plus le volume de données en transit et la longueur du chemin emprunté par les données sont faibles. Plus le cache est proche de la source de données, plus il peut être mutualisé par un nombre important d&#39;utilisateurs mais les données seront tout de même échangées, seules les opérations de traitement et collecte seront réduites.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(28);'>
+        <h2>
+        Le choix des fournisseurs prend-il en compte les aspects Numérique Responsable et RSE au même titre que les données de solvabilité ?
+        </h2>
+        <p>
+        La qualification des fournisseurs s&#39;appuie sur des règles de décisions qui permettent de statuer sur la pérennité de la relation. Parmi ces règles doivent figurer des éléments liés au NR. Ces aspects NR doivent avoir un impact important dans l&#39;évaluation de la solvabilité du fournisseur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(29);'>
+        <h2>
+        La frugalité des données a-t-elle été intégrée ? 
+        </h2>
+        <p>
+        La réduction de la volumétrie, notamment des données, réduit l&#39;impact du point de vue NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(30);'>
+        <h2>
+        Est-ce que l&#39;application minimise les données devant être échangées avec d&#39;autres applications ou les utilisateurs avec l&#39;utilisation d&#39;une matrice de flux ?
+        </h2>
+        <p>
+        Dans les usages de services numériques les échanges de données sont à la fois indispensables mais génèrent une consommation importante de ressources. La réduction des besoins d&#39;échanges au strict minimum diminue l&#39;impact de ces échanges. Seule la vue globale des flux avec leurs sources, destinations et objectifs permet de qualifier la nécessité et d&#39;accepter l&#39;impact des consommations qu&#39;ils génèrent.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(31);'>
+        <h2>
+        Chaque composant déployé est-il qualifié du point de vue de sa durée de vie, et les procédures de déprovisonnement sont-elles systématiquement exprimées ?
+        </h2>
+        <p>
+        Toutes les ressources d&#39;un composant doivent être gérées et une durée de vie, un processus de retrait doit être mis en place. Ces éléments doivent aussi prendre en compte les traitements récurrents (batch, CRON, ..), les données et les sauvegardes. Le maintien ou l&#39;oubli sur des systèmes en production de composants inactifs est à la fois un gaspillage de ressources, mais aussi une fragilité dans la sécurité.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(32);'>
+        <h2>
+        Les aspects sécurité, accessibilité, et Numérique Responsable sont-ils traités de la même manière pour chaque élément de l&#39;architecture ?
+        </h2>
+        <p>
+        Les organisations sont structurées pour que la phase d&#39;architecture intègre très tôt dans la démarche les aspects de sécurité. La sécurité doit être adressée pour tous éléments de l&#39;architecture. La sécurité n&#39;étant pas le seul domaine qui s&#39;applique de manière transversale, elle doit être associée avec les autres sujets : accessibilité et NR. Chaque élément de l&#39;architecture doit être traité avec la même excellence pour la sécurité, l&#39;accessibilité et le NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(33);'>
+        <h2>
+        La traçabilité des exigences de sécurité est-elle garantie ?
+        </h2>
+        <p>
+        La sécurité des systèmes d&#39;information impacte l&#39;activité de l&#39;organisation, le respect et la confiance des utilisateurs. La sécurité n&#39;est pas un acquis, elle doit être remise en cause périodiquement et les procédures de suivi, validation doivent être tracées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(34);'>
+        <h2>
+        L&#39;utilisation du service exclut-elle certaines configurations logicielles ou matérielles ?
+        </h2>
+        <p>
+        Lorsque la conception d&#39;un service augmente les exigences techniques des environnements sur lesquels il est apte à fonctionner, que ce soit côté serveur ou périphériques utilisateurs, cela entraîne au mieux un nouveau dimensionnement de ces composants matériels, au pire la nécessité de les remplacer par une gamme plus puissante. Dans tous les cas, cela génère un impact environnemental fort sans parler du fait que cela écarte certains utilisateurs qui ne disposent pas des matériels.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(35);'>
+        <h2>
+        L&#39;utilisation du service permet-elle d&#39;envisager des configurations logicielles ou matérielles moins impactantes pour l&#39;environnement ?
+        </h2>
+        <p>
+        L&#39;escalade technologique au détriment de l&#39;environnement n&#39;est pas soutenable. La phase d&#39;architecture doit prendre en considération la manière de remplir les fonctionnalités en limitant les impacts de la technologie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(36);'>
+        <h2>
+        La valeur ajoutée du framework justifie-t-elle l&#39;alourdissement de l&#39;applicatif ?
+        D&#39;autres librairies ou framework plus légers et correspondant au besoin existent-ils ? 
+        </h2>
+        <p>
+        Les alternatives entre des solutions développées en interne et l&#39;utilisation de frameworks doivent prendre en considération les aspects Numérique Responsable. Les frameworks fournissent plus de fonctionnalités que nécessaire pour le projet et intègrent des composants et des dépendances pour remplir la totalité des fonctionnalités offertes. Le rapport entre les fonctionnalités apportées par le framework et celles réellement recherchées est critique. Le choix du framework doit aussi permettre de restreindre son périmètre fonctionnel aux seuls éléments indispensables pour le service. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(37);'>
+        <h2>
+        La fréquence d&#39;utilisation de la fonctionnalité l&#39;oblige-t-elle à être disponible en permanence ou peut-elle être mise à jour en arrière-plan (batch) ?
+        </h2>
+        <p>
+        Surpasser les attentes peut conduire à proposer des solutions proches du temps réel, en fournissant au plus vite et le plus souvent possible le résultat d&#39;une opération. Les utilisateurs ou les clients, au sens technique, n&#39;ont que très rarement besoin de cette solution, voire sont submergés par des informations plus rapidement qu&#39;ils ne peuvent ou souhaitent les assimiler. Réduire le nombre d&#39;opérations instantanées et gérer les temps entre ces opérations en les traitant en arrière plan réduit les charges du service. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(38);'>
+        <h2>
+        L&#39;application est-elle rapide à se lancer / à s&#39;arrêter ?
+        </h2>
+        <p>
+        La performance technique est souvent un indicateur de performance environnementale. Plus un service est léger (volume d&#39;échange, traitements) plus il se lance rapidement et moins il consomme de ressources.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(39);'>
+        <h2>
+        Est-ce qu&#39;une optimisation des algorithmes et des traitements est réalisée dans l&#39;application ?
+        </h2>
+        <p>
+        Certains traitements sont systématiquement déclenchés, même si unitairement ils ne sont pas très impactants, leur nombre d&#39;occurrence va impacter l&#39;empreinte globale. En travaillant au niveau de l&#39;algorithme de chaque traitement, cette optimisation est possible.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(40);'>
+        <h2>
+        La capacité d&#39;évolution / modification de l&#39;application est-elle étudiée ?
+        </h2>
+        <p>
+        Le Numérique Responsable est une démarche d&#39;amélioration continue qui doit permettre de faire progresser la réduction des impacts.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(41);'>
+        <h2>
+        Un langage compilé est-il utilisé pour des aspects performance et/ou sécurité ?
+        </h2>
+        <p>
+        Le type de langage utilisé introduit soit une proximité vers les processeurs (CPU), c&#39;est le cas des langages compilés, soit vers les hommes, c&#39;est le cas des langages interprétés (PHP, JavaScript, ...). La proximité des ordres machine augmente la performance technique mais rend la production logicielle plus lourde (phases de compilation, édition de liens). La proximité &quot;humaine&quot; facilite les développements mais aussi les malversations (piratages) et demande aux systèmes un effort supplémentaire pour traduire &quot;à la demande&quot; les lignes de programme en code machine, avec l&#39;aide d&#39;un interpréteur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(42);'>
+        <h2>
+        Les éléments de référence sont-ils connus, tenus à jour, et mis à disposition de l&#39;ensemble de l&#39;équipe projet ?
+        </h2>
+        <p>
+        L&#39;utilisation de références stables est indispensable pour conserver une démarche cohérente
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(43);'>
+        <h2>
+        L&#39;état des lieux des données d&#39;entrée est-il mis à disposition afin d&#39;être réutilisé dans d&#39;autres projets?
+        </h2>
+        <p>
+        Les principes NR sont stables et les bonnes pratiques déployées sont directement utilisables dans d&#39;autres contextes projet, d&#39;autant plus que les projets au sein d&#39;une organisation ont beaucoup de similarités que ce soit dans les méthodes, les objectifs, les périmètres fonctionnels. Dans la phase de spécification, collecter, préparer et produire ces éléments est un gage d&#39;efficacité et de fiabilité pour augmenter la maturité de l&#39;organisation dans ses pratiques NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(44);'>
+        <h2>
+        Les fonctionnalités liées aux traitements de données réglementées (santé, bancaire, ...)  sont-elles validées en terme d&#39;interopérabilité ?
+        </h2>
+        <p>
+        La pratique des professionnels des domaines réglementés est guidée par la sécurité des données et par la réduction de l&#39;impact d&#39;utilisation du service. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(45);'>
+        <h2>
+        L&#39;implémentation de nouveaux services liés à des données réglementées est-elle nécessaire et, le cas échéant, s&#39;appuie-t-elle sur le socle des services disponibles ?
+        </h2>
+        <p>
+        Les services doivent prendre en compte les éléments réglementaires et réutiliser le maximum d&#39;éléments habituels de ces types de services consolidés sous forme d&#39;un socle de service. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(46);'>
+        <h2>
+        Est il prévu des réunions pour que le cellule urbanisation évalue les évolutions du SI au regard de la conception, évolution mise en place ? 
+        </h2>
+        <p>
+        Les enjeux NR ne sont jamais établis définitivement et doivent faire l&#39;objet d&#39;un suivi périodique
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(47);'>
+        <h2>
+        Le schéma directeur de l&#39;organisation propose-t-il des objectifs et actions Numérique Responsable qui vont influencer le design d&#39;architecture ou les solutions d&#39;urbanisation ? En l&#39;absence de ces éléments, une pré-étude doit être conduite pour définir les objectifs généraux.
+        </h2>
+        <p>
+        L&#39;intégration du Numérique Responsable dans la stratégie de l&#39;entreprise est indispensable pour que ce concept soit propagé dans toutes les fonctions de l&#39;organisation. En l&#39;absence de cette stratégie globale, seule une pré-étude permet de positionner les objectifs généraux et de déterminer les leviers d&#39;actions qui seront mis en oeuvre.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(48);'>
+        <h2>
+        Les objectifs NR sont-ils qualifiés ? Une grille des objectifs du projet au regard des objectifs ODD existe-t-elle ? 
+        </h2>
+        <p>
+        L&#39;adhésion aux ODD et aux principes NR doit être vérifiée pour situer la distance parcourue et restante par rapport aux objectifs. La qualification des objectifs sous forme d&#39;indicateurs est une opération préalable indispensable
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(49);'>
+        <h2>
+        L&#39;ensemble des équipements techniques utilisés par le service sont-ils identifiés?
+        </h2>
+        <p>
+        La conception, le développement, les tests, la production, la gestion de disponibilité sont des étapes qui vont utiliser des ressources techniques. Chacune de ces ressources doit être identifiée et ses caractéristiques répertoriées. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(50);'>
+        <h2>
+        Pour chaque équipement, les caractéristiques sont-elles disponibles ? (Ancienneté, données de performances environnementales, ...)
+        </h2>
+        <p>
+        La position de l&#39;équipement dans son cycle de vie et son impact environnemental doivent être connus pour utiliser au mieux les équipements disponibles.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(51);'>
+        <h2>
+        Chaque fonction du service est-elle appréhendée en regard de son importance dans le service ?
+        </h2>
+        <p>
+        Les fonctionnalités les plus importantes sont parfois moins consommatrices de ressources que des fonctions marginales ce qui n&#39;a pas de sens dans une démarche NR cohérente.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(52);'>
+        <h2>
+        Les fonctions secondaires ont-elles aussi un impact moindre sur l&#39;impact environnemental ?
+        </h2>
+        <p>
+        La cohérence NR pousse à s&#39;assurer que les fonctions secondaires n&#39;ont pas un impact environnemental plus important que les fonctions principales, les spécifications doivent clairement identifier les fonctions principales et secondaires et leur impact du point de vue NR 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(53);'>
+        <h2>
+        Chacune des phases du cycle de vie (Démarrage, maturité, arrêt) sont-elles identifiées avec des actions spécifiques ?
+        </h2>
+        <p>
+        La démarche ACV est une base de la prise en compte du NR dans la conception des services numériques, elle permet d&#39;associer des actions à chaque étape du cycle de vie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(54);'>
+        <h2>
+        Les données ACV sont-elles réutilisées dans le cas d&#39;une adaptation d&#39;un service existant ?
+        </h2>
+        <p>
+        Les analyses ACV peuvent être réalisées sur des services existants afin de les rendre plus efficaces dans le cas d&#39;une refonte ou adaptation d&#39;un service existant
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(55);'>
+        <h2>
+        La durée du support du service numérique est-elle suffisante pour minimiser le renouvellement des équipements ?
+        </h2>
+        <p>
+        Les besoins d&#39;adaptation des matériels aux services en exploitation peuvent être une source d&#39;impact environnemental important.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(56);'>
+        <h2>
+        La production documentaire est-elle recherchée/revue/exploitée en amont de la démarche et produite en aval pour être ré-utilisée dans les projets suivants ?
+        </h2>
+        <p>
+        D&#39;une part, dans une organisation les projets présentent beaucoup de similitudes, d&#39;autre part les aspects NR adressés dans les projets sont souvent du même ordre. Afin de capitaliser sur ces éléments et bénéficier des efforts produits, il est nécessaire de s&#39;appuyer sur un socle de connaissances stables. Toutefois la maturité d&#39;une organisation d&#39;un point de vue NR est amenée à progresser, il faut donc que les étapes documentées puissent aussi suivre ces évolutions et participer activement à cet accroissement de maturité. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(57);'>
+        <h2>
+        Chaque partie-prenante a-t-elle la latitude de prendre des décisions pouvant influer sur l&#39;impact environnemental ?
+        </h2>
+        <p>
+        Les décisions projets qui peuvent avoir un impact important sur l&#39;environnement doivent pouvoir être prises rapidement. Pour cela il est indispensable de définir l&#39;espace de décision de chaque acteur et les mécanismes de validation. En l&#39;absence de cette clarification, des décisions erratiques, même pour de bonnes raisons, pourraient intervenir et décrédibiliser la démarche NR, ou entraîner une forme d&#39;auto-censure limitant les bénéfices NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(58);'>
+        <h2>
+        Les aspects Numérique Responsable sont-ils propagés et entretenus sur l&#39;ensemble des acteurs ?
+        </h2>
+        <p>
+        Les définitions projet peuvent évoluer au fil du temps. Ces évolutions doivent systématiquement prendre en compte les aspects NR. Les adaptations sont le plus souvent le fait des métiers ou d&#39;impératifs techniques. Les impacts environnementaux doivent pouvoir aussi avoir cette latitude avec des chemins de validation pré-définis.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(59);'>
+        <h2>
+        Les objectifs Numérique Responsable sont-ils qualifiés pour chaque type de public dans le design d&#39;architecture ?
+        </h2>
+        <p>
+        Pour exprimer clairement les objectifs NR dans chacune des étapes de conception d&#39;architecture il est indispensable de situer les profils cibles et de leur associer des objectifs NR précis.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(60);'>
+        <h2>
+        L&#39;architecte dispose-t-il d&#39;un rôle dans la continuité du produit ? Est-il associé aux phases de présentation, évangélisation, de build et de run du produit mis en oeuvre ?
+        </h2>
+        <p>
+        Chaque étape projet doit s&#39;attacher à prendre en compte la couverture la plus complète possible du cycle de vie produit.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(61);'>
+        <h2>
+        L&#39;animation de l&#39;équipe projet intègre-t-elle une dimension Numérique Responsable ?
+        </h2>
+        <p>
+        La prise en compte des aspects NR fait au démarrage de la conception peut être respectée mais dans un mode itératif il est possible de s&#39;en écarter graduellement. Les revues du respect NR sont indispensables pour conserver la cohérence du projet.
+        </p>
+        </div>
+        </div> 
+        
+            
+
+    </div>
+</div>
+
+
+</body>
+</html>

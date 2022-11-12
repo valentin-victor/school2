@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="javascript.js"></script>
+  <meta name="index">
+</head>
+<body onload="initialisation(0)">
+
+  <nav> <!-- navbar -->
+    <div class="navbar" id="hautDePage">
+        <a class="navbar pageActuel" href="index.html">Stratégie</a>                
+        <a class="navbar" href="specification.html">Spécifications</a>
+        <a class="navbar" href="ux_ui.html">Ux/Ui</a>
+        <a class="navbar" href="contenus.html">Contenus</a>
+        <a class="navbar" href="architecture.html">Architecture</a>
+        <a class="navbar" href="frontend.html">Frontend</a>
+        <a class="navbar" href="backend.html">Backend</a>
+        <a class="navbar" href="hebergement.html">Hébergement</a>
+    </div>
+  </nav>
+
+
+    <!-- le panier -->
+    <div class="enssemblePanier"> 
+      <a href="panier.html" class="panier panierNonSelectionner"> 
+      <div>
+      <img id="imagePanier" src="logo/panier.png" alt="image d'un panier"/>
+      </div>
+      <div class="textePanier">
+      <p class="textePanier">
+          panier
+      </p>
+      <p id="textePanier">
+      </p>
+      </div>
+      </a>
+  </div>
+
+
+
+  <!-- bouton retour en haut -->
+  <div class="caseRetourHaut">
+    <a href="#hautDePage" class="boutonRetourHaut">
+      <img id="buttonGoUp" src="logo/toTop.png" alt="image d'un bouton retouner en haut"/>
+    </a>
+  </div>
+
+
+
+
+
+  <div class="ensembleSousNav"> <!-- texte du site -->
+    <h1 class="titreGrandTheme">
+        STRATÉGIE
+    </h1>
+    <div class="contenuPage"> <!-- contenu -->
+      <div class='enssembleThemeSecondaire'>
+        <div class='interieur_theme_secondaire' onclick='changeColor(0);'>
+        <h2>
+        Les réunions sont-elles limitées au strict minimum, en privilégiant le distanciel, lorsque les réunions nécessitent des déplacements physiques ?
+        </h2>
+        <p>
+        Les trajets sont sources d&#39;émissions de Gaz à Effet de Serre (GES) et ont un impact sur l&#39;organisation personnelle des collaborateurs.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(1);'>
+        <h2>
+        Le télétravail est-il autorisé, sans limites, aux collaborateurs qui le souhaitent et dont l&#39;activité le permet ?
+        </h2>
+        <p>
+        Outre la limitation des transports quotidiens et leurs impacts environnementaux, les temps perdus lors des trajets peuvent être considérables. Les outils et l&#39;organisation doivent permettre en revanche de lutter contre la rupture de lien social qui peut s&#39;installer avec le télétravail.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(2);'>
+        <h2>
+        L&#39;entreprise est-elle ouverte à une démarche NR qui pourrait fédérer les énergies autour d&#39;un projet novateur ?
+        </h2>
+        <p>
+        Pour être efficace, la démarche NR doit être présente dans la stratégie de l&#39;organisation et associer l&#39;ensemble des processus de décision dans l&#39;objectif de réduire les impacts des services numériques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(3);'>
+        <h2>
+        Est-ce que les stratégies RSE et NR sont associées et systématiquement mises en oeuvre dans tous les projets ?
+        </h2>
+        <p>
+        Le traitement NR est une démarche systémique si la stratégie NR est prise en compte dans tous les projets. Comme c&#39;est le plus souvent le cas pour la RSE le gain est beaucoup plus significatif que lorsque les éléments NR sont traités ponctuellement
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(4);'>
+        <h2>
+        Comment faire du NR plus qu&#39;un objectif de communication ? Est-ce que des résultats concrets sont associés à la démarche NR ? (pas de Greenwashing)
+        </h2>
+        <p>
+        Les énergies et budgets dépensés pour les aspects purement communication (greenwashing) peuvent être conséquents pour aucun résultat tangible. Avec les mêmes investissements il est tout à fait possible d&#39;obtenir des résultats significatifs sur lesquels la communication sera de plus, plus efficace.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(5);'>
+        <h2>
+        Le besoin métier est-il exprimé ?
+        </h2>
+        <p>
+        Les incertitudes poussent à extrapoler les besoins souvent au delà des attentes réelles ce qui est nuisible pour les impacts environnementaux
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(6);'>
+        <h2>
+        La cible des utilisateurs (principale et secondaire) est-elle définie, pour préciser le besoin métier ?
+        </h2>
+        <p>
+        Pour répondre justement (ni trop, ni trop peu) aux attentes utilisateurs, il est indispensable de connaître les cibles et leurs comportements., afin de ne pas surcharger les applicatifs, ni les appauvrir au point qu&#39;ils ne répondent plus aux attentes légitimes. Les utilisateurs secondaires ont des besoins souvent plus simples. Sans l&#39;identification de cette catégorie d&#39;utilisateur, il est difficile de dimensionner correctement le service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(7);'>
+        <h2>
+        Les matériels utilisateurs sont-ils identifiés ?
+        </h2>
+        <p>
+        Certaines utilisations peuvent être contraintes par les équipements des utilisateurs, pour permettre un choix plus large d&#39;équipements même anciens et limiter les renouvellements de matériels. Il est important de connaître les profils de matériel que les utilisateurs vont pouvoir employer, aujourd&#39;hui et demain.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(8);'>
+        <h2>
+        L’ensemble des produits et services sont-ils indispensables en ligne ? 
+        
+        </h2>
+        <p>
+        Certaines fonctionnalités sont proposées en mode connecté alors qu&#39;aucune donnée distante ou aucun processus de calcul lourd n&#39;est requis, dans ces cas une solution locale (hors ligne) est efficace d&#39;un point de vue environnemental avec moins de circulation d&#39;information et moins d&#39;utilisation des réseaux. En revanche, si le mode hors ligne nécessite des duplications d&#39;informations, il ne se justifie que si les accès réseaux sont intermittents et posent des difficultés d&#39;utilisation du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(9);'>
+        <h2>
+        Est ce que je peux proposer de couvrir les besoins autrement, en évitant le digital avec un moyen plus respectueux de l’environnement ? 
+        </h2>
+        <p>
+        Certains processus manuels simples peuvent être une alternative au tout numérique, même au sein d&#39;un service numérique. Dans le cadre d&#39;un service numérique la tendance naturelle est d&#39;y intégrer toutes les étapes sans se poser la question de l&#39;efficacité environnementale.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(10);'>
+        <h2>
+        La solution retenue est-elle la plus respectueuse de l&#39;environnement? Sinon, ce choix est-il justifié par le besoin utilisateur?
+        </h2>
+        <p>
+        Le nouveau service peut apporter une meilleure efficacité environnementale, mais il peut aussi participer à la création de dette environnementale supplémentaire, l&#39;ensemble des 3 dimensions (3P) doivent pouvoir montrer un bénéfice sinon le positionnement du service peut être à revoir.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(11);'>
+        <h2>
+        Le modèle économique de ce service prend-il en compte l&#39;éco-conception ?
+        </h2>
+        <p>
+        Lorsque le NR est en dehors du modèle économique il est difficile de concilier l&#39;activité économique et les impacts du NR, et cela tourne le plus souvent à des arbitrages où la prosperityabilité immédiate est privilégiée face aux 3P
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(12);'>
+        <h2>
+        Les aspects performances, accessibilité, sécurité et sobriété sont-ils pris en compte ensemble ?
+        </h2>
+        <p>
+        Dans la majorité des cas, une meilleure performance technique est aussi synonyme d&#39;une meilleure efficacité environnementale, la consommation de ressources de calcul est plus faible, les volumes de transferts sont plus restreints, les algorithmes sont plus efficaces. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(13);'>
+        <h2>
+        Les gains NR sont-ils évalués en préalable du projet ?
+        </h2>
+        <p>
+        Dans le cas de refonte de services, il est plus simple d&#39;estimer les gains attendus par le nouveau service en référence au service actuel. Pour un service nouveau, l&#39;étude préalable déterminera des hypothèses de gains qui devront être affinées au cours du projet. L&#39;affichage des gains attendus est un marqueur important pour convaincre l&#39;ensemble des acteurs du bien fondé de la démarche
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(14);'>
+        <h2>
+        Le NR est-il inscrit dans la stratégie et les objectifs de l&#39;organisation ?
+        </h2>
+        <p>
+        Afin de pouvoir installer une démarche NR dans les projets, il est indispensable que tous les décideurs adhèrent à cette démarche, c&#39;est nécessairement le cas si le NR est inscrit dans la stratégie de l&#39;organisation. Dans le cas contraire, il sera difficile de mener une démarche NR, car en permanence il faudra trouver des justifications pour convaincre de poursuivre. Le projet en serait impacté donc perçu comme moins efficace &quot;à cause du NR&quot;
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(15);'>
+        <h2>
+        L&#39;attente du marché, clients, fournisseurs, partenaires est-elle en phase avec une démarche NR ?
+        </h2>
+        <p>
+        Les différents secteurs d&#39;activité présentent des sensibilités variables face au NR, et à périmètre identique certaines organisations ou catégories de parties prenantes ont des aspirations variables. Le fait de s&#39;engager dans une démarche NR et de l&#39;exposer est plus simple si cela correspond à une préoccupation des acteurs concernés. La communication et l&#39;expression de la démarche NR sera quelque peu différente en fonction de la maturité du marché cible.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(16);'>
+        <h2>
+        Les enjeux et bénéfices attendus sont-ils bien identifiés ?
+        </h2>
+        <p>
+        Pour capitaliser sur l&#39;innovation apportée par la prise en compte du NR il est important de déterminer les bénéfices de la démarche, que ce soit d&#39;un point de vue financier, ou d&#39;avantage compétitif ou de notoriété ou de capacité de communication et reconnaissance d&#39;être un acteur engagé pour réduire les impacts du numérique.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(17);'>
+        <h2>
+        L&#39;organisation est-elle en mesure de faire progresser son niveau de maturité vis à vis de l’éco conception et de son périmètre, avec la réalisation de projets NR ?
+        </h2>
+        <p>
+        La démarche NR doit être présente dans toutes les étapes de réalisation et cela passe nécessairement par une culture NR au sein de l&#39;organisation. La maturité augmentera progressivement avec les pratiques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(18);'>
+        <h2>
+        Un audit de l&#39;existant est-il disponible pour en améliorer les performances NR ?
+        </h2>
+        <p>
+        Les principaux travers d&#39;un service existant par rapport aux 3P peut utilement servir de socle pour déterminer les axes de performance NR à améliorer avec des quick wins et des adaptations plus profondes.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(19);'>
+        <h2>
+        Les budgets financiers pour les aspects NR du projet sont-ils évalués ?
+        </h2>
+        <p>
+        Le NR va générer une nouvelle catégorie d&#39;exigences qui devront être prises en compte dans les démarches projet, et demanderont des lignes budgétaires clairement identifiées. Bien que souvent les projets NR soient plus efficaces, moins &quot;boulimiques&quot; de technologies &quot;à la mode&quot; et de fonctionnalités inutiles, les charges projet en final sont diminuées. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(20);'>
+        <h2>
+        Des équipements matériels sont-ils à renouveler ou à acheter pour le projet, les équipements supplémentaires nécessaires sont-ils mis à disposition en gardant en tête les principes du NR ?
+        </h2>
+        <p>
+        Le lancement de nouveaux projets est souvent l&#39;occasion de renouveler ou compléter les équipements techniques. Dans le principe de la démarche NR, il serait plutôt l&#39;occasion de challenger une meilleure utilisation des équipements disponibles et mettre en place toutes les solutions possibles pour les préserver.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(21);'>
+        <h2>
+        Mes ressources humaines (Identifiées pour chaque phase) sont-elles disponibles ?
+        </h2>
+        <p>
+        L&#39;efficacité de la démarche NR ne peut être atteinte sans la connaissance des enjeux NR par les personnes qui prendront part au projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(22);'>
+        <h2>
+        Les sponsors et éventuelles résistances de la démarche NR sont-ils identifiés ?
+        </h2>
+        <p>
+        Lorsque la démarche NR est peu installée dans le modèle opérationnel de l&#39;organisation, les luttes d&#39;influence vont parfois décider de l&#39;avenir du NR. Pour faciliter l&#39;adoption, les freins doivent être identifiés et les arguments pour vaincre les résistances doivent être préparés en avance de phase et mis à disposition des sponsors de cette démarche.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(23);'>
+        <h2>
+        Les objectifs NR sont-ils exposés clairement et partagés par toutes les parties prenantes, internes ou externes à l&#39;organisation ?
+        </h2>
+        <p>
+        Plusieurs acteurs, y compris externes à l&#39;organisation, peuvent être impliqués dans le projet. La perméabilité de la démarche NR vers toutes les parties prenantes peut permettre d&#39;identifier / activer des leviers que des acteurs n&#39;auraient peut-être pas spontanément exprimés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(24);'>
+        <h2>
+        Les délais de mise en oeuvre sont-ils envisagés ?
+        </h2>
+        <p>
+        La gestion des délais projet est toujours au centre des préoccupations. Pour que le NR ne soit pas l&#39;élément pointé du doigt il faut que les délais (en plus ou en moins) liés à cette démarche soient exprimés. Le délai projet n&#39;intervient qu&#39;une fois dans la vie du service, le gain ou la dette NR du projet va se multiplier tout au long du cycle de vie du projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(25);'>
+        <h2>
+        Le besoin couvert par le service numérique s&#39;inscrit-il dans l&#39;un des objectifs de développement durable?
+        </h2>
+        <p>
+        Le questionnement de l&#39;utilité du service numérique par rapport à l&#39;un ou plusieurs des 17 ODD est capital, afin d&#39;éviter la production de services numériques qui ne soient pas porteurs de valeurs.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(26);'>
+        <h2>
+        A-t-on les personnes avec les compétences techniques les plus pertinentes pour chaque élément du projet ? 
+        </h2>
+        <p>
+        La démarche NR requiert avant tout une pratique métier affirmée. Il est difficile d&#39;optimiser des éléments techniques lorsque la pratique n&#39;est pas suffisamment ancrée. A l&#39;inverse les optimisations NR sont parfois &quot;contre-intuitives&quot; et une bonne maîtrise du NR et des 3P est indispensable.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(27);'>
+        <h2>
+        Les référents NR sont-ils listés et la liste communiquée aux acteurs du projet?
+        </h2>
+        <p>
+        Le NR adresse un très large périmètre, qu&#39;il est difficile d&#39;appréhender complètement dans chaque phase projet. Il est indispensable que les professionnels intervenant sur le projet puissent s&#39;appuyer à tous moments sur des personnes référence pour les assister dans les meilleures pratiques à déployer.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(28);'>
+        <h2>
+        Une stratégie pour sensibiliser les collègues/partenaires/clients au NR est-elle mise en place avec des étapes permettant de faire progresser les pratiques en continu ?
+        </h2>
+        <p>
+        L&#39;adoption du NR est une démarche globale, qui ne doit pas être freinée par la capacité de tout faire tout de suite, elle s&#39;inscrit dans une progression qui s&#39;installe au fur et à mesure des pratiques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(29);'>
+        <h2>
+        Les parties prenantes internes et externes sont-elles sensibilisées, voire formées/certifiées au NR ?
+        </h2>
+        <p>
+        Chaque partie prenante à besoin d&#39;une information efficace sur son domaine d&#39;expertise et d&#39;action, seul un plan de formation adapté peut apporter cette efficacité en amont des projets
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(30);'>
+        <h2>
+        Les équipes ont-elle été questionnées en amont du lancement du projet, l&#39;impact a-t-il été évalué et communiqué?
+        </h2>
+        <p>
+        Lorsque le NR est intégré dans la démarche projet, tous les éléments d&#39;optimisation des projets sont mis en oeuvre, notamment les adaptations des processus avec la prise en compte des retours d&#39;expérience sont naturels et totalement adaptés au NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(31);'>
+        <h2>
+        Chaque partie-prenante interne et externe a-t-elle la latitude de prendre des décisions pouvant influer sur l&#39;impact du Numérique Responsable ?
+        </h2>
+        <p>
+        Les décisions projets qui peuvent avoir un impact important sur l&#39;environnement doivent pouvoir être prises rapidement. Pour cela il est indispensable de définir l&#39;espace de décision de chaque acteur et les mécanismes de validation. En l&#39;absence de cette clarification, des décisions erratiques, même pour de bonnes raisons, pourraient intervenir et décrédibiliser la démarche NR, ou entraîner une forme d&#39;auto-censure limitant les bénéfices NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(32);'>
+        <h2>
+        Mes cibles peuvent-elles adhérer à ma démarche NR et de quelle manière ? 
+        </h2>
+        <p>
+        La démarche NR est mise en place pour le bien de toute la communauté, il serait dommage que cette prise en compte reste confidentielle et ne participe pas à la prise de conscience collective de l&#39;impact des services numériques
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(33);'>
+        <h2>
+        Le projet avec une démarche NR va t-il réellement répondre aux besoins de mes clients ?
+        </h2>
+        <p>
+        Une démarche NR appliquée sur un service numérique peut dans certains cas générer un peu d&#39;inconfort / de disruption pour les utilisateurs dans leurs pratiques. Un mécanisme d&#39;accompagnement ou de communication peut aisément lever ces points. Et apporter une valorisation importante.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(34);'>
+        <h2>
+        Les aspects Numérique Responsable sont-ils propagés et entretenus sur l&#39;ensemble des acteurs ?
+        </h2>
+        <p>
+        Obtenir et maintenir l&#39;engagement des acteurs est un point important pour que le NR devienne la norme de fait.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(35);'>
+        <h2>
+        Chacune des phases du cycle de vie (démarrage, maturité, arrêt) sont-elles identifiées avec des actions spécifiques ?
+        </h2>
+        <p>
+        La démarche ACV est une base de la prise en compte du NR dans la conception des services numériques. Elle permet d&#39;associer des actions à chaque étape du cycle de vie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(36);'>
+        <h2>
+        Les données ACV sont-elles réutilisées dans le cas d&#39;une adaptation d&#39;un service existant ?
+        </h2>
+        <p>
+        Les analyses ACV peuvent être réalisées sur des services existants afin de les rendre plus efficaces dans le cas d&#39;une refonte ou adaptation d&#39;un service existant
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(37);'>
+        <h2>
+        Si je décide de refaire mon service, qu’est-ce que je conserve de l’ancien et comment je le nettoie de la toile ? 
+        </h2>
+        <p>
+        Une bonne optimisation des enjeux NR passe aussi par la réutilisation des éléments qui ont été conçus avec une prise en compte du NR afin d&#39;éviter de dupliquer certains éléments ou d&#39;avoir des composants en double emploi, ou tout simplement inactifs, qui ne seraient maintenus que parce que l&#39;effort de nettoyage n&#39;a pas été pris en compte.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(38);'>
+        <h2>
+        Est-ce que je peux recycler des briques logicielles ou du contenu existant ? Est-ce que je vais créer de la valeur réutilisable/valorisable dans d&#39;autres projets ?
+        </h2>
+        <p>
+        La conception modulaire est une pratique métier très largement employée. Le NR peut tirer un bénéfice de ces méthodes lorsque chaque composant modulaire est bien décrit et que ses atouts ou travers sont bien identifiés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(39);'>
+        <h2>
+        Comment sont gérées les phases de fin de vie, dès le début ou à la fin d&#39;un projet ?
+        </h2>
+        <p>
+        Lors de la conception, chaque partie composant le projet peut être amenée à avoir une durée de vie différente. Il est important que l&#39;ensemble des procédure de fin de vie soient exprimées pour que l&#39;empreinte des composants inutilisés et arrêtés soient nulle.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(40);'>
+        <h2>
+        La prise de conscience des &quot;coûts de non-qualité&quot; est-elle partagée par toutes les parties prenantes internes ? 
+        </h2>
+        <p>
+        La qualité du logiciel produit à un impact direct sur les aspects NR. En effet, les défauts génèrent de multiples livraisons de nouvelles versions successives, les anomalies entraînent des productions de traces d&#39;anomalies importantes, et des fonctionnalités plus consommatrices de ressources techniques, parfois pour un résultat non atteint, donc des ressources ont été gaspillées pour ne produire aucun résultat.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(41);'>
+        <h2>
+        Lors d&#39;un audit, les éléments suivants sont-ils appréhendés ? A quel moment je gâche de l&#39;énergie dans mon service ? Quels sont les pages/parcours utilisateurs en trop ou inutiles qui devraient donc être nettoyées ? 
+        </h2>
+        <p>
+        Lorsque le parcours utilisateur est court, moins de composants sont mis en oeuvre, les flux sont plus réduits, la compréhension du service est plus simple, donc les aspects NR sont mieux pris en compte.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(42);'>
+        <h2>
+        Les indicateurs pour mesurer l&#39;efficacité de ma démarche NR sont-ils identifiés et suivis ?
+        </h2>
+        <p>
+        La mesure de certains éléments est un objectif qui permet de valoriser le résultat d&#39;une démarche NR. La recherche d&#39;indicateurs trop complexes peut s&#39;avérer contre-productive, il vaut mieux s&#39;attacher à des données fiables et marquantes et faire évoluer le nombre et la précision des indicateurs au fur et à mesure des gains de maturité de l&#39;organisation et des acteurs internes
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(43);'>
+        <h2>
+        Les outils pour mesurer l&#39;efficacité de ma démarche NR sont-ils identifiés et communiqués ?
+        </h2>
+        <p>
+        Permettre aux acteurs de valider les résultats obtenus par la prise en compte du NR est important car il permet à chacun de s&#39;approprier cette démarche et de situer ses actions dans cet objectif avec des outils adaptés à chaque acteur
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(44);'>
+        <h2>
+        La durée de vie du projet est-elle définie ?
+        </h2>
+        <p>
+        Un service numérique ne peut plus être conçu pour l&#39;éternité, il est étroitement lié aux environnements socio-économiques. A cette fin, il doit pouvoir être remis en cause régulièrement. Ceci présente aussi l&#39;avantage de ne pas cumuler de dettes techniques et de rester au fait des avancées et pratiques les plus efficaces dans les domaines NR qui évoluent très rapidement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(45);'>
+        <h2>
+        Est ce que les expériences des projets passés sont prises en compte ?
+        </h2>
+        <p>
+        Beaucoup de projets au sein d&#39;une organisation ont des principes communs, il est nécessaire de pouvoir s&#39;appuyer sur d&#39;autres projets pour capitaliser sur les gains et bénéfices des démarches NR du passé, et de les enrichir avec les nouvelles connaissances ou pratiques acquises.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(46);'>
+        <h2>
+        Est-il prévu de capitaliser l&#39;expérience de ce projet pour le futur?
+        </h2>
+        <p>
+        Les méthodologies projet utilisent fréquemment les post-mortem pour apprendre des réalisations passées et progresser. Le NR doit apparaître dans ces thématiques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(47);'>
+        <h2>
+        Les indicateurs couvrent-ils les éléments pour mesurer, évaluer et estimer le niveau de maturité NR, le piloter, l’améliorer et le contrôler ?
+        </h2>
+        <p>
+        La démarche NR est itérative, elle doit s&#39;insérer dans un processus d&#39;amélioration continue.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(48);'>
+        <h2>
+        La conformité numérique responsable est-elle exposée ?
+        </h2>
+        <p>
+        Un service numérique concu en respectant les recommandations du numérique responsable doit exposer les acquis et faiblesses identfiés. Dans une démarche similaire à celle déployée pour l&#39;accessibilité avec la &quot;déclaration d&#39;accessibilité&quot;.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(49);'>
+        <h2>
+        En dehors des éléments constituant le service numérique, quels sont les services annexes nécessaires : technologie tiers / open source, hébergement vert, agence digitale éco-responsable ... ?
+        </h2>
+        <p>
+        Les phases de design, de développements, de production ont des impacts sur les aspects NR qui doivent être abordés dans toutes les ressources associées au projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(50);'>
+        <h2>
+        Chaque fonction du service est-elle appréhendée en regard de son importance dans le service ?
+        </h2>
+        <p>
+        Les fonctionnalités les plus importantes sont parfois moins consommatrices de ressources que des fonctions marginales ce qui n&#39;a pas de sens dans une démarche NR cohérente.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(51);'>
+        <h2>
+        Est-ce qu&#39;une donnée réglementée (santé, bancaire, ...)  est utilisée dans l&#39;ensemble du système ?
+        </h2>
+        <p>
+        L&#39;exposition de l&#39;utilisateur doit pouvoir être strictement encadrée. Au delà de la réglementation, c&#39;est aussi la dimension humaine du NR qui est en jeu
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(52);'>
+        <h2>
+        Des données personnelles au sens du RGPD sont-elles utilisées ?
+        </h2>
+        <p>
+        L&#39;utilisateur vous confie des données. Pour prendre en considération l&#39;aspect PEOPLE, et ne pas s&#39;exposer à des sanctions onéreuses, la démarche NR incite à fortement limiter ces données.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(53);'>
+        <h2>
+        Est ce que le choix de solutions Open Source est privilégié ? 
+        </h2>
+        <p>
+        Une solution Open Source n&#39;est pas un gage d&#39;efficacité NR et les différentes alternatives doivent être challengées. Mais l&#39;open source permet de limiter les ambitions et mainmises de certains acteurs dont les pratiques économiques et sociales sont opaques. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(54);'>
+        <h2>
+        Les outils intégrés (CMS, frameworks, ...), ou les développements internes, apportent-ils des éléments positifs vis à vis de la démarche NR ?
+        </h2>
+        <p>
+        Dans les choix BUY/BUILD la dimension NR doit pouvoir être évaluée et projetée dans le temps pour s&#39;assurer que les choix sont suffisamment évolutifs pour permettre de gagner en conformité NR au fil du temps. Et pas uniquement sur la phase de développement / intégration.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(55);'>
+        <h2>
+        Quelle est la technologie adhèrant aux principes NR la plus appropriée à mes besoins ? 
+        </h2>
+        <p>
+        Le choix technologique doit être dicté par des critères NR, plutôt que par l&#39;attrait technologique de la nouveauté à la mode. La liste des critères doit être déterminée par un collectif pas exclusivement composé des techniciens qui vont les utiliser afin d&#39;avoir une vision plus large.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(56);'>
+        <h2>
+        Dans le cas d&#39;un développement interne (CMS, Framework, ...), quelle est la pertinence de le retravailler sous l&#39;angle d&#39;une optimisation NR, si la démarche NR est peu maîtrisée et le projet déjà avancé ?
+        </h2>
+        <p>
+        Les outils sélectionnés pour les développements doivent permettre d&#39;intégrer les principes NR sans qu&#39;une refonte complexe ne soit nécessaire. La complexité écarte de fait les bonnes volontés et écarte les personnes les moins aguerries, ce qui donne au projet une forme élitiste peu compatible avec les principes NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(57);'>
+        <h2>
+        Comment choisir les solutions techniques les plus propices au NR ?
+        </h2>
+        <p>
+        Un choix de base technique doit prendre en compte les aspects techniques mais aussi les orientations des fournisseurs et la facilité de déployer la production réalisée à partir de ce socle en limitant les impacts environnementaux. Les critères permettant la sélection de ce type de composants doivent être clairement définis.
+        </p>
+        </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>specification</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="javascript.js"></script>
+  <meta name="specification">
+</head>
+<body onload="initialisation(1)">
+
+  <nav>
+    <div class="navbar" id="hautDePage">
+        <a class="navbar" href="index.html">Stratégie</a>                
+        <a class="navbar pageActuel" href="specification.html">Spécifications</a>
+        <a class="navbar" href="ux_ui.html">Ux/Ui</a>
+        <a class="navbar" href="contenus.html">Contenus</a>
+        <a class="navbar" href="architecture.html">Architecture</a>
+        <a class="navbar" href="frontend.html">Frontend</a>
+        <a class="navbar" href="backend.html">Backend</a>
+        <a class="navbar" href="hebergement.html">Hébergement</a>
+    </div>
+  </nav>
+
+    <!-- le panier -->
+    <div class="enssemblePanier"> 
+      <a href="panier.html" class="panier panierNonSelectionner"> 
+      <div>
+      <img id="imagePanier" src="logo/panier.png" alt="image d'un panier"/>
+      </div>
+      <div class="textePanier">
+      <p class="textePanier">
+          panier
+      </p>
+      <p id="textePanier">
+      </p>
+      </div>
+      </a>
+  </div>
+
+
+    <!-- bouton retour en haut -->
+    <div class="caseRetourHaut">
+      <a href="#hautDePage" class="boutonRetourHaut">
+        <img id="buttonGoUp" src="logo/toTop.png" alt="image d'un bouton retouner en haut"/>
+      </a>
+    </div>
+
+
+
+
+  <div class="ensembleSousNav"> <!-- texte du site -->
+    <h1 class="titreGrandTheme">
+        SPECIFICATION
+    </h1>
+    <div class="contenuPage"> <!-- contenu -->
+      <div class='enssembleThemeSecondaire'>
+        <div class='interieur_theme_secondaire' onclick='changeColor(0);'>
+        <h2>
+        Les enjeux NR du projet ont-ils été communiqués à l&#39;équipe dès l&#39;origine ?
+        </h2>
+        <p>
+        La démarche NR est mieux prise en compte lorsqu&#39;elle s&#39;insère par un processus systémique et qu&#39;elle est exposée comme direction à suivre pour tous les acteurs.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(1);'>
+        <h2>
+        Les référents NR de l&#39;organisation sont-ils identifiés ?
+        </h2>
+        <p>
+        Le NR nécessite une forte connaissance qui doit être portée par des personnes qui sont les mieux adaptées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(2);'>
+        <h2>
+        Quelle approche éditoriale est prévue pour sensibiliser les clients au NR ?
+        </h2>
+        <p>
+        La communication vers les utilisateurs et clients est aussi un engagement de l&#39;entreprise pour réduire ses impacts environnementaux et se démarquer de la concurrence en affichant son ambition et ses résultats NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(3);'>
+        <h2>
+        Chaque entité de l&#39;équipe Projet dispose-t-elle des compétences NR ?
+        </h2>
+        <p>
+        Chacune des étapes projet requiert des connaissances spécifiques pour les aspects NR, il est important que toutes les étapes soient couvertes afin que les résultats NR soient cohérents tout au long de la vie du service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(4);'>
+        <h2>
+        Les données ACV sont-elles réutilisées dans le cas d&#39;une adaptation d&#39;un service existant ?
+        </h2>
+        <p>
+        Les analyses ACV peuvent être réalisées sur des services existants afin de les rendre plus efficaces dans le cas d&#39;une refonte ou adaptation d&#39;un service existant. Les spécifications et exigences NR issues des ACV précédentes doivent être reprises et adaptées si besoin.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(5);'>
+        <h2>
+        Chaque partie-prenante a-t-elle la latitude de prendre des décisions pouvant influer sur l&#39;impact environnemental ?
+        </h2>
+        <p>
+        Les spécifications et les USER STORY peuvent évoluer au fil du temps, ces évolutions doivent systématiquement prendre en compte les aspects NR. Les adaptations sont le plus souvent le fait des métiers. Les impacts environnementaux doivent pouvoir aussi avoir cette latitude avec des chemins de validation pré-définis.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(6);'>
+        <h2>
+        La définition des besoins est-elle réalisée en consultant les utilisateurs finaux ?
+        </h2>
+        <p>
+        Lorsque les besoins utilisateurs sont extrapolés à partir d&#39;analyses et d&#39;objectifs de l&#39;organisation, cela peut conduire à des expressions de besoin plus larges que celles dont les utilisateurs vont réellement se servir et le service sera plus consommateur que nécessaire.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(7);'>
+        <h2>
+        Transmettez-vous une pédagogie NR aux utilisateurs ?
+        </h2>
+        <p>
+        Les utilisations des services sont une source de consommation de ressources. Si les utilisateurs sont incités et guidés pour réduire leurs impacts avec des démarches pédagogiques, cela rend l&#39;ensemble du service plus efficace pour réduire son impact.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(8);'>
+        <h2>
+        Les aspects NR sont-ils propagés et entretenus sur l&#39;ensemble des acteurs ?
+        </h2>
+        <p>
+        Lorsque chacun des acteurs a un accès simple à des marqueurs permettant d&#39;évaluer l&#39;impact environnemental de ses actions et choix, il peut adapter ses pratiques pour rendre le service plus efficace et responsable.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(9);'>
+        <h2>
+        Les profils cibles sont-ils définis ?
+        </h2>
+        <p>
+        Pour exprimer clairement les objectifs NR dans chacune des spécifications il est indispensable de situer les profils cibles et de leur associer des objectifs NR précis.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(10);'>
+        <h2>
+        Les aspects numérique responsable sont-ils propagés et entretenus sur l&#39;ensemble des profils utilisateurs ?
+        </h2>
+        <p>
+        Les phases d&#39;utilisation sont un moyen de communiquer et entretenir le lien sur les aspects NR avec les utilisateurs, c&#39;est aussi une démarche qui offre un canal de communication différent et démarquant vis à vis de la concurrence en impliquant les utilisateurs et les rendant acteurs du service proposé.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(11);'>
+        <h2>
+        Les étapes de revue NR sont-elles incluses dans la méthodologie ?
+        </h2>
+        <p>
+        Les objectifs NR doivent être clairement définis et la gestion projet doit traiter le suivi de ces objectifs avec des revues au même titre que les autres catégories d&#39;exigences, en associant les acteurs aptes à arbitrer, justifier et valider les décisions
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(12);'>
+        <h2>
+        Des fonctionnalités (User Story) concernent-elles uniquement les aspects NR ? 
+        </h2>
+        <p>
+        Le projet doit définir des exigences NR (Exigences Non Fonctionnelles - NFR) ou des User Stories spécifiques qui vont introduire des orientations NR dans la conception. Ces éléments seront pris en charge au même titre que les autres NFR (sécurité, accessibilité par exemple) et garantiront que les aspects NR seront pris en considération dans toutes les étapes du projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(13);'>
+        <h2>
+        Quelle proportion des fonctionnalités (User Story) ont une composante NR ? 
+        </h2>
+        <p>
+        Certaines fonctionnalités peuvent être conçues avec des impacts NR très différents. En l&#39;absence de clarification, la solution choisie sera le plus souvent pilotée par la facilité ou l&#39;appétence technique, ce qui s&#39;oppose en général à la performance NR. Le seul moyen de guider les décisions est d&#39;introduire des points d&#39;attention sur les aspects NR dans la majorité des User Stories.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(14);'>
+        <h2>
+        Quelle est la fréquence de revue/validation des éléments NR, sur un mode similaire aux revues et validation &quot;Sécurité&quot; ? 
+        </h2>
+        <p>
+        La prise en compte des aspects NR fait au démarrage de la conception peut être respectée mais dans un mode itératif il est possible de s&#39;en écarter graduellement. Les revues du respect NR sont indispensables pour conserver la cohérence du projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(15);'>
+        <h2>
+        Chaque fonctionnalité est-elle évaluée par rapport aux usages ?
+        </h2>
+        <p>
+        Les User Story / Use Case doivent être spécifiés par rapport à des usages afin de ne pas aller vers une inflation de fonctionnalités qui seraient superflues par rapport aux besoins réels des utilisateurs. Proposer des fonctionnalités marginales va engendrer une empreinte environnementale, un coût et une incompréhension du service supplémentaire non justifiés. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(16);'>
+        <h2>
+        L&#39;utilisation d&#39;intégration continue est-elle généralisée ?
+        </h2>
+        <p>
+        Du point de vue NR, le fait de capitaliser sur les acquis et de fournir un modèle technique qui garanti ces acquis, évite les anomalies et surcoûts de non qualité.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(17);'>
+        <h2>
+        Les processus d&#39;intégration continue ne génèrent-ils pas des brèches dans la prise en compte des aspects NR ?
+        </h2>
+        <p>
+        Les différentes phases de l&#39;intégration continue permettent de piloter les processus avec des attendus définis. L&#39;une de ces étapes d&#39;intégration doit valider le respect des impacts NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(18);'>
+        <h2>
+        Les exigences non fonctionnelles (User Story) sont-elles traitées de la même manière pour les aspects NR, sécurité et accessibilité ?
+        </h2>
+        <p>
+        Les catégories d&#39;exigences Non Fonctionnelles (NFR) interviennent de manière transverse dans la gestion de projet car les dépendances sont le plus souvent associées à des comportements que l&#39;on ne peut que rarement lier à une seule action. C&#39;est aussi le cas du NR, une décision ponctuelle efficace peut être rendue caduque par des actions en amont ou en aval.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(19);'>
+        <h2>
+        L&#39;état des lieux des données d&#39;entrée est-il mis à disposition afin d&#39;être réutilisé dans d&#39;autres projets?
+        </h2>
+        <p>
+        Les principes NR sont stables et les bonnes pratiques déployées sont directement utilisables dans d&#39;autres contextes projet, d&#39;autant plus que les projets au sein d&#39;une organisation ont beaucoup de similarités, que ce soit dans les méthodes, les objectifs ou les périmètres fonctionnels. Dans la phase de spécification, collecter, préparer et produire ces éléments est un gage d&#39;efficacité et de fiabilité pour augmenter la maturité de l&#39;organisation dans ses pratiques NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(20);'>
+        <h2>
+        Les exigences NR sont elles associées à toutes les fonctionnalités produit ?
+        </h2>
+        <p>
+        Chaque fonctionnalité mise en oeuvre doit disposer d&#39;une prise en compte du NR pour que l&#39;ensemble du service soit conçu avec le respect le plus complet des principes NR, un aspect non couvert pouvant annuler tout ou partie des bénéfices acquis par ailleurs. Il est plus efficace d&#39;avoir un traitement équilibré sur l&#39;ensemble, plutôt que viser l&#39;excellence sur une partie et laisser des trous conséquents sur d&#39;autres.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(21);'>
+        <h2>
+        Chaque fonction principale ou secondaire du service est-elle appréhendée en regard de son importance dans le service ?
+        </h2>
+        <p>
+        La cohérence NR pousse à s&#39;assurer que les fonctions secondaires n&#39;ont pas un impact environnemental plus important que les fonctions principales. Les spécifications doivent clairement identifier les fonctions principales et secondaires et leurs impacts du point de vue NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(22);'>
+        <h2>
+        Toutes les exigences projet (performance, sécurité, accessibilité, NR) sont-elles associées à chaque fonctionnalité ?
+        </h2>
+        <p>
+        Le panorama complet des exigences non fonctionnelles (Sécurité, Accessibilité, NR) permet de faciliter les arbitrages et de déterminer l&#39;axe qui sera choisi lorsque des éléments présentent des conflits. Le conflit est difficilement traitable localement, seule la vision globale permettra de garantir que l&#39;équilibre est respecté sur l&#39;ensemble du projet. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(23);'>
+        <h2>
+        Les cas d&#39;exclusion de chaque fonctionnalité sont-ils adressés et des alternatives proposées ?
+        </h2>
+        <p>
+        Certaines fonctionnalités non retenues peuvent néanmoins avoir un intérêt et pousser à trouver des alternatives de remplacement. Ces solutions intermédiaires respectent les mêmes processus projet en terme de NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(24);'>
+        <h2>
+        La nécessité d&#39;une fonctionnalité est-elle validée en rapport avec son impact NR ?
+        </h2>
+        <p>
+        La sélection des fonctionnalités spécifiées jugées indispensables peut être remis en cause dans sa forme initiale par rapport aux impacts NR. Dans ce cas les coûts / bénéfices devront prendre en compte ces oppositions et faire l&#39;objet d&#39;une adaptation pour faire converger les 2 approches : nécessité fonctionnelle et impact NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(25);'>
+        <h2>
+        Quelles alternatives sont proposées pour traiter une fonctionnalité non retenue ?
+        </h2>
+        <p>
+        Des solutions alternatives peuvent être déployées sachant qu&#39;elles ne sont pas les plus efficaces d&#39;un point de vue NR mais apportent une première étape plus efficace par rapport à la solution n&#39;incluant aucune considération NR. Ces pistes alternatives doivent être transitoires et faire l&#39;objet de planification de revue afin d&#39;augmenter graduellement leur conformité NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(26);'>
+        <h2>
+        Les orientations du service ne sont-elles pas basées sur les effets d&#39;addiction artificiels ?
+        </h2>
+        <p>
+        La sur-consommation des usages du service implique la création d&#39;une dépendance de l&#39;utilisateur vis à vis du service, et augmente artificiellement les charges d&#39;utilisation du service, donc l&#39;impact environnemental. Ces effets d&#39;addiction sont dommageables pour le respect des principes NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(27);'>
+        <h2>
+        Les interfaces utilisateurs et techniques sont-elles conçues pour être efficaces du point de vue NR ? 
+        </h2>
+        <p>
+        Le lien entre l&#39;utilisateur et le service peut générer des parcours complexes, longs, avec des volumes de saisie ou d&#39;informations présentées très élevés. Si la gestion des interfaces est efficace pour l&#39;utilisateur, elle sera le plus souvent aussi efficace du point de vue NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(28);'>
+        <h2>
+        Les aspects réglementaires de l&#39;accessibilité sont-ils pris en compte ?
+        </h2>
+        <p>
+        Le non-respect des réglementations est tout d&#39;abord illégal et peut entraîner des pénalités importantes. Il coupe aussi des utilisateurs, même hors du cadre du handicap, de l&#39;accès au service.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(29);'>
+        <h2>
+        Le service est-il conforme au RGPD ?
+        </h2>
+        <p>
+        Lors des spécifications, si de nouvelles collections de données sont prévues, elles doivent systématiquement faire l&#39;objet d&#39;une évaluation pour les données à caractère personnelle, être associé au registre de traitement et au PIA, en lien avec le DPO. Les aspects de confiance et respect des utilisateurs est l&#39;une des dimensions du NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(30);'>
+        <h2>
+        La sécurité est-elle adaptée à la valeur de mes données ?
+        </h2>
+        <p>
+        La sécurisation des données nécessite souvent des éléments redondants, des méthodes de sauvegardes et de duplications qui génèrent une empreinte environnementale supplémentaire. Certaines catégories de données justifient pleinement ces dispositions, mais pour d&#39;autres l&#39;extrême sécurisation n&#39;a pas de sens, si ce n&#39;est la facilité de traiter de la même manière toutes les informations. Le niveau de sécurisation, à partir du moment où il présente un surcoût environnemental, doit être en rapport avec la donnée.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(31);'>
+        <h2>
+        Les solutions techniques retenues sont-elles pilotées par l&#39;usage plutôt que par l&#39;intérêt technique ?
+        </h2>
+        <p>
+        Les fonctions techniques ont souvent besoin d&#39;exprimer leurs compétences et leur suivi des avancées technologiques en choisissant les solutions les plus récentes et définies dans leur écosystème comme les plus avancées. Cela pousse à faire des choix d&#39;implémentation guidés par l&#39;attrait technologique plutôt que par l&#39;efficacité notamment NR. Réorienter les pratiques techniques sur les défis NR est une bonne pratique pour conserver l&#39;intérêt technique des professionnels et leur permettre de progresser avec des résultats concrets.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(32);'>
+        <h2>
+        L&#39;évaluation de la valeur fonctionnelle de chaque interaction utilisateur est-elle réalisée ?
+        </h2>
+        <p>
+        Chaque fois que l&#39;utilisateur interagit avec le service, un nombre important de mécanismes &quot;invisibles&quot; se déclenchent. Chacun de ces éléments, en s&#39;exécutant, consomme des ressources. Pour réduire cette consommation, outre les principes d&#39;optimisation des algorithmes, il est plus utile et souvent plus facile de limiter le nombre de ces interactions.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(33);'>
+        <h2>
+        L&#39;impact de la couverture de la fonctionnalité peut-elle être réduite par la solution technique envisagée ?
+        </h2>
+        <p>
+        Certaines fonctionnalités sont nativement offertes par des composants techniques, mais ces composants ne se limitent que très rarement au seul périmètre recherché et fournissent beaucoup d&#39;autres fonctionnalités qui peuvent ne pas être utiles. Le fait de pouvoir réduire un composant technique aux seuls apports réellement utiles est un bénéfice NR important. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(34);'>
+        <h2>
+        Avez-vous identifié des indicateurs de performance pour le suivi du cycle de vie ?
+        </h2>
+        <p>
+        Les indicateurs NR universels ne sont pas vraiment disponibles, cela peut pousser à passer énormément d&#39;énergie et de ressources à définir les meilleurs indicateurs. Ce qui représente une surcharge dans le projet qui peut conduire à une remise en cause du traitement des impacts NR dans les projets. Il serait dommage que la crédibilité des bénéfices NR soient dégradés par la recherche de points de mesure. La fiabilité d&#39;un indicateur est dicté par la fiabilité de la donnée qui permet de le calculer, il vaut mieux démarrer avec des indicateurs sans doute moins ambitieux mais justes et peu onéreux en terme de charge projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(35);'>
+        <h2>
+        Dans le processus d&#39;achat (Appel d&#39;offre) des exigences d&#39;engagement NR sont-elles demandées aux prestataires externes ?
+        </h2>
+        <p>
+        Un projet est rarement réalisé avec un périmètre couvert à 100% au sein de l&#39;organisation, nombre de ressources externes sont mobilisées au cours du projet. Les spécifications permettent d&#39;identifier ces ressources nécessaires et leur associer des exigences NR pour permettre de sélectionner les prestataires en fonctions des contraintes techniques, de solvabilité économique et de NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(36);'>
+        <h2>
+        La gestion des impacts des mises à jour logicielles sur la mise en obsolescence des matériels est-elle évaluée ?
+        </h2>
+        <p>
+        Dans un développement itératif et tout au long de la vie du service des mises à jour seront appliquées. Chacune de ces adaptations doit permettre de continuer à utiliser les matériels actuels et ne pas ajouter de contraintes artificielles qui amèneraient à saturer les capacités de traitement des terminaux utilisateurs, ni introduire de mise à jour technique qui génèrerait une incompatibilité, nécessiterait / pousserait à un renouvellement des équipements.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(37);'>
+        <h2>
+        Les équipements actuels des utilisateurs sont-ils évalués ?
+        </h2>
+        <p>
+        Les spécifications doivent définir les gammes de terminaux que le service doit supporter afin que les utilisateurs avec des périphériques plus anciens puissent accéder au service dans les meilleures conditions. Les incompatibilités matérielles sont une source de souhaits / impératifs de renouvellement de terminaux avant que celui-ci ne soit réellement hors d&#39;usage. Le NR participe à prolonger la durée de vie des équipements.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(38);'>
+        <h2>
+        Les revues de projet prennent-elles en compte les validations des exigences NR ?
+        </h2>
+        <p>
+        Le cadrage et la phase de spécification prévoient des livraisons intermédiaires, sous forme de POC, de MVP, de BETA. Chacune de ces livraisons intermédiaires est une occasion de revoir et valider la couverture des exigences NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(39);'>
+        <h2>
+        Lors de chaque nouvelle mise en production, une revue du respect des enjeux NR est-elle effectuée ?
+        </h2>
+        <p>
+        La mise en production ne doit pas être considérée comme l&#39;étape ultime de la vie d&#39;un projet dans le respect des principes NR. Cette opération de mise en production permet de statuer sur les engagements NR définis et remplis au cours du projet et de valider que ces éléments seront suivis pendant toute la phase active du service, et pris en compte lors du retrait du service en fin de vie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(40);'>
+        <h2>
+        Les données et procédures spécifiées ont-elles toutes une information de fin de vie ?
+        
+        </h2>
+        <p>
+        Les spécifications font apparaître des collections de données des procédures asynchrones ou des tâches périodiques indispensables au bon fonctionnement du service. Ces éléments sont le plus souvent invisibles et en l&#39;absence de spécifications explicites des processus de retrait ils sont rarement pris en compte dans les fins d&#39;exploitation d&#39;un service. Chacun de ces éléments doit porter sa propre information de fin de vie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(41);'>
+        <h2>
+        Est-ce que le produit cible à une durée de vie déterminée ?
+        </h2>
+        <p>
+        Les services répondent à une opportunité et sont créés pour traiter cette demande. Dans un environnement technique et économique très mouvant et imprévisible, ils ont rarement une espérance de vie infinie. Il est utile d&#39;un point de vue NR de décider en préalable du terme de l&#39;exploitation du service pour éviter qu&#39;il ne subsiste ad vitam aeternam alors que l&#39;objet du service n&#39;existe plus.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(42);'>
+        <h2>
+        Les charges, bénéfices, risques sont-ils suivis ?
+        </h2>
+        <p>
+        La mise en production d&#39;un service respectant les principes NR est un atout important pour une organisation. Pour l&#39;ensemble des parties-prenantes, le bilan de la conduite du projet et du traitement des enjeux NR est un moyen supplémentaire de capitaliser sur les bénéfices de l&#39;opération et d&#39;évaluer sereinement les risques et charges pris en compte dans le projet afin de faciliter les prises en compte NR dans les futurs projets.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(43);'>
+        <h2>
+        Un plan de suivi des risques est-il déployé ? 
+        </h2>
+        <p>
+        Certains choix techniques sont orientés par l&#39;angle NR, et des adaptations techniques sont réalisées pour plus de conformité NR. Cela peut introduire des risques supplémentaires (délais, difficultés, anomalies). Ces risques doivent être suivis et le plan de traitement des risques doit prendre en considération ces éléments associés aux choix NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(44);'>
+        <h2>
+        Un gain de notoriété et de capitalisation est-il associé aux aspects NR du projet ?
+        </h2>
+        <p>
+        La conduite d&#39;un projet NR a un retentissement au delà des sphères techniques et métiers du projet, pouvant permettre à l&#39;organisation d&#39;afficher une affinité forte avec les contraintes environnementales qui est valorisable dans les opérations de communications institutionnelles ou informelles. Ces éléments peuvent être chiffrés dans les budgets projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(45);'>
+        <h2>
+        Les fonctions secondaires ont-elles aussi un impact moindre sur l&#39;impact environnemental ?
+        </h2>
+        <p>
+        80% des usages sont traités par 20% des fonctionnalités. Sans être une règle immuable, c&#39;est très souvent le cas. Il ne faut pas tomber dans le travers ou les 20% d&#39;usages marginaux consomment 80% des impacts environnementaux du projet.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(46);'>
+        <h2>
+        Les fournisseurs de solutions et prestataires de service sont-ils sélectionnés sur leur capacité à respecter un cahier des charges NR ?
+        </h2>
+        <p>
+        Les spécifications mettent en évidence des besoins de prestations externalisées ou des relations avec des fournisseurs de services. Dans les règles de sélection des fournisseurs de services ou de produits externes, les aspects NR doivent être pris en compte de la même manière que si le service ou produit était pris en charge en interne. Le cahier des charges doit exposer en plus des considérations techniques, budgétaires et de respect des normes de sécurité les principes NR que le fournisseur doit remplir.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(47);'>
+        <h2>
+        Les aspects déplacements physiques sont-ils évalués lors de la sélection de prestataires, des solutions techniques et de l&#39;organisation des acteurs internes intervenant sur le projet ?
+        </h2>
+        <p>
+        L&#39;impact environnemental des déplacements physiques est très visible et facilement estimable. Lors des interactions avec des partenaires, la distance, le nombre des déplacements doit être évalué et restreint. La définition d&#39;un budget déplacement pour l&#39;ensemble du projet peut apporter plus de contrôle sur cet aspect et promouvoir chaque fois que cela est possible des points distanciels plutôt que présentiels.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(48);'>
+        <h2>
+        Les intervenants des prestataires disposent-ils tous des mêmes bénéfices sociaux et conditions de travail ?
+        </h2>
+        <p>
+        Dans les dimensions NR les aspects humains et économiques occupent une place importante. S&#39;assurer que tous les intervenants y compris chez les prestataires (et ses propres sous-traitants et fournisseurs) utilisés pour le projet disposent des mêmes cadres socio-économiques est nécessaire pour que la cohérence des efforts NR ne soit pas anéantie par un choix qui aurait pu être évité.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(49);'>
+        <h2>
+        Est-ce que les postes de travail font l&#39;objet d&#39;une gestion de cycle de vie ?
+        </h2>
+        <p>
+        Chacun des acteurs internes va mobiliser des équipements techniques pour gérer et développer le projet. Les postes de travail de l&#39;ensemble de l&#39;équipe sont un point relativement simple à adresser du point de vue NR. Avec le suivi du cycle de vie des équipements, l&#39;utilisation de matériels avec labels environnementaux, le pilotage des alimentations électriques du poste de travail en fonction de la présence / absence au poste.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(50);'>
+        <h2>
+        Un espace commun a-t-il été mis à disposition du projet pour le partage des ressources ? (ex : limiter les PJ mail, duplication de documents...)
+        </h2>
+        <p>
+        Lors du suivi projet beaucoup de documents sont produits, revues, validés. La duplication de documents, les transferts vers des destinataires multiples est une source de consommation excessive de ressources. Le plus souvent l&#39;utilisation d&#39;un espace partagé avec la mise en place de règles d&#39;accès permet d&#39;éviter ces impacts environnementaux.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(51);'>
+        <h2>
+        Est-ce que les ressources/composants disponibles pour le projet ont une information concernant la conformité NR ?
+        
+        </h2>
+        <p>
+        Les développements modulaires sont mis en place dans les projets pour faciliter la réutilisation et permettre d&#39;assembler des composants validés ce qui se traduit par des gains d&#39;efficacité et de fiabilité. Cette pratique est basée sur les descriptions des interfaces (entrées-sorties) de ces composants, de leurs cadres d&#39;utilisation et de leurs dépendances. En plus de ces éléments techniques les aspects et bénéfices NR implémentés dans le composant sont utiles pour capitaliser en plus des aspects techniques sur les aspects NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(52);'>
+        <h2>
+        Dans les ressources techniques du projet est-ce que les gestions de dépendances sont prises en compte, pour limiter l&#39;obésité des solutions techniques employées?
+        </h2>
+        <p>
+        La majorité des projets est une suite d&#39;intégration de composants avec des développements d&#39;interfaces spécifiques entre ces composants. Bien souvent les composants issus de bibliothèques publiques (open source ou commerciales) apportent un ensemble de fonctionnalités qui ne sont que rarement toutes utilisées et drainent des dépendances vis-à-vis d&#39;autres composants avec les mêmes caractéristiques. Au final le projet agrège un volume de bibliothèque important alors qu&#39;une petite partie est réellement utilisée. Privilégier les composants dont les dépendances et fonctionnalités sont pilotables par rapport aux besoins est efficace du point de vue NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(53);'>
+        <h2>
+        Dans les choix de conceptions (fonctionnelles et techniques), est-ce que la création, la mise à jour ou la fin de vie d&#39;un domaine du service numérique a un impact réduit sur les autres domaines du service numérique?
+        </h2>
+        <p>
+        Les spécifications du projet peuvent s&#39;appuyer sur des éléments déjà employés pour d&#39;autres services. Ces dépendances entre services sont efficaces d&#39;un point de vue gestion du projet mais peuvent être pénalisantes lorsqu&#39;elles imposent le maintien de composants partagés moins efficaces d&#39;un point de vue NR, surtout lorsque les services utilisant ces ressources sont destinés à être arrêtés à des périodes différentes.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(54);'>
+        <h2>
+        L&#39;implémentation de nouveaux services sous contraintes réglementaires (santé, bancaire, ...) sont-ils nécessaires et le cas échéant s&#39;appuient-ils sur un socle de service disponible ?
+        </h2>
+        <p>
+        La pratique des professionnels utilisant des données réglementées est guidé par la sécurité des données et par la réduction de l&#39;impact d&#39;utilisation du service pour rester centré sur l&#39;enjeu principal. Les spécifications doivent prendre en compte ces éléments et réutiliser le maximum d&#39;éléments habituels de ces types de services consolidés sous forme d&#39;un socle de service. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(55);'>
+        <h2>
+        Quels sont les KPIs définis ?
+        </h2>
+        <p>
+        Les métiers et le management ont l&#39;habitude de piloter l&#39;activité avec une gamme d&#39;indicateurs business. Le suivi de la performance NR va aussi nécessiter des indicateurs dédiés pour suivre les impacts. Pour la détermination des indicateurs, des plages de valeurs de performance doivent être définis de manière itérative et suivre l&#39;augmentation de maturité de l&#39;organisation dans l&#39;appréhension de ces données afin que les processus de décisions puissent se mettre en place pour effectuer un pilotage des aspects NR.
+        </p>
+        </div>
+        </div>
+        
+
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hebergement</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="javascript.js"></script>
+  <meta name="hebergement">
+</head>
+<body onload="initialisation(7)">
+
+  <nav>
+    <div class="navbar" id="hautDePage">
+        <a class="navbar" href="index.html">Stratégie</a>                
+        <a class="navbar" href="specification.html">Spécifications</a>
+        <a class="navbar" href="ux_ui.html">Ux/Ui</a>
+        <a class="navbar" href="contenus.html">Contenus</a>
+        <a class="navbar" href="architecture.html">Architecture</a>
+        <a class="navbar" href="frontend.html">Frontend</a>
+        <a class="navbar" href="backend.html">Backend</a>
+        <a class="navbar pageActuel" href="hebergement.html">Hébergement</a>
+    </div>
+  </nav>
+
+    <!-- le panier -->
+    <div class="enssemblePanier"> 
+      <a href="panier.html" class="panier panierNonSelectionner"> 
+      <div>
+      <img id="imagePanier" src="logo/panier.png" alt="image d'un panier"/>
+      </div>
+      <div class="textePanier">
+      <p class="textePanier">
+          panier
+      </p>
+      <p id="textePanier">
+      </p>
+      </div>
+      </a>
+  </div>
+
+
+    <!-- bouton retour en haut -->
+    <div class="caseRetourHaut">
+      <a href="#hautDePage" class="boutonRetourHaut">
+        <img id="buttonGoUp" src="logo/toTop.png" alt="image d'un bouton retouner en haut"/>
+      </a>
+    </div>
+
+
+
+
+  <div class="ensembleSousNav"> <!-- texte du site -->
+    <h1 class="titreGrandTheme">
+        HEBERGEMENT
+    </h1>
+    <div class="contenuPage"> <!-- contenu -->
+      <div class='enssembleThemeSecondaire'>
+        <div class='interieur_theme_secondaire' onclick='changeColor(0);'>
+        <h2>
+        Le refroidissement affecte-t-il  les nappes phréatiques ?
+        
+        </h2>
+        <p>
+        L&#39;utilisation de l&#39;eau est associée aux hébergements informatiques. Le plus souvent l&#39;eau circule mais la dégradation peut provenir à la fois de la température et de la pureté.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(1);'>
+        <h2>
+        L&#39;emplacement du datacenter affecte-t-il l&#39;écosystème à proximité ?
+        
+        </h2>
+        <p>
+        Les datacenters sont rarement installés au coeur des zones urbaines, ils bénéficient d&#39;environnement naturels plus favorables qu&#39;ils ne doivent pas contribuer à appauvrir.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(2);'>
+        <h2>
+        La qualité de l&#39;eau est-elle dégradée par son utilisation dans le datacenter ?
+        </h2>
+        <p>
+        Le datacenter doit être en mesure de réutiliser l&#39;eau qu&#39;il rejette.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(3);'>
+        <h2>
+        L&#39;eau utilisée ne provient-elle pas du réseau d&#39;eau potable ?
+        </h2>
+        <p>
+        Il n&#39;y a pas de traitement superflu de l&#39;eau nécessaire au refroidissement du datacenter. En conséquence l&#39;utilisation de l&#39;eau potable n&#39;est pas envisageable. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(4);'>
+        <h2>
+        Les déchets issus du datacenter sont-ils valorisés ou recyclés ?
+        </h2>
+        <p>
+        Le traitement des déchets générés par un datacenter est complexe, il est donc nécessaire de l&#39;adresser et de se préoccuper de sa bonne gestion en termes de recyclage et de respect de l&#39;environnement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(5);'>
+        <h2>
+        Le datacenter produit-il une nuisance sonore ?
+        </h2>
+        <p>
+        Conformément à l&#39;article L1382 du Code Civil, tout datacenter doit veiller à limiter sa nuisance sonore (= pollution sonore).
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(6);'>
+        <h2>
+        Est-ce que de l&#39;énergie indirecte produite (chaleur) est réutilisée ?
+        </h2>
+        <p>
+        La transformation d&#39;énergie produit de la chaleur. Afin de ne pas rejeter de source de chaleur dans l&#39;environnement et éviter la consommation d&#39;énergie pour produire de la chaleur dans d&#39;autres activités, la chaleur des datacenters doit être réutilisée (chauffage de locaux, d&#39;eau, de serres, ...)
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(7);'>
+        <h2>
+        Est-ce que le bâtiment est certifié LEED / BDM ou équivalent ?
+        </h2>
+        <p>
+        La structure du bâtiment peut être plus ou moins efficace dans sa conception, les normes environnementales les plus performantes de construction doivent être appliquées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(8);'>
+        <h2>
+        Est-ce que le refroidissement est optimisé en fonction d&#39;une analyse de température précise ?
+        </h2>
+        <p>
+        Chaque degré supplémentaire de refroidissement consomme de l&#39;énergie, l&#39;adaptation de la production de froid au besoin instantané permet de réduire cette consommation.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(9);'>
+        <h2>
+        Comment et sur quels critères est optimisé le refroidissement ?
+        </h2>
+        <p>
+        Les températures de fonctionnement et le niveau d&#39;hygrométrie des tolérances des serveurs sont étendues, le refroidissement doit être optimisé pour être dans les valeurs hautes de ces plages.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(10);'>
+        <h2>
+        L&#39;infrastructure du datacenter prend-t-elle en compte les contraintes de refroidissement ?
+        </h2>
+        <p>
+        L&#39;organisation du datacenter peut faciliter la gestion des flux de refroidissements avec des structures permettant de canaliser et réduire le volume d&#39;air traité par le refroidissement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(11);'>
+        <h2>
+        Les alimentations des serveurs sont-elles efficaces ?
+        </h2>
+        <p>
+        La consommation énergétique des serveurs est l&#39;un des facteurs permettant de réduire l&#39;empreinte de l&#39;hébergement. Les labels et certifications en constantes évolutions facilitent le choix des gammes et modèles de serveurs. Certains équipements disposent de plusieurs sources d&#39;alimentations. Les gestions d&#39;alimentations redondantes doivent aussi entrer dans les critères de choix
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(12);'>
+        <h2>
+        Est-ce que le PUE (Power Usage Effectivness) est disponible ?
+        </h2>
+        <p>
+        La puissance totale consommée par le datacenter en comparaison de la puissance consommée par les serveurs donnent l&#39;efficacité globale de toute l&#39;infrastructure.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(13);'>
+        <h2>
+        Le taux d&#39;occupation des salles du datacenter est-il optimisé pour améliorer le bilan énergétique ?
+        </h2>
+        <p>
+        La densité d&#39;occupation des racks dans les salles d&#39;hébergement doit permettre de privilégier l&#39;efficacité des équipements mutualisés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(14);'>
+        <h2>
+        Est-ce que le WUE (Water Usage Effectivness) est disponible ?
+        </h2>
+        <p>
+        La quantité d&#39;eau consommée par le datacenter en comparaison de la puissance consommée par les serveurs donnent l&#39;efficacité globale de toute l&#39;infrastructure.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(15);'>
+        <h2>
+        L&#39;hébergeur adhère-t-il aux meilleurs prattiques de son secteur d&#39;activité ?
+        </h2>
+        <p>
+        Le domaine de l&#39;hébergement se struture pour afficher des pratiques métiers vertueuses en développant des codes de conduite.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(16);'>
+        <h2>
+        Est-ce que tous les collaborateurs du prestataire disposent de conditions sociales et salariales équivalentes à celles du client du datacenter ?
+        </h2>
+        <p>
+        Les besoins de supervision 24/7 des datacenters peuvent pousser les opérateurs à distribuer leurs ressources techniques et humaines de supervision dans un mode &quot;Follow the Sun&quot;. Les conditions d&#39;exercice et de travail dans des pays différents peuvent introduire de grandes inégalités de traitement, de couverture sociale. La transparence et la cohérence de traitement de tous les collaborateurs du prestataire permet de garantir la dimension humaine et économique du NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(17);'>
+        <h2>
+        Le datacenter est-il situé à proximité de l&#39;activité principale ?
+        </h2>
+        <p>
+        Les déplacements physiques sur les datacenters sont par nature peu fréquents mais des synchronisations avec les équipes techniques sur site est parfois indispensable. La distance doit être minimisée pour réduire les impacts de ces déplacements
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(18);'>
+        <h2>
+        Les trajets pour interventions au datacenter sont-ils possibles en transport en commun ou mobilité douce?
+        </h2>
+        <p>
+        La localisation du datacenter dans un périmètre accessible en mobilité faible émission est plus intéressante pour les quelques déplacements qui seraient nécessaires.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(19);'>
+        <h2>
+        Le datacenter favorise-t-il l&#39;écosystème économique local ?
+        </h2>
+        <p>
+        La localisation du datacenter, notamment le pays, peut introduire des conséquences sur la territorialité des données. La région de son implémentation dans des zones favorisées ou défavorisées peut permettre de réduire les impacts des zones où le numérique est peut représenté.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(20);'>
+        <h2>
+        Le matériel provient-il d&#39;entreprises réputées comme respectant le code du travail ?
+        </h2>
+        <p>
+        Les fournisseurs d&#39;approvisionnements matériels du datacenter doivent pouvoir être tracés pour permettre une analyse du cycle de vie. Le strict respect des normes internationales du travail doivent pouvoir être validées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(21);'>
+        <h2>
+        Est-ce que les équipements sont fabriqués par des entreprises respectueuses de l&#39;environnement ?
+        </h2>
+        <p>
+        Le positionnement NR des fournisseurs de matériels du datacenter doit pouvoir être exposé et validé, pour assurer la continuité de la vision que demande l&#39;analyse du cycle de vie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(22);'>
+        <h2>
+        Les serveurs /routeurs sont-ils éteints quand ils sont inutilisés ?
+        </h2>
+        <p>
+        L&#39;infrastructure réseau est au coeur de l&#39;architecture des datacenters, les mécanismes de redondances, de sur-dimensionnement sont largement déployés mais utilisés de manière ponctuelle. En l&#39;absence de besoin et lorsque cela n&#39;impacte pas la sécurité du site, les équipements en sur-nombre devraient être hors tension pour diminuer les consommations d&#39;énergie et les besoins de refroidissement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(23);'>
+        <h2>
+        La taille du parc physique est-il en adéquation avec le volume de machines virtuelles à exécuter ?
+        </h2>
+        <p>
+        Les techniques de virtualisation permettent de mutualiser les ressources physiques d&#39;un serveur et d&#39;un espace de stockage. Cette abstraction peut optimiser l&#39;emploi du matériel, mais peut aussi conduire à sous-utiliser les équipements physiques et déployer de nouveaux équipements avant que le besoin ne soit réellement présent. L&#39;impact environnemental total d&#39;un serveur et de son utilisation est important.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(24);'>
+        <h2>
+        La mémoire attribuée est-elle fonction de l&#39;usage réel ?
+        </h2>
+        <p>
+        L&#39;adaptation et le suivi des consommations de ressources physiques doivent faire intervenir des collectes sur les équipements physiques et sur tous les équipements virtuels qu&#39;ils accueillent. Les techniques de virtualisation récentes autorisent le changement de paramètres sans interruption pour, en fonction du besoin, augmenter ou diminuer les ressources (CPU/RAM) allouées aux machines virtuelles, voire migrer des machines virtuelles sur des serveurs physiques moins chargés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(25);'>
+        <h2>
+        Le nombre de coeurs attribués est-il fonction de l&#39;usage réel ?
+        </h2>
+        <p>
+        Les ressources CPU accessibles par les machines virtuelles sont fonction du nombre de processeurs, du nombre de coeurs de chaque processeur et des capacités d&#39;hyperThreading. Ce nombre de composants CPU constitue la base des ressources virtuelles que les machines virtuelles pourront allouer.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(26);'>
+        <h2>
+        Le choix technique (mutualisé, dédié, collocation) est-il optimisé entre le besoin et l&#39;efficacité énergétique ?
+        </h2>
+        <p>
+        Les différentes solutions proposées par les hébergeurs génèrent des allocations de matériels physiques très différentes et donc un impact environnemental différent. Le point d&#39;analyse majeur est le nombre de serveurs, les puissances consommées par les serveurs, les volumes de stockage et la puissance consommée par ceux-ci. L&#39;utilisation de serveurs ou de stockages pour un besoin réduit en dessous de sa capacité nominale génère une déperdition environnementale.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(27);'>
+        <h2>
+        Les coeurs inutilisés sont-ils désactivés ?
+        </h2>
+        <p>
+        Les services hébergés n&#39;ont pas toujours les mêmes besoins de performance et subissent des variations fortes de charges, au cours de la journée, de la semaine, des mois, de l&#39;année. Les dimensionnements sont calibrés pour accepter les charges maximales qui peuvent être sur des plages de temps restreintes. En dehors de ces périodes, le besoin de puissance est réduit et l&#39;activité des systèmes doit être en mesure de se réduire dans les mêmes proportions pour ne pas monopoliser d&#39;énergie inutilement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(28);'>
+        <h2>
+        Le système de sauvegarde est-il incrémentiel (optimisation disque) ?
+        </h2>
+        <p>
+        La sécurité est un des points clé des datacenters, les sauvegardes sont l&#39;un des éléments participant à cette sécurisation. La volumétrie des sauvegardes est cumulative. Unitairement le volume de données à sauvegarder tend à croître, les différents jeux de sauvegardes multiplient cet effet. Les données non modifiées n&#39;ont pas de raison d&#39;encombrer inutilement des espaces de sauvegarde. Les sauvegardes incrémentales réduisent l&#39;impact environnemental de ce processus. Certaines solutions sont en mesure de gérer des incréments, d&#39;autres ne savent gérer que des archives totales qui augmentent l&#39;empreinte environnementale.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(29);'>
+        <h2>
+        L&#39;usage de containers par rapport à des machines virtuelles est-il privilégié ?
+        </h2>
+        <p>
+        Les machines virtuelles et les containers sont 2 techniques de virtualisation. La technologie des machines virtuelles utilise beaucoup de duplications (système d&#39;exploitation par exemple) et créent des composants virtuels associés à des composants physiques. Le mode container repose sur les composants physiques du matériel et les exploite plus nativement en limitant les duplications de composants logiciels. D&#39;un point de vue NR les containers sont souvent plus efficaces mais la technologie est moins largement déployée.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(30);'>
+        <h2>
+        Est-ce que les solutions Open Source sont mises en oeuvre lorsqu&#39;elles sont disponibles ?
+        </h2>
+        <p>
+        Une solution Open Source n&#39;est pas un gage d&#39;efficacité NR et les différentes alternatives doivent être challengées. Mais l&#39;Open Source permet de limiter les ambitions et mainmises de certains acteurs dont les pratiques économiques, sociales sont opaques. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(31);'>
+        <h2>
+        La haute disponibilité est-elle conçue de manière modulaire?
+        </h2>
+        <p>
+        Les besoins de sécurisation sont différents en fonction des clients, des services hébergés. La même règle générique d&#39;excellence dans ce domaine n&#39;est pas toujours nécessaire. La conception des mécanismes de haute disponibilité qui met en jeu beaucoup de composants redondants doit pouvoir s&#39;adapter au besoin réel afin de réduire l&#39;impact des services. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(32);'>
+        <h2>
+        Le provisionning / deprovisionning est-il dynamique en fonction de la charge ?
+        </h2>
+        <p>
+        Lors de l&#39;hébergement d&#39;un service, chaque partie le composant peut être amenée à avoir une durée de vie différente. Il est important que l&#39;ensemble des procédures de fin de vie soient exprimées pour que l&#39;empreinte des composants inutilisés et arrêtés soient nulle. Y compris lorsque l&#39;arrêt est temporaire suite à une baisse d&#39;activité.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(33);'>
+        <h2>
+        Est-ce que les solutions de stockage permettent de réduire le nombre de composants (par exemple: supports SSD haute densité) ?
+        </h2>
+        <p>
+        La densité des espaces de stockage conditionne la consommation d&#39;énergie que le stockage va demander. Les technologies des disques évoluent rapidement, les parties mobiles tendent à être remplacées par des composants électroniques qui permettent de réduire la consommation électrique globale. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(34);'>
+        <h2>
+        L&#39;électricité provient-elle d&#39;énergies renouvelables ?
+        </h2>
+        <p>
+        L&#39;activité d&#39;un datacenter nécessite de l&#39;énergie. Les sources d&#39;énergies vont déterminer l&#39;empreinte environnementale. Les solutions d&#39;alimentation à partir d&#39;énergie bas carbone et renouvelables vont diminuer cet impact.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(35);'>
+        <h2>
+        Les serveurs et les équipements techniques sont-ils certifiés ?
+        </h2>
+        <p>
+        Les normes, labels et certifications environnementales se généralisent. Les serveurs, les espaces de stockage, les équipements réseaux affichent de plus en plus fréquemment des adhésions à certaines de ces normes de fait ou standardisées. L&#39;émergence de nouveaux marqueurs doit être surveillée pour permettre la meilleure solution.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(36);'>
+        <h2>
+        Le datacenter permet-il d&#39;avoir des informations fiables en terme de consommations d&#39;énergie?
+        </h2>
+        <p>
+        Le total des consommations d&#39;énergie est utile pour estimer l&#39;empreinte environnementale du datacenter. Cela doit prendre en compte aussi les équipements de secours (générateurs, onduleurs,...), mais la segmentation de ces consommations par usage est beaucoup plus significative, certains indicateurs n&#39;étant calculés qu&#39;avec des données plus précises (par exemple le PUE). L&#39;autre intérêt de cette ventilation est d&#39;identifier les points les plus consommateurs pour mettre en place des actions visant à les réduire. 
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(37);'>
+        <h2>
+        L&#39;hébergeur est-il transparent sur l&#39;impact carbone de l&#39;infrastructure et des usages pour ses clients ?
+        </h2>
+        <p>
+        L&#39;activité d&#39;un datacenter génère un impact carbone qui peut être important.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(38);'>
+        <h2>
+        Est-ce que les fournisseurs sont sélectionnés en fonction de leurs capacités à communiquer les indicateurs différenciants ?
+        </h2>
+        <p>
+        Dans les règles de sélection des fournisseurs de services d&#39;hébergement, les aspects NR doivent être pris en compte de la même manière que si le service était pris en charge en interne. Le cahier des charges doit exposer en plus des considérations techniques, budgétaires et de respect des normes de sécurité les principes NR que le fournisseur doit remplir.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(39);'>
+        <h2>
+        La structure juridique, ses filiales et sa filiation sont-elles respectueuses des réglementations et de la déontologie ?
+        </h2>
+        <p>
+        Les activités d&#39;hébergement prennent deux directions opposées : la concentration avec de gros acteurs et la multiplication d&#39;acteurs de proximité. Les structures juridiques de ces deux types d&#39;entités peuvent être plus ou moins visibles, il est important de pouvoir en appréhender toutes les ramifications pour choisir, en connaissance de cause et dans le respect des principes NR, le fournisseur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(40);'>
+        <h2>
+        Le fournisseur expose-t-il tous ses indicateurs ?
+        </h2>
+        <p>
+        Le niveau de maturité NR des opérateurs de datacenter est très variable, lorsque les indicateurs de performances NR sont exposés cela démontre une maturité avancée. La communication d&#39;indicateurs ne présume pas de la pertinence et de la fiabilité des indicateurs qui doivent aussi être exposés.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(41);'>
+        <h2>
+        Les équipements non-critiques sont-ils issus du reconditionnement ?
+        </h2>
+        <p>
+        Le prolongement de la durée de vie des équipements permet de réduire les remplacements de matériels, l&#39;utilisation de matériels reconditionnés est une pratique intéressante dans ce sens. Toutefois les avancées technologiques et l&#39;efficacité des composants techniques peut rendre plus utile dans la phase d&#39;usage de disposer de matériels récents qui vont consommer moins d&#39;énergie pour une même utilisation.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(42);'>
+        <h2>
+        Les équipements sont-ils réparés plutôt que remplacés ?
+        </h2>
+        <p>
+        La réparabilité des matériels, et le taux effectif de réparation est un critère qui permet d&#39;atténuer l&#39;impact environnemental des matériels sur l&#39;ensemble de leurs durées de vie.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(43);'>
+        <h2>
+        Les équipements en fin de vie sont-ils revalorisés ( vente / don / recyclage ... ) ?
+        </h2>
+        <p>
+        Le renouvellement du parc technique est incontournable, les équipements en capacité de servir des usages moins intenses doivent être reconditionnés et ré-injectés dans d&#39;autres secteurs d&#39;activité. Les matériels qui ne peuvent être remis en service doivent entrer dans une filière de recyclage fiable et chaque étape doit être tracée pour garantir sa conformité avec les exigences NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(44);'>
+        <h2>
+        Est-ce que les serveurs et routeurs sont renouvelés lorsque les technologies permettent une meilleure efficacité énergétique ?
+        </h2>
+        <p>
+        Les avancées technologiques et l&#39;efficacité des composants techniques peut rendre plus utile dans la phase d&#39;usage de disposer de matériels récents qui vont consommer moins d&#39;énergie pour une même utilisation.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(45);'>
+        <h2>
+        Est-ce que les matériaux de construction / gaine / isolant utilisés permettent une meilleure efficacité énergétique. Le bâtiment répond-t-il aux normes HQE , rt2012 ou équivalentes ?
+        </h2>
+        <p>
+        En plus de la structure du bâtiment qui peut être plus ou moins efficace dans sa conception, les éléments de construction et liés à l&#39;activité de datacenter peuvent aussi suivre les normes environnementales les plus performantes.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(46);'>
+        <h2>
+        Quel est l&#39;impact du refroidissement du datacenter sur l&#39;environnement ?
+        </h2>
+        <p>
+        Les techniques de refroidissement font intervenir soit de la production de froid à partir d&#39;une source d&#39;énergie, soit la captation de froid sur une source naturelle. La consommation d&#39;énergie à un impact direct. La captation d&#39;une source naturelle de froid doit aussi être évaluée par rapport à l&#39;impact environnemental de rejet de chaleur.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(47);'>
+        <h2>
+        Les mesures carbon / water efficiency sont-elles disponibles ?
+        </h2>
+        <p>
+        Les standards pour les datacenters mettent en avant les indicateurs d&#39;efficacité qui dépassent la partie énergétique. Les métriques d&#39;efficacité carbone et eau sont de plus en plus employée et permettent une meilleure évaluation des datacenter.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(48);'>
+        <h2>
+        L&#39;entreprise (l&#39;hébergeur) applique-t-elle une politique RSE / RGAA ?
+        </h2>
+        <p>
+        Le respect des considérations des personnes est un critère important pour le NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(49);'>
+        <h2>
+        L&#39;entreprise fournit-elle des garanties fiables en terme de RGPD ?
+        </h2>
+        <p>
+        Le RGPD impose de communiquer les éléments d&#39;hébergement, cet aspect légal doit être vérifié précisément.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(50);'>
+        <h2>
+        Les atouts de l&#39;hébergeur sont-ils exposés lorsqu&#39;ils font progresser le NR ?
+        </h2>
+        <p>
+        Des outils permettent de vérifier les caractéristiques des hébergeurs pour des sites WEB. La promotion des hébergeurs utilisés qui mettent en oeuvre les meilleures solutions NR peuvent être exposés avec des &quot;stickers&quot; sur le site WEB. Certains outils utilisent des règles opaques, dans tous les cas il est indispensable de vérifier la validité des notations données par ces outils.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(51);'>
+        <h2>
+        Toutes les données soumises à une réglementation (santé, bancaire) sont-elles sécurisées sur un hébergeur avec un niveau d&#39;agrément compatible ?
+        </h2>
+        <p>
+        Les réglementations imposent des agréments spécifiques pour certaines catégories de données (santé, bancaire). Les normes évoluent en fonction des besoins de sécurisation et de l&#39;état de l&#39;art. La validation d&#39;un agrément doit être suivi régulièrement pour garantir que les utilisateurs du services ne sont pas exposés à des risques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(52);'>
+        <h2>
+        L&#39;hébergeur est-il agréé?
+        </h2>
+        <p>
+        Les réglementations imposent des agréments spécifiques pour certaines catégories de données (santé, bancaire). Les normes évoluent en fonction des besoins de sécurisation et de l&#39;état de l&#39;art. La validation d&#39;un agrément doit être suivie régulièrement pour garantir que les utilisateurs du service ne sont pas exposés à des risques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(53);'>
+        <h2>
+        Le fournisseur adhère-t-il à un standard / label ? S&#39;implique-t-il dans des réseaux liés au Numérique Responsable ?
+        </h2>
+        <p>
+        L&#39;opérateur de datacenter peut avoir lancé une démarche NR, et être en mesure d&#39;exposer son adhésion et ses actions pour le NR
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(54);'>
+        <h2>
+        Le datacenter est-il à minima Tier 3 ?
+        </h2>
+        <p>
+        Le niveau de sécurisation du datacenter conditionne les éléments de disponibilité des services numériques.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(55);'>
+        <h2>
+        L&#39;opérateur dispose-t-il de plusieurs datacenters interconnectés et distants de + de 100kms ?
+        </h2>
+        <p>
+        Les impacts des cataclysmes naturels ou industriels peuvent rendre certains sites inopérants. Afin de garantir une continuité de service, les distances entre les différents sites hébergeant les services doivent prendre en compte ces éléments.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(56);'>
+        <h2>
+        La certification du datacenter est-elle adaptée au besoin et à l&#39;emplacement géographique (sismique, innondation) ?
+        </h2>
+        <p>
+        Les caractéristiques des zones géographiques peuvent nécessiter des dispositions spécifiques que les datacenters doivent prendre en compte.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(57);'>
+        <h2>
+        Le contrôle d&#39;accès physique au site met-il en oeuvre des données biométriques ?
+        </h2>
+        <p>
+        La capture d&#39;information biométriques permet de sécuriser des accès, mais transmet des données personnelles importantes qui doivent être protégées.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(58);'>
+        <h2>
+        Le datacenter fournit-il une solution locale de coffre-fort numérique sécurisé ?
+        </h2>
+        <p>
+        L&#39;hébergement de données critiques dans un espace hautement sécurisé et crypté est parfois indispensable pour assurer la pérennité de l&#39;organisation
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(59);'>
+        <h2>
+        Les processus mis en place pour la prévention des incidents prennent-ils en compte la non-dégradation des serveurs et équipements ?
+        </h2>
+        <p>
+        Les procédures de réponses aux incidents doivent en premier lieu protéger les personnes et leurs données, mais la destruction d&#39;équipements physiques génère un besoin de renouvellement avec son impact sur l&#39;environnement.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(60);'>
+        <h2>
+        L&#39;impact environnemental d&#39;implémentation de chaque fonction est-il en rapport avec son importance ?
+        </h2>
+        <p>
+        La cohérence NR pousse à s&#39;assurer que les fonctions secondaires n&#39;ont pas un impact environnemental plus important que les fonctions principales. Les spécifications doivent clairement identifier les fonctions principales et secondaires et leur impact du point de vue NR.
+        </p>
+        </div>
+        <div class='interieur_theme_secondaire' onclick='changeColor(61);'>
+        <h2>
+        Chacune des phases du cycle de vie sont-elles identifiées avec des actions spécifiques ?
+        </h2>
+        <p>
+        La démarche ACV est une base de la prise en compte du NR dans la conception des services numériques, elle permet d&#39;associer des actions à chaque étape du cycle de vie.
+        </p>
+        </div>
+        </div>        
+        
+
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
